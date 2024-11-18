@@ -4,8 +4,10 @@ import Detail from "@/components/Detail";
 import Header from "@/components/Header";
 import Main from "@/components/Main";
 import Image from "next/image";
+import { Button as ShadCNButton } from "@/components/ui/button";
 
 import { Fugaz_One } from "next/font/google";
+import { Menu, MenuIcon, SlidersHorizontal } from "lucide-react";
 
 const fugaz = Fugaz_One({ subsets: ["latin"], weight: ["400"] });
 
@@ -65,22 +67,9 @@ export default function Home() {
 
       <div className="gap-4 grid grid-cols-12 justify-center items-center">
         {/* Mobile Menu Toggle */}
-        <button
-          data-collapse-toggle="navbar-sticky"
-          type="button"
-          className="col-span-1 inline-flex items-center p-3  justify-center text-sm text-black rounded-lg bg-white focus:outline-none  focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-sticky"
-          aria-expanded="false"
-        >
-          <span className="sr-only">Open main menu</span>
-          <Image
-            src="/images/option.png"
-            alt="Settings"
-            width={20}
-            height={20}
-          />
-        </button>
-
+        <ShadCNButton variant="outline" size="icon" className='shrink-0'>
+          <MenuIcon/>
+        </ShadCNButton>
         {/* Search Bar */}
         <form className="max-w-xl col-span-11 relative ">
           <label
@@ -164,14 +153,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={`bg-white p-3 rounded-md ${fugaz.className}`}>
-        <Image
-          src="/images/setting.png"
-          alt="Settings"
-          width={20}
-          height={20}
-        />
-      </div>
+      <ShadCNButton variant="outline" size="icon" className='shrink-0' >
+          <SlidersHorizontal />
+        </ShadCNButton>
     </header>
   );
 
