@@ -19,3 +19,31 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 8px; /* Horizontal scrollbar height */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Track color */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #3b82f6; /* Thumb color (blue) */
+  border-radius: 4px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin; /* Firefox: Make scrollbar thin */
+  scrollbar-color: #3b82f6 #f0f0f0; /* Firefox: Thumb and track colors */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Hides scrollbar for Chrome, Safari, and Edge */
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* Hides scrollbar for Internet Explorer and Edge */
+  scrollbar-width: none; /* Hides scrollbar for Firefox */
+}
