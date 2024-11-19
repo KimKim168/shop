@@ -350,7 +350,7 @@ export default function Home() {
             />
           </div>
         </>
-        <footer className="mt-4 sm:p-10 grid place-items-center bg-primary">
+        <footer className="mt-4 p-4 sm:p-10 grid place-items-center bg-primary">
           <div className="text-center">
             <span className="text-sm text-white">
               © 2024{" "}
