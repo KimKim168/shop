@@ -214,7 +214,7 @@ export default function Home() {
       <section className="col-span-12 md:col-span-8 xl:col-span-9 ">
         {headers}
         <>
-          <div className=" flex mt-3 pb-1 items-center overflow-auto scroll-smooth whitespace-nowrap custom-scrollbar gap-x-2 ">
+          <div className=" flex mt-3 pb-2 items-center overflow-auto scroll-smooth whitespace-nowrap custom-scrollbar gap-x-2 ">
             <div className="flex-1 flex gap-2 justify-center items-center">
               {/* <Button text="All Menu" dark={true} /> */}
               <ShadCNButton>
