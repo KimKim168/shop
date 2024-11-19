@@ -5,6 +5,6 @@ export default function Main(props) {
     const { children } = props;
 
   return (
-    <main className='grid grid-cols-12 max-w-screen-xl mx-auto'>{ children }</main>
+    <main className='grid grid-cols-12 '>{ children }</main>
   )
 }

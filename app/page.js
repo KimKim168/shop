@@ -7,7 +7,7 @@ import Image from "next/image";
 import { Button as ShadCNButton } from "@/components/ui/button";
 
 import { Fugaz_One } from "next/font/google";
-import { Menu, MenuIcon, SlidersHorizontal } from "lucide-react";
+import { CoffeeIcon, Menu, MenuIcon, SlidersHorizontal } from "lucide-react";
 
 const fugaz = Fugaz_One({ subsets: ["latin"], weight: ["400"] });
 
@@ -61,6 +61,54 @@ export default function Home() {
     },
   ];
 
+  const categories = [
+    {
+      id: 1,
+      text: "Brew Equipment",
+      icon: "/images/product2.jpg",
+    },
+    {
+      id: 2,
+      text: "Coffee",
+      icon: "/images/coffee.png",
+    },
+    {
+      id: 3,
+      text: "Espresso",
+      icon: "/images/drink.png",
+    },
+    {
+      id: 4,
+      text: "Instant + RTD",
+      icon: "/images/product2.jpg",
+    },
+    {
+      id: 5,
+      text: "Ceramics",
+      icon: "/images/coffee.png",
+    },
+    {
+      id: 6,
+      text: "Brew Equipment",
+      icon: "/images/drink.png",
+    },
+    {
+      id: 7,
+      text: "Coffee",
+      icon: "/images/product2.jpg",
+    },
+    {
+      id: 8,
+      text: "Espresso",
+      icon: "/images/product2.jpg",
+    },
+    {
+      id: 9,
+      text: "Instant + RTD",
+      icon: "/images/product2.jpg",
+    },
+  ];
+
   const headers = (
     <header className="mt-3 sm:px-2 sm:pt-8 flex items-center justify-between gap-4  ">
       {/* Logo */}
@@ -74,7 +122,7 @@ export default function Home() {
         <div className="flex-1">
           <form className="w-full relative ">
             <label
-              for="default-search"
+              htmlFor="default-search"
               className=" text-sm font-medium text-gray-900 sr-only dark:text-white"
             >
               Search
@@ -163,26 +211,35 @@ export default function Home() {
 
   return (
     <Main>
-      <section className="col-span-12 md:col-span-8 ">
+      <section className="col-span-12 md:col-span-8 xl:col-span-9 ">
         {headers}
         <>
-          <div className="mt-3 sm:mt-0 flex pb-2 overflow-auto  scroll-smooth whitespace-nowrap custom-scrollbar gap-x-2">
-            <div className="flex-1">
-              <Button text="All" dark={true} />
-              <Button text="Brew Equipment" />
-              <Button text="Coffee" />
-              <Button text="Espresso" />
-              <Button text=" Instant + RTD" />
-              <Button text="Ceramics" />
-              <Button text="Brew Equipment" />
-              <Button text="Coffee" />
-              <Button text="Espresso" />
-              <Button text=" Instant + RTD" />
+          <div className=" flex mt-3 pb-1 items-center overflow-auto scroll-smooth whitespace-nowrap custom-scrollbar gap-x-2 ">
+            <div className="flex-1 flex gap-2 justify-center items-center">
+              {/* <Button text="All Menu" dark={true} /> */}
+              <ShadCNButton>
+                {/* <Image src='/images/menu.png' width={20} height={20} alt="image"></Image> */}
+                <p>All Menu</p>
+              </ShadCNButton>
+
+              {categories.map((category) => (
+                <ShadCNButton key={category.id} variant="outline" >
+                  {category.icon && (
+                    <Image
+                      src={category.icon}
+                      width={20}
+                      height={20}
+                      alt={`${category.text} Icon`}
+                    />
+                  )}
+                  <p>{category.text}</p>
+                </ShadCNButton>
+              ))}
             </div>
           </div>
         </>
         <>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center justify-center w-full lg:grid-cols-4 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 items-center justify-center w-full lg:grid-cols-4 gap-3">
             <Card
               image="/images/product3.webp"
               title="Fellow Clara French Press"
@@ -271,7 +328,7 @@ export default function Home() {
           </p>
         </footer>
       </section>
-      <section className="col-span-12 md:col-span-4 ml-4">
+      <section className="col-span-12 md:col-span-4 xl:col-span-3 ml-4">
         <>
           <Detail details={orderDetails} />
         </>

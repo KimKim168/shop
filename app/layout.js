@@ -22,11 +22,10 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-
   return (
     <html lang="en">
       <body
-        className={`px-2 max-w-screen-xl mx-auto text-sm sm:text-base min-h-screen flex flex-col bg-gray-100  ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`px-2 max-w-screen-2xl mx-auto text-sm sm:text-base min-h-screen flex flex-col bg-gray-100  ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
         {/* {footer} */}
