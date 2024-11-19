@@ -22,7 +22,7 @@ export default function Card({image, title, shortDescription, price}) {
         </h5>
       </a>
      
-      <p className=" font-bold text-blue-600 dark:text-gray-400">
+      <p className=" font-bold text-primary dark:text-gray-400">
         {price}
       </p>
      

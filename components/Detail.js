@@ -33,7 +33,7 @@ export default function Detail({ details }) {
               </p>
               <div className="flex justify-center items-center mt-5">
                 <p className="text-sm text-gray-500">{item.increase}</p>
-                <p className="ml-auto font-semibold text-blue-600">
+                <p className="ml-auto font-semibold text-primary">
                   {item.price}
                 </p>
               </div>
@@ -43,27 +43,27 @@ export default function Detail({ details }) {
       </div>
       <div>
         {/* Subtotal */}
-        <div className="mt-4 border-t pt-4">
+        <div className="mt-4 border-t pt-4 space-y-3">
           <div className="flex justify-between text-sm">
-            <p className="text-gray-600">Subtotal</p>
-            <p className="font-semibold">$742.00</p>
+            <p className="text-primary/70">Subtotal</p>
+            <p className="font-semibold text-red-600">$742.00</p>
           </div>
           <div className="flex justify-between text-sm">
-            <p className="text-gray-600">Discount sales</p>
+            <p className="text-primary/70">Discount sales</p>
             <p className="font-semibold text-red-600">-$4.00</p>
           </div>
           <div className="flex justify-between text-sm">
-            <p className="text-gray-600">Total sales tax</p>
-            <p className="font-semibold">$2.00</p>
+            <p className="text-primary/70">Total sales tax</p>
+            <p className="font-semibold text-red-600">$2.00</p>
           </div>
-          <div className="flex justify-between text-lg mt-3 font-bold">
-            <p>Total</p>
-            <p>$740.00</p>
+          <div className="flex justify-between text-lg mt-4 pt-4 border-t font-bold">
+            <p className="text-primary/70">Total</p>
+            <p className="text-red-600">$740.00</p>
           </div>
         </div>
 
         {/* Pay Now Button */}
-        <button className="w-full mt-4 bg-blue-600 text-white font-bold py-2 rounded-lg hover:bg-blue-700">
+        <button className="w-full mt-4 bg-primary text-white font-bold py-2 rounded-lg hover:bg-primary/90">
           Pay Now
         </button>
         {/* <Button text='Pay Now'/> */}
