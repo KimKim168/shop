@@ -5,9 +5,24 @@ import Header from "@/components/Header";
 import Main from "@/components/Main";
 import Image from "next/image";
 import { Button as ShadCNButton } from "@/components/ui/button";
+// import { Sheet } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 import { Fugaz_One } from "next/font/google";
-import { CoffeeIcon, Menu, MenuIcon, SlidersHorizontal } from "lucide-react";
+import {
+  CoffeeIcon,
+  Menu,
+  MenuIcon,
+  ShoppingCart,
+  SlidersHorizontal,
+} from "lucide-react";
 
 const fugaz = Fugaz_One({ subsets: ["latin"], weight: ["400"] });
 
@@ -206,12 +221,30 @@ export default function Home() {
       <ShadCNButton variant="outline" size="icon" className="shrink-0">
         <SlidersHorizontal />
       </ShadCNButton>
+
+      <section className="md:hidden">
+        <Sheet>
+          <SheetTrigger>
+            <ShadCNButton>
+              <ShoppingCart />
+            </ShadCNButton>
+          </SheetTrigger>
+          <SheetContent>
+            <SheetHeader>
+              {/* <SheetTitle>Are you absolutely sure?</SheetTitle> */}
+              <SheetDescription>
+                <Detail details={orderDetails} />
+              </SheetDescription>
+            </SheetHeader>
+          </SheetContent>
+        </Sheet>
+      </section>
     </header>
   );
 
   return (
     <Main>
-      <section className="col-span-12 md:col-span-8 xl:col-span-9 ">
+      <section className="col-span-12 sm:col-span-12 md:col-span-8 xl:col-span-9 ">
         {headers}
         <>
           <div className=" flex mt-3 pb-2 items-center overflow-auto scroll-smooth whitespace-nowrap custom-scrollbar gap-x-2 ">
@@ -223,7 +256,7 @@ export default function Home() {
               </ShadCNButton>
 
               {categories.map((category) => (
-                <ShadCNButton key={category.id} variant="outline" >
+                <ShadCNButton key={category.id} variant="outline">
                   {category.icon && (
                     <Image
                       src={category.icon}
@@ -328,7 +361,7 @@ export default function Home() {
           </p>
         </footer>
       </section>
-      <section className="col-span-12 md:col-span-4 xl:col-span-3 ml-4">
+      <section className="md:col-span-4 xl:col-span-3 ml-4">
         <>
           <Detail details={orderDetails} />
         </>

@@ -6,7 +6,7 @@ export default function Card({ image, title, shortDescription, price }) {
     <div className=" md:max-w-xs p-1 mt-5 bg-white border border-white rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <a href="#">
         <Image
-          className="rounded-lg bg-gray-200 aspect-square object-cover p-1"
+          className="rounded-lg bg-gray-200 aspect-[1/1] object-cover p-0.5"
           src={image}
           alt="Noteworthy technology acquisitions 2021"
           width={500} // Adjust width according to your needs
@@ -21,7 +21,9 @@ export default function Card({ image, title, shortDescription, price }) {
           </h5>
         </a>
 
-        <p className="col-span-2 text-right text-primary dark:text-gray-400">{price}</p>
+        <p className="col-span-2 text-right text-primary dark:text-gray-400">
+          {price}
+        </p>
       </div>
     </div>
   );

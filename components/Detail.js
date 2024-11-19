@@ -17,7 +17,7 @@ export default function Detail({ details }) {
   }
 
   return (
-    <section className="z-50 sticky top-0 h-[100vh] flex flex-col bg-white p-4 ">
+    <section className="z-50 sticky top-0 h-[100vh] flex flex-col md:bg-white md:p-4  ">
       <Sheet>
         <h2 className="w-full text-lg font-bold mb-4">Order Details</h2>
         <div className="space-y-4 border-t flex-1 overflow-auto pr-2 custom-scrollbar">
@@ -29,23 +29,23 @@ export default function Detail({ details }) {
                 width={90}
                 height={90}
                 objectFit="center"
-                className="rounded-lg aspect-square object-cover border-2 border-solid"
+                className="rounded-lg aspect-[1/1] object-cover border-2 border-solid"
               />
               <div className="ml-3 w-full">
                 <p className="text-sm  line-clamp-2">{item.title}</p>
                 <div className="flex justify-center items-center mt-5">
-                  <div className="flex justify-center items-center">
+                  <div className="flex justify-center  items-center">
                     <ShadCNButton variant="outline" size="xs">
                       <Minus />
                     </ShadCNButton>
-                    <p className="text-sm mx-2 text-gray-500">
-                      {item.increase}
-                    </p>
+                    <p className="text-sm mx-2 text-black">{item.increase}</p>
                     <ShadCNButton variant="outline" size="xs">
                       <Plus />
                     </ShadCNButton>
                   </div>
-                  <p className="ml-auto text-primary text-sm ">{item.price}</p>
+                  <p className="ml-10 mr-2  text-primary text-sm ">
+                    {item.price}
+                  </p>
                   <ShadCNButton variant="ghost">
                     <Trash2Icon className="text-red-600" />
                   </ShadCNButton>
