@@ -122,6 +122,16 @@ export default function Home() {
       text: "Instant + RTD",
       icon: "/images/product2.jpg",
     },
+    {
+      id: 10,
+      text: "Instant + RTD",
+      icon: "/images/product2.jpg",
+    },
+    {
+      id: 11,
+      text: "Ceramics",
+      icon: "/images/coffee.png",
+    },
   ];
 
   const headers = (
@@ -348,25 +358,95 @@ export default function Home() {
               title="Fellow Clara French Press"
               price="14.00$"
             />
+            <Card
+              image="/images/product3.webp"
+              title="Fellow Clara French Press"
+              price="11.00$"
+            />
+            <Card
+              image="/images/product5.png"
+              title="Fellow Clara French Press"
+              price="12.00$"
+            />
+            <Card
+              image="/images/product4.png"
+              title="Fellow Clara French Press"
+              price="13.00$"
+            />
+            <Card
+              image="/images/product2.jpg"
+              title="Fellow Clara French Press"
+              price="14.00$"
+            />
+            <Card
+              image="/images/book6.jpg"
+              title="Fellow Clara French Press"
+              price="11.00$"
+            />
+            <Card
+              image="/images/book3.jpg"
+              title="Fellow Clara French Press"
+              price="12.00$"
+            />
+            <Card
+              image="/images/book1.jpg"
+              title="Fellow Clara French Press"
+              price="13.00$"
+            />
+            <Card
+              image="/images/book6.jpg"
+              title="Fellow Clara French Press"
+              price="14.00$"
+            />
+            <Card
+              image="/images/book4.jpg"
+              title="Fellow Clara French Press"
+              price="11.00$"
+            />
+            <Card
+              image="/images/book5.jpg"
+              title="Fellow Clara French Press"
+              price="12.00$"
+            />
+            <Card
+              image="/images/product3.webp"
+              title="Fellow Clara French Press"
+              price="11.00$"
+            />
+            <Card
+              image="/images/product5.png"
+              title="Fellow Clara French Press"
+              price="12.00$"
+            />
+            <Card
+              image="/images/product4.png"
+              title="Fellow Clara French Press"
+              price="13.00$"
+            />
+            <Card
+              image="/images/book5.jpg"
+              title="Fellow Clara French Press"
+              price="12.00$"
+            />
           </div>
         </>
-        <footer className="mt-4 p-4 sm:p-10 grid place-items-center bg-primary">
-          <div className="text-center">
-            <span className="text-sm text-white">
-              © 2024{" "}
-              <a href="https://flowbite.com/" className="hover:underline">
-                Shop™
-              </a>
-              . All Rights Reserved.
-            </span>
-          </div>
-        </footer>
       </section>
-      <section className="hidden md:grid md:col-span-4 xl:col-span-3 ml-4">
+      <section className="hidden md:grid md:col-span-4 md:row-span-12 xl:row-span-12 xl:col-span-3 ml-4">
         <>
           <Detail details={orderDetails} />
         </>
       </section>
+      <footer className="mt-4 col-span-12 p-4 sm:p-10 w-full z-70 sticky bottom-0 h-[5vh] grid place-items-center bg-primary">
+        <div className="text-center">
+          <span className="text-sm text-white">
+            © 2024{" "}
+            <a href="https://flowbite.com/" className="hover:underline">
+              Shop™
+            </a>
+            . All Rights Reserved.
+          </span>
+        </div>
+      </footer>
     </Main>
   );
 }
