@@ -436,7 +436,7 @@ export default function Home() {
           <Detail details={orderDetails} />
         </>
       </section>
-      <footer className="mt-4 col-span-12 p-4 sm:p-10 w-full z-70 sticky bottom-0 h-[5vh] grid place-items-center bg-primary">
+      <footer className="mt-4 col-span-12 p-4 sm:p-10  w-full  z-70 fixed bottom-0 bg-primary">
         <div className="text-center">
           <span className="text-sm text-white">
             © 2024{" "}
