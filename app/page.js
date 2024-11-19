@@ -230,12 +230,7 @@ export default function Home() {
             </ShadCNButton>
           </SheetTrigger>
           <SheetContent>
-            <SheetHeader>
-              {/* <SheetTitle>Are you absolutely sure?</SheetTitle> */}
-              <SheetDescription>
-                <Detail details={orderDetails} />
-              </SheetDescription>
-            </SheetHeader>
+            <Detail details={orderDetails} />
           </SheetContent>
         </Sheet>
       </section>
@@ -355,13 +350,19 @@ export default function Home() {
             />
           </div>
         </>
-        <footer className="p-4 sm:p-10 grid place-items-center ">
-          <p className={`text-indigo-600 ${fugaz.className}`}>
-            Created with 💛
-          </p>
+        <footer className="mt-4 sm:p-10 grid place-items-center bg-primary">
+          <div className="text-center">
+            <span className="text-sm text-white">
+              © 2024{" "}
+              <a href="https://flowbite.com/" className="hover:underline">
+                Shop™
+              </a>
+              . All Rights Reserved.
+            </span>
+          </div>
         </footer>
       </section>
-      <section className="md:col-span-4 xl:col-span-3 ml-4">
+      <section className="hidden md:grid md:col-span-4 xl:col-span-3 ml-4">
         <>
           <Detail details={orderDetails} />
         </>

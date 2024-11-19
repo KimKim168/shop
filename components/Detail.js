@@ -17,7 +17,7 @@ export default function Detail({ details }) {
   }
 
   return (
-    <section className="z-50 sticky top-0 h-[90vh] md:h-[100vh] flex flex-col md:bg-white md:p-4  ">
+    <section className="z-40 sticky top-0 h-[90vh] md:h-[100vh] flex flex-col md:bg-white md:p-4  ">
       <Sheet>
         <h2 className="w-full text-lg font-bold mb-4">Order Details</h2>
         <div className="space-y-4 border-t flex-1 overflow-auto pr-2 custom-scrollbar">
