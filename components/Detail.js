@@ -34,7 +34,7 @@ export default function Detail({ details }) {
               <div className="ml-3 w-full">
                 <p className="text-sm  line-clamp-2">{item.title}</p>
                 <div className="flex justify-center items-center mt-5">
-                  <div className="flex justify-center  items-center">
+                  <div className="flex justify-center mr-1 items-center">
                     <ShadCNButton variant="outline" size="xs">
                       <Minus />
                     </ShadCNButton>
@@ -43,12 +43,12 @@ export default function Detail({ details }) {
                       <Plus />
                     </ShadCNButton>
                   </div>
+                  <ShadCNButton variant="secondary" size="xxs">
+                    <Trash2Icon className="text-red-600" />
+                  </ShadCNButton>
                   <p className="ml-10 mr-2  text-primary text-sm ">
                     {item.price}
                   </p>
-                  <ShadCNButton variant="ghost">
-                    <Trash2Icon className="text-red-600" />
-                  </ShadCNButton>
                 </div>
               </div>
             </div>
@@ -76,7 +76,7 @@ export default function Detail({ details }) {
           </div>
 
           {/* Pay Now Button */}
-          <button className="w-full mt-4 bg-primary text-white py-2 rounded-lg hover:bg-primary/90">
+          <button className="w-full mt-4 mb-2  bg-primary text-white py-2 rounded-lg hover:bg-primary/90">
             Pay Now
           </button>
           {/* <Button text='Pay Now'/> */}

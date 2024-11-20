@@ -6,6 +6,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+footer {
+  background-color: #bcbcff ;
+}
+
 .custom-scrollbar::-webkit-scrollbar {
   height: 8px; /* Horizontal scrollbar height */
 }
@@ -23,7 +27,7 @@ body {
 
 .custom-scrollbar {
   scrollbar-width: thin; /* Firefox: Make scrollbar thin */
-  scrollbar-color: #4d489d #f0f0f0; /* Firefox: Thumb and track colors */
+  scrollbar-color: #bdb9ff #bcb9ff; /* Firefox: Thumb and track colors */
 }
 .no-scrollbar::-webkit-scrollbar {
   display: none; /* Hides scrollbar for Chrome, Safari, and Edge */

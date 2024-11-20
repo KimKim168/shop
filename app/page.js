@@ -135,115 +135,126 @@ export default function Home() {
   ];
 
   const headers = (
-    <header className="mt-3 sm:px-2 sm:pt-8 flex items-center justify-between gap-4  ">
+    <header>
       {/* Logo */}
-
-      <div className="gap-4 flex w-full justify-center items-center">
-        {/* Mobile Menu Toggle */}
-        <ShadCNButton variant="outline" size="icon" className="shrink-0">
-          <MenuIcon />
-        </ShadCNButton>
-        {/* Search Bar */}
-        <div className="flex-1">
-          <form className="w-full relative ">
-            <label
-              htmlFor="default-search"
-              className=" text-sm font-medium text-gray-900 sr-only dark:text-white"
-            >
-              Search
-            </label>
-            <div className="relative">
-              <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                <svg
-                  className="w-4 h-4 text-gray-500 dark:text-gray-400"
-                  // ariaHidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M19 19l-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                  />
-                </svg>
-              </div>
-              <input
-                type="search"
-                id="default-search"
-                className="block w-full p-3 ps-10 text-sm text-primary border border-gray-300 rounded-lg bg-gray-50 focus:ring-focus:ring-primary/100 focus:border-primary/100 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 "
-                placeholder="Search Product..."
-                required
-              />
-              <button
-                type="submit"
-                className="text-white absolute end-1.5 bottom-1.5 bg-primary hover:bg-primary/90 focus:ring-4 focus:outline-none focus:ring-primary/100 font-medium rounded-lg text-sm px-4 py-2"
+        <div className="text-end mt-2 space-x-3">
+          <ShadCNButton variant="secondary" size="lg">
+            <Image src='/images/invoice.png' width={40} height={40} alt="image"></Image>
+          </ShadCNButton>
+          <ShadCNButton variant="secondary" size="lg">
+            <Image src='/images/quotation.png' width={40} height={40} alt="image"></Image>
+          </ShadCNButton>
+        </div>
+      <div className="mt-3 sm:px-2  flex items-center justify-between gap-4  ">
+        <div className="gap-4 flex w-full justify-center items-center">
+          {/* Mobile Menu Toggle */}
+          <ShadCNButton variant="outline" size="icon" className="shrink-0">
+            <MenuIcon />
+          </ShadCNButton>
+          {/* Search Bar */}
+          <div className="flex-1">
+            <form className="w-full relative ">
+              <label
+                htmlFor="default-search"
+                className=" text-sm font-medium text-gray-900 sr-only dark:text-white"
               >
                 Search
-              </button>
-            </div>
-          </form>
+              </label>
+              <div className="relative">
+                <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                  <svg
+                    className="w-4 h-4 text-gray-500 dark:text-gray-400"
+                    // ariaHidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 19l-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                    />
+                  </svg>
+                </div>
+                <input
+                  type="search"
+                  id="default-search"
+                  className="block w-full p-3 ps-10 text-sm text-primary border border-gray-300 rounded-lg bg-gray-50 focus:ring-focus:ring-primary/100 focus:border-primary/100 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 "
+                  placeholder="Search Product..."
+                  required
+                />
+
+                {/* Error here <button> tag */}
+                <button
+                  type="submit"
+                  className="text-white absolute end-1.5 bottom-1.5 bg-primary hover:bg-primary/90 focus:ring-4 focus:outline-none focus:ring-primary/100 font-medium rounded-lg text-sm px-4 py-2"
+                >
+                  Search
+                </button>
+              </div>
+            </form>
+          </div>
+          <div
+            className="items-center justify-between hidden w-full  md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a
+                  href="#"
+                  className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                  aria-current="page"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  Services
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div
-          className="items-center justify-between hidden w-full  md:w-auto md:order-1"
-          id="navbar-sticky"
-        >
-          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-                aria-current="page"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              >
-                Services
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
+
+        <ShadCNButton variant="outline" size="icon" className="shrink-0">
+          <SlidersHorizontal />
+        </ShadCNButton>
+
+        <section className="md:hidden">
+          <Sheet>
+            <SheetTrigger>
+              <ShadCNButton>
+                <ShoppingCart />
+              </ShadCNButton>
+            </SheetTrigger>
+            <SheetContent>
+              <Detail details={orderDetails} />
+            </SheetContent>
+          </Sheet>
+        </section>
       </div>
-
-      <ShadCNButton variant="outline" size="icon" className="shrink-0">
-        <SlidersHorizontal />
-      </ShadCNButton>
-
-      <section className="md:hidden">
-        <Sheet>
-          <SheetTrigger>
-            <ShadCNButton>
-              <ShoppingCart />
-            </ShadCNButton>
-          </SheetTrigger>
-          <SheetContent>
-            <Detail details={orderDetails} />
-          </SheetContent>
-        </Sheet>
-      </section>
     </header>
   );
 
@@ -436,14 +447,10 @@ export default function Home() {
           <Detail details={orderDetails} />
         </>
       </section>
-      <footer className="max-w-screen-xl mt-4 col-span-12 p-4 sm:p-10  w-full  z-70 fixed bottom-0 bg-primary">
+      <footer className="max-w-screen-xl mt-4 col-span-12  w-full  z-70 fixed bottom-0">
         <div className="text-center">
-          <span className="text-sm text-white">
-            © 2024{" "}
-            <a href="https://flowbite.com/" className="hover:underline">
-              Shop™
-            </a>
-            . All Rights Reserved.
+          <span className="text-sm text-black">
+            © 2024 . All Rights Reserved.
           </span>
         </div>
       </footer>
