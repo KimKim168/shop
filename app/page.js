@@ -252,7 +252,7 @@ export default function Home() {
       <section className="col-span-12 sm:col-span-12 md:col-span-8 xl:col-span-9 ">
         {headers}
         <>
-          <div className=" flex mt-3 pb-2 items-center overflow-auto scroll-smooth whitespace-nowrap custom-scrollbar gap-x-2 ">
+          <div className="px-2 flex mt-3 pb-2 items-center overflow-auto scroll-smooth whitespace-nowrap custom-scrollbar gap-x-2 ">
             <div className="flex-1 flex gap-2 justify-center items-center">
               {/* <Button text="All Menu" dark={true} /> */}
               <ShadCNButton>
@@ -277,7 +277,7 @@ export default function Home() {
           </div>
         </>
         <>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 items-center justify-center w-full lg:grid-cols-4 gap-3">
+          <div className="px-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 items-center justify-center w-full lg:grid-cols-4 gap-3">
             <Card
               image="/images/product3.webp"
               title="Fellow Clara French Press"
@@ -431,12 +431,12 @@ export default function Home() {
           </div>
         </>
       </section>
-      <section className="hidden md:grid md:col-span-4 md:row-span-12 xl:row-span-12 xl:col-span-3 ml-4">
+      <section className="hidden md:grid md:col-span-4 md:row-span-12 xl:row-span-12 xl:col-span-3 ml-2">
         <>
           <Detail details={orderDetails} />
         </>
       </section>
-      <footer className="mt-4 col-span-12 p-4 sm:p-10  w-full  z-70 fixed bottom-0 bg-primary">
+      <footer className="max-w-screen-xl mt-4 col-span-12 p-4 sm:p-10  w-full  z-70 fixed bottom-0 bg-primary">
         <div className="text-center">
           <span className="text-sm text-white">
             © 2024{" "}
