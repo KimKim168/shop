@@ -3,6 +3,17 @@ import Button from "./Button";
 import { Sheet } from "@/components/ui/sheet";
 import { Button as ShadCNButton } from "@/components/ui/button";
 import { Minus, Pencil, Plus, Trash2Icon } from "lucide-react";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
 
 export default function Detail({ details }) {
   if (!details || details.length === 0) {
@@ -32,7 +43,7 @@ export default function Detail({ details }) {
                 className="rounded-lg aspect-[1/1] object-cover border-2 border-solid"
               />
               <div className="ml-3 w-full">
-                <p className="text-sm  line-clamp-2">{item.title}</p>
+                <p className="text-sm max-w-32 line-clamp-2">{item.title}</p>
                 <div className="flex justify-center items-center mt-5">
                   <div className="flex justify-center mr-1 items-center">
                     <ShadCNButton variant="outline" size="xs">
@@ -43,10 +54,14 @@ export default function Detail({ details }) {
                       <Plus />
                     </ShadCNButton>
                   </div>
-                  <ShadCNButton variant="secondary" size="xxs">
-                    <Trash2Icon className="text-red-600" />
+                  <ShadCNButton
+                    variant="secondary"
+                    size="icon"
+                    className="px-10 "
+                  >
+                    <Trash2Icon className="text-red-600 " />
                   </ShadCNButton>
-                  <p className="ml-10 mr-2  text-primary text-sm ">
+                  <p className="ml-2  text-primary text-sm ">
                     {item.price}
                   </p>
                 </div>
@@ -75,11 +90,26 @@ export default function Detail({ details }) {
             </div>
           </div>
 
-          {/* Pay Now Button */}
-          <button className="w-full mt-4 mb-2  bg-primary text-white py-2 rounded-lg hover:bg-primary/90">
-            Pay Now
-          </button>
-          {/* <Button text='Pay Now'/> */}
+          <AlertDialog>
+            <AlertDialogTrigger>
+              <ShadCNButton  className="w-[339px] mt-4 mb-2  bg-primary text-white py-2 rounded-lg hover:bg-primary/90">
+                Pay Now
+              </ShadCNButton>
+            </AlertDialogTrigger>
+            <AlertDialogContent>
+              <AlertDialogHeader>
+                <AlertDialogTitle className="border-b ">Pay Now</AlertDialogTitle>
+                <AlertDialogDescription>
+                  This action cannot be undone. This will permanently delete
+                  your account and remove your data from our servers.
+                </AlertDialogDescription>
+              </AlertDialogHeader>
+              <AlertDialogFooter>
+                <AlertDialogCancel>Cancel</AlertDialogCancel>
+                <AlertDialogAction>Continue</AlertDialogAction>
+              </AlertDialogFooter>
+            </AlertDialogContent>
+          </AlertDialog>
         </div>
       </Sheet>
     </section>

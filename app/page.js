@@ -138,11 +138,14 @@ export default function Home() {
     <header>
       {/* Logo */}
         <div className="text-end mt-2 space-x-3">
-          <ShadCNButton variant="secondary" size="lg">
-            <Image src='/images/invoice.png' width={40} height={40} alt="image"></Image>
+          <ShadCNButton variant="secondary" size="icon">
+            <Image src='/images/invoice.png' width={20} height={20} alt="image"></Image>
           </ShadCNButton>
-          <ShadCNButton variant="secondary" size="lg">
-            <Image src='/images/quotation.png' width={40} height={40} alt="image"></Image>
+          <ShadCNButton variant="secondary" size="icon">
+            <Image src='/images/quotation.png' width={20} height={20} alt="image"></Image>
+          </ShadCNButton>
+          <ShadCNButton variant="secondary" size="icon">
+            <Image src='/images/table.png' width={20} height={20} alt="image"></Image>
           </ShadCNButton>
         </div>
       <div className="mt-3 sm:px-2  flex items-center justify-between gap-4  ">
