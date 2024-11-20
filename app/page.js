@@ -107,7 +107,7 @@ export default function Home() {
       text: "Brew Equipment",
       icon: "/images/drink.png",
     },
-    { 
+    {
       id: 7,
       text: "Coffee",
       icon: "/images/product2.jpg",
@@ -163,7 +163,7 @@ export default function Home() {
           ></Image>
         </ShadCNButton>
       </div>
-      <div className="mt-3 sm:px-2  flex items-center justify-between gap-4  ">
+      <div className="mt-3 px-2  flex items-center justify-between gap-4  ">
         <div className="gap-4 flex w-full justify-center items-center">
           {/* Mobile Menu Toggle */}
           <ShadCNButton variant="outline" size="icon" className="shrink-0">
