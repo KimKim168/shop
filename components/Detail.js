@@ -100,18 +100,141 @@ export default function Detail({ details }) {
             </AlertDialogTrigger>
             <AlertDialogContent>
               <AlertDialogHeader>
-                <AlertDialogTitle className="border-b ">
-                  Pay Now
-                </AlertDialogTitle>
                 <AlertDialogDescription>
-                  This action cannot be undone. This will permanently delete
-                  your account and remove your data from our servers.
+                  <div className="mx-auto max-w-md space-y-6 rounded-lg border border-gray-200 bg-white p-6 shadow-md dark:border-gray-700 dark:bg-gray-800">
+                    {/* Payable Amount */}
+                    <div className="space-y-2">
+                      <p className="text-lg font-semibold text-gray-900 dark:text-white">
+                        PAYABLE AMOUNT
+                      </p>
+                    </div>
+
+                    <hr className="border-gray-300 dark:border-gray-700" />
+
+                    {/* Add Tip */}
+                    {/* <div>
+                      <p className="text-sm font-medium text-gray-900 dark:text-white">
+                        ADD TIP
+                      </p>
+                      <div className="mt-2 flex gap-2">
+                        {["$5", "$10", "$15", "$20"].map((tip, index) => (
+                          <button
+                            key={index}
+                            className={`flex-1 rounded-md border border-gray-300 bg-gray-100 p-2 text-sm font-medium text-gray-900 hover:bg-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 ${
+                              tip === "$5" ? "bg-gray-200 dark:bg-gray-600" : ""
+                            }`}
+                          >
+                            {tip}
+                          </button>
+                        ))}
+                      </div>
+                    </div> 
+
+                    <hr className="border-gray-300 dark:border-gray-700" />*/}
+
+                    <div>
+                      <p className="text-sm font-medium text-gray-900 dark:text-white">
+                        PAYMENT METHOD
+                      </p>
+                      <div className="mt-2 flex gap-2">
+                        {/* {["Cash", "Card", "Voucher"].map((method, index) => (
+                          <button
+                            key={index}
+                            className={`flex-1 rounded-md border border-gray-300 p-3 text-sm font-medium text-gray-900 dark:border-gray-600 dark:text-white ${
+                              method === "Cash"
+                                ? "bg-gray-200 dark:bg-gray-600"
+                                : "bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600"
+                            }`}
+                          >
+                            {method}
+                          </button>
+                        ))} */}
+                        <ShadCNButton variant="secondary" size="mySize">
+                          <Image
+                            src="/images/dollar.png"
+                            width={20}
+                            height={20}
+                            alt="image"
+                          ></Image>
+                          <p>Cash</p>
+                        </ShadCNButton>
+                        <ShadCNButton variant="secondary" size="mySize">
+                          <Image
+                            src="/images/credit.png"
+                            width={20}
+                            height={20}
+                            alt="image"
+                          ></Image>
+                          <p>Card</p>
+                        </ShadCNButton>
+                        <ShadCNButton variant="secondary" size="mySize">
+                          <Image
+                            src="/images/abaPay.png"
+                            width={20}
+                            height={20}
+                            alt="image"
+                          ></Image>
+                          <p>ABA</p>
+                        </ShadCNButton>
+                      </div>
+                    </div>
+
+                    {/* Add Cash Received */}
+                    <div className="space-y-2">
+                      <p className="text-sm font-medium text-gray-900 dark:text-white">
+                        ADD CASH RECEIVED
+                      </p>
+                      <div className="flex items-center justify-between rounded-md border border-gray-300 bg-gray-100 p-3 dark:border-gray-600 dark:bg-gray-700">
+                        <input
+                          type="text"
+                          placeholder="50"
+                          className="w-full border-none bg-transparent  text-lg font-medium text-gray-900 placeholder-gray-500 focus:ring-0 dark:text-white"
+                        />
+                        <select
+                          className=" bg-transparent border-none text-center text-lg  text-gray-900 dark:text-white focus:outline-none focus:ring-0"
+                          defaultValue="USD"
+                        >
+                          <option value="USD">$</option>
+                          <option value="EUR">៛</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <hr className="border-gray-300 dark:border-gray-700" />
+
+                    {/* Summary */}
+                    <div className="space-y-2">
+                      <div className="flex items-center justify-between text-sm text-gray-900 dark:text-gray-400">
+                        <span>Cash Received</span>
+                        <span className="font-medium text-gray-900 dark:text-white">
+                          $50.00
+                        </span>
+                      </div>
+                      <div className="flex items-center justify-between text-sm text-gray-900 dark:text-gray-400">
+                        <span>Total</span>
+                        <span className="font-medium text-gray-900 dark:text-white">
+                          $45.00
+                        </span>
+                      </div>
+                    </div>
+
+                    <hr className="border-gray-300 dark:border-gray-700" />
+
+                    {/* Total */}
+                    <div className="flex items-center justify-between text-sm text-gray-900 dark:text-gray-400">
+                      <span>Change </span>
+                      <span className="font-medium text-gray-900 dark:text-white">
+                        $5.00
+                      </span>
+                    </div>
+                    <hr className="border-gray-300 dark:border-gray-700" />
+                    <AlertDialogFooter>
+                      <AlertDialogCancel>Cancel</AlertDialogCancel>
+                      <AlertDialogAction>Continue</AlertDialogAction>
+                    </AlertDialogFooter>
+                  </div>
                 </AlertDialogDescription>
               </AlertDialogHeader>
-              <AlertDialogFooter>
-                <AlertDialogCancel>Cancel</AlertDialogCancel>
-                <AlertDialogAction>Continue</AlertDialogAction>
-              </AlertDialogFooter>
             </AlertDialogContent>
           </AlertDialog>
         </div>

@@ -107,7 +107,7 @@ export default function Home() {
       text: "Brew Equipment",
       icon: "/images/drink.png",
     },
-    {
+    { 
       id: 7,
       text: "Coffee",
       icon: "/images/product2.jpg",
