@@ -137,17 +137,32 @@ export default function Home() {
   const headers = (
     <header>
       {/* Logo */}
-        <div className="text-end mt-2 space-x-3">
-          <ShadCNButton variant="secondary" size="icon">
-            <Image src='/images/invoice.png' width={20} height={20} alt="image"></Image>
-          </ShadCNButton>
-          <ShadCNButton variant="secondary" size="icon">
-            <Image src='/images/quotation.png' width={20} height={20} alt="image"></Image>
-          </ShadCNButton>
-          <ShadCNButton variant="secondary" size="icon">
-            <Image src='/images/table.png' width={20} height={20} alt="image"></Image>
-          </ShadCNButton>
-        </div>
+      <div className="text-end mt-2 space-x-3 px-2">
+        <ShadCNButton variant="secondary" size="icon">
+          <Image
+            src="/images/invoice.png"
+            width={20}
+            height={20}
+            alt="image"
+          ></Image>
+        </ShadCNButton>
+        <ShadCNButton variant="secondary" size="icon">
+          <Image
+            src="/images/quotation.png"
+            width={20}
+            height={20}
+            alt="image"
+          ></Image>
+        </ShadCNButton>
+        <ShadCNButton variant="secondary" size="icon">
+          <Image
+            src="/images/table.png"
+            width={20}
+            height={20}
+            alt="image"
+          ></Image>
+        </ShadCNButton>
+      </div>
       <div className="mt-3 sm:px-2  flex items-center justify-between gap-4  ">
         <div className="gap-4 flex w-full justify-center items-center">
           {/* Mobile Menu Toggle */}

@@ -61,9 +61,7 @@ export default function Detail({ details }) {
                   >
                     <Trash2Icon className="text-red-600 " />
                   </ShadCNButton>
-                  <p className="ml-2  text-primary text-sm ">
-                    {item.price}
-                  </p>
+                  <p className="ml-2  text-primary text-sm ">{item.price}</p>
                 </div>
               </div>
             </div>
@@ -91,14 +89,20 @@ export default function Detail({ details }) {
           </div>
 
           <AlertDialog>
-            <AlertDialogTrigger>
-              <ShadCNButton  className="w-[339px] mt-4 mb-2  bg-primary text-white py-2 rounded-lg hover:bg-primary/90">
+            <AlertDialogTrigger className="w-full">
+              <ShadCNButton
+                size="mySize"
+                variant="myStyle"
+                className="mt-4 w-full mb-2 bg-primary text-white p-2 rounded-lg hover:bg-primary/90"
+              >
                 Pay Now
               </ShadCNButton>
             </AlertDialogTrigger>
             <AlertDialogContent>
               <AlertDialogHeader>
-                <AlertDialogTitle className="border-b ">Pay Now</AlertDialogTitle>
+                <AlertDialogTitle className="border-b ">
+                  Pay Now
+                </AlertDialogTitle>
                 <AlertDialogDescription>
                   This action cannot be undone. This will permanently delete
                   your account and remove your data from our servers.
