@@ -17,6 +17,7 @@ import {
 
 import { Fugaz_One } from "next/font/google";
 import {
+  BellIcon,
   CoffeeIcon,
   Menu,
   MenuIcon,
@@ -138,6 +139,18 @@ export default function Home() {
     <header>
       {/* Logo */}
       <div className="text-end mt-2 space-x-3 px-2">
+        <ShadCNButton variant="secondary" size="icon">
+          <div className="relative inline-block">
+            <BellIcon
+              className=" text-gray-700"
+              style={{ width: "20px", height: "20px" }}
+            />
+            <span className="absolute top-0 right-0 inline-flex items-center justify-center w-3 h-3 text-[8px] font-bold text-white bg-red-600 rounded-full">
+              2
+            </span>
+          </div>
+        </ShadCNButton>
+
         <ShadCNButton variant="secondary" size="icon">
           <Image
             src="/images/invoice.png"
@@ -306,136 +319,162 @@ export default function Home() {
           </div>
         </>
         <>
-          <div className="px-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 items-center justify-center w-full lg:grid-cols-4 gap-3">
+          <div className="px-2 grid grid-cols-1 mb-10 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 items-center justify-center w-full lg:grid-cols-4 gap-3">
             <Card
               image="/images/product3.webp"
               title="Fellow Clara French Press"
               price="11.00$"
+              discount="0.50$"
             />
             <Card
               image="/images/product5.png"
               title="Fellow Clara French Press"
               price="12.00$"
+              discount="0.50$"
             />
             <Card
               image="/images/product4.png"
               title="Fellow Clara French Press"
               price="13.00$"
+              discount="0.50$"
             />
             <Card
               image="/images/product2.jpg"
               title="Fellow Clara French Press"
               price="14.00$"
+              discount="0.50$"
             />
             <Card
               image="/images/book1.jpg"
               title="Fellow Clara French Press"
               price="11.00$"
+              discount="0.50$"
             />
             <Card
               image="/images/book3.jpg"
               title="Fellow Clara French Press"
               price="12.00$"
+              discount="0.50$"
             />
             <Card
               image="/images/book4.jpg"
               title="Fellow Clara French Press"
               price="13.00$"
+              discount="0.50$"
             />
             <Card
               image="/images/book5.jpg"
               title="Fellow Clara French Press"
               price="14.00$"
+              discount="0.50$"
             />
             <Card
               image="/images/book6.jpg"
               title="Fellow Clara French Press"
               price="11.00$"
+              discount="0.50$"
             />
             <Card
               image="/images/book3.jpg"
               title="Fellow Clara French Press"
               price="12.00$"
+              discount="0.50$"
             />
             <Card
               image="/images/book1.jpg"
               title="Fellow Clara French Press"
               price="13.00$"
+              discount="0.50$"
             />
             <Card
               image="/images/book6.jpg"
               title="Fellow Clara French Press"
               price="14.00$"
+              discount="0.50$"
             />
             <Card
               image="/images/book4.jpg"
               title="Fellow Clara French Press"
               price="11.00$"
+              discount="0.50$"
             />
             <Card
               image="/images/book5.jpg"
               title="Fellow Clara French Press"
               price="12.00$"
+              discount="0.50$"
             />
             <Card
               image="/images/book1.jpg"
               title="Fellow Clara French Press"
               price="13.00$"
+              discount="0.50$"
             />
             <Card
               image="/images/book6.jpg"
               title="Fellow Clara French Press"
               price="14.00$"
+              discount="0.50$"
             />
             <Card
               image="/images/product3.webp"
               title="Fellow Clara French Press"
               price="11.00$"
+              discount="0.50$"
             />
             <Card
               image="/images/product5.png"
               title="Fellow Clara French Press"
               price="12.00$"
+              discount="0.50$"
             />
             <Card
               image="/images/product4.png"
               title="Fellow Clara French Press"
               price="13.00$"
+              discount="0.50$"
             />
             <Card
               image="/images/product2.jpg"
               title="Fellow Clara French Press"
               price="14.00$"
+              discount="0.50$"
             />
             <Card
               image="/images/book6.jpg"
               title="Fellow Clara French Press"
               price="11.00$"
+              discount="0.50$"
             />
             <Card
               image="/images/book3.jpg"
               title="Fellow Clara French Press"
               price="12.00$"
+              discount="0.50$"
             />
             <Card
               image="/images/book1.jpg"
               title="Fellow Clara French Press"
               price="13.00$"
+              discount="0.50$"
             />
             <Card
               image="/images/book6.jpg"
               title="Fellow Clara French Press"
               price="14.00$"
+              discount="0.50$"
             />
             <Card
               image="/images/book4.jpg"
               title="Fellow Clara French Press"
               price="11.00$"
+              discount="0.50$"
             />
             <Card
               image="/images/book5.jpg"
               title="Fellow Clara French Press"
               price="12.00$"
+              discount="0.50$"
             />
             <Card
               image="/images/product3.webp"
@@ -446,6 +485,7 @@ export default function Home() {
               image="/images/product5.png"
               title="Fellow Clara French Press"
               price="12.00$"
+              discount="0.50$"
             />
             <Card
               image="/images/product4.png"
@@ -456,6 +496,7 @@ export default function Home() {
               image="/images/book5.jpg"
               title="Fellow Clara French Press"
               price="12.00$"
+              discount="0.50$"
             />
           </div>
         </>
@@ -465,7 +506,7 @@ export default function Home() {
           <Detail details={orderDetails} />
         </>
       </section>
-      <footer className="max-w-screen-xl mt-4 col-span-12  w-full  z-70 fixed bottom-0">
+      <footer className="max-w-screen-xl col-span-12   w-full  z-70 fixed bottom-0">
         <div className="text-center">
           <span className="text-sm text-black">
             © 2024 . All Rights Reserved.

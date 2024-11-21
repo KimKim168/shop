@@ -76,7 +76,12 @@ export default function Detail({ details }) {
             </div>
             <div className="flex justify-between text-sm">
               <p className="text-black">Discount sales</p>
-              <p className=" text-red-600">-$4.00</p>
+              <input
+                type="number"
+                id="received-dollar"
+                className="text-red-600 placeholder-red-600 w-20 text-end no-spinner"
+                placeholder="$0.00"
+              />
             </div>
             <div className="flex justify-between text-sm">
               <p className="text-black">Total sales tax</p>
@@ -98,141 +103,143 @@ export default function Detail({ details }) {
                 Pay Now
               </ShadCNButton>
             </AlertDialogTrigger>
+
+            {/* Payment Arlert */}
             <AlertDialogContent>
               <AlertDialogHeader>
                 <AlertDialogDescription>
-                  <div className="mx-auto max-w-md space-y-6 rounded-lg border border-gray-200 bg-white p-6 shadow-md dark:border-gray-700 dark:bg-gray-800">
-                    {/* Payable Amount */}
-                    <div className="space-y-2">
-                      <p className="text-lg font-semibold text-gray-900 dark:text-white">
-                        PAYABLE AMOUNT
-                      </p>
-                    </div>
-
-                    <hr className="border-gray-300 dark:border-gray-700" />
-
-                    {/* Add Tip */}
-                    {/* <div>
-                      <p className="text-sm font-medium text-gray-900 dark:text-white">
-                        ADD TIP
-                      </p>
-                      <div className="mt-2 flex gap-2">
-                        {["$5", "$10", "$15", "$20"].map((tip, index) => (
-                          <button
-                            key={index}
-                            className={`flex-1 rounded-md border border-gray-300 bg-gray-100 p-2 text-sm font-medium text-gray-900 hover:bg-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 ${
-                              tip === "$5" ? "bg-gray-200 dark:bg-gray-600" : ""
-                            }`}
-                          >
-                            {tip}
-                          </button>
-                        ))}
-                      </div>
-                    </div> 
-
-                    <hr className="border-gray-300 dark:border-gray-700" />*/}
-
+                  <div>
+                    <h1 className="text-2xl text-black font-bold text-center mb-4">
+                      Payment
+                    </h1>
+                    <hr className="my-4 border-black" />
                     <div>
-                      <p className="text-sm font-medium text-gray-900 dark:text-white">
-                        PAYMENT METHOD
-                      </p>
-                      <div className="mt-2 flex gap-2">
-                        {/* {["Cash", "Card", "Voucher"].map((method, index) => (
-                          <button
-                            key={index}
-                            className={`flex-1 rounded-md border border-gray-300 p-3 text-sm font-medium text-gray-900 dark:border-gray-600 dark:text-white ${
-                              method === "Cash"
-                                ? "bg-gray-200 dark:bg-gray-600"
-                                : "bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600"
-                            }`}
-                          >
-                            {method}
-                          </button>
-                        ))} */}
-                        <ShadCNButton variant="secondary" size="mySize">
-                          <Image
-                            src="/images/dollar.png"
-                            width={20}
-                            height={20}
-                            alt="image"
-                          ></Image>
-                          <p>Cash</p>
-                        </ShadCNButton>
-                        <ShadCNButton variant="secondary" size="mySize">
-                          <Image
-                            src="/images/credit.png"
-                            width={20}
-                            height={20}
-                            alt="image"
-                          ></Image>
-                          <p>Card</p>
-                        </ShadCNButton>
-                        <ShadCNButton variant="secondary" size="mySize">
-                          <Image
-                            src="/images/abaPay.png"
-                            width={20}
-                            height={20}
-                            alt="image"
-                          ></Image>
-                          <p>ABA</p>
-                        </ShadCNButton>
+                      {/* Total Amount */}
+                      <div className=" max-w-full subBgpayMent p-4 rounded-lg text-center ">
+                        <div className="text-3xl py-2 bg-payMent text-white rounded-lg">
+                          $50
+                        </div>
+                        <div className="text-black mt-3 text-lg">
+                          20000.00 <span>រៀល</span>
+                        </div>
                       </div>
+
+                      {/* Customer */}
                     </div>
 
-                    {/* Add Cash Received */}
-                    <div className="space-y-2">
-                      <p className="text-sm font-medium text-gray-900 dark:text-white">
-                        ADD CASH RECEIVED
-                      </p>
-                      <div className="flex items-center justify-between rounded-md border border-gray-300 bg-gray-100 p-3 dark:border-gray-600 dark:bg-gray-700">
-                        <input
-                          type="text"
-                          placeholder="50"
-                          className="w-full border-none bg-transparent  text-lg font-medium text-gray-900 placeholder-gray-500 focus:ring-0 dark:text-white"
-                        />
-                        <select
-                          className=" bg-transparent border-none text-center text-lg  text-gray-900 dark:text-white focus:outline-none focus:ring-0"
-                          defaultValue="USD"
+                    {/* Payment Method */}
+                    <div className="grid grid-cols-7 gap-6 justify-between items-center my-3">
+                      <div className="col-span-4">
+                        <p className="text-gray-700">Payment Method</p>
+                        <div className="flex space-x-2">
+                          <ShadCNButton variant="base">
+                            <Image
+                              src="/images/dollar.png"
+                              width={15}
+                              height={15}
+                              alt="image"
+                            ></Image>
+                            <p> Cash</p>
+                          </ShadCNButton>
+                          <ShadCNButton variant="base">
+                            <Image
+                              src="/images/credit.png"
+                              width={15}
+                              height={15}
+                              alt="image"
+                            ></Image>
+                            <p> Card</p>
+                          </ShadCNButton>
+                          <ShadCNButton variant="base">
+                            <Image
+                              src="/images/abaPay.png"
+                              width={15}
+                              height={15}
+                              alt="image"
+                            ></Image>
+                            <p> ABA</p>
+                          </ShadCNButton>
+                        </div>
+                      </div>
+
+                      <div className="col-span-3">
+                        <label
+                          htmlFor="customer"
+                          className="block text-gray-700 font-medium mb-1"
                         >
-                          <option value="USD">$</option>
-                          <option value="EUR">៛</option>
+                          Customer:
+                        </label>
+
+                        <select
+                          id="customer"
+                          className="w-full p-1 border border-gray-300 "
+                        >
+                          <option value="">N/A</option>
+                          <option value="customer1">Customer 1</option>
+                          <option value="customer2">Customer 2</option>
                         </select>
                       </div>
                     </div>
 
-                    <hr className="border-gray-300 dark:border-gray-700" />
-
-                    {/* Summary */}
-                    <div className="space-y-2">
-                      <div className="flex items-center justify-between text-sm text-gray-900 dark:text-gray-400">
-                        <span>Cash Received</span>
-                        <span className="font-medium text-gray-900 dark:text-white">
-                          $50.00
-                        </span>
+                    <hr className="my-4 border border-[#4d489d] max-w-72 mx-auto border-dashed " />
+                    <section className="grid grid-cols-7 gap-6">
+                      <div className="col-span-4">
+                        {/* Received Amount */}
+                        <div className="mb-4">
+                          <label
+                            htmlFor="received-dollar"
+                            className="block text-black text-[16px] font-medium mb-1"
+                          >
+                            Received In Dollar
+                          </label>
+                          <input
+                            type="number"
+                            id="received-dollar"
+                            className="w-full text-[16px] border-2 text-red-600 border-black p-2 rounded-lg shadow-sm "
+                            placeholder="$"
+                          />
+                        </div>
+                        <div className="mb-4">
+                          <label
+                            htmlFor="received-khmer"
+                            className="block text-black text-[16px] font-medium mb-1"
+                          >
+                            Received In Khmer
+                          </label>
+                          <input
+                            type="number"
+                            id="received-khmer"
+                            className="w-full text-[16px] border-2 text-red-600 border-black p-2 rounded-lg shadow-sm "
+                            placeholder="៛"
+                          />
+                        </div>
                       </div>
-                      <div className="flex items-center justify-between text-sm text-gray-900 dark:text-gray-400">
-                        <span>Total</span>
-                        <span className="font-medium text-gray-900 dark:text-white">
-                          $45.00
-                        </span>
+                      {/* Return Amount */}
+                      <div className="col-span-3">
+                        <p className="text-black text-[16px] mb-1">Return:</p>
+                        <div className="subBgpayMent text-black p-4 rounded-lg ">
+                          <div className="flex justify-between text-[16px] items-center py-4">
+                            <p>Dollar: </p>
+                            <p> 2.00 </p>
+                            <p> Dollar </p>
+                          </div>
+                          <div className="flex justify-between text-[16px] items-center py-4">
+                            <p>រៀល: </p>
+                            <p> 8,000 </p>
+                            <p> រៀល </p>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-
-                    <hr className="border-gray-300 dark:border-gray-700" />
-
-                    {/* Total */}
-                    <div className="flex items-center justify-between text-sm text-gray-900 dark:text-gray-400">
-                      <span>Change </span>
-                      <span className="font-medium text-gray-900 dark:text-white">
-                        $5.00
-                      </span>
-                    </div>
-                    <hr className="border-gray-300 dark:border-gray-700" />
-                    <AlertDialogFooter>
-                      <AlertDialogCancel>Cancel</AlertDialogCancel>
-                      <AlertDialogAction>Continue</AlertDialogAction>
-                    </AlertDialogFooter>
+                    </section>
                   </div>
+                  <AlertDialogFooter className="mt-10">
+                    <AlertDialogCancel className="text-black  border hover:text-white">
+                      Cancel
+                    </AlertDialogCancel>
+                    <AlertDialogAction className="text-black  border border-red-600 hover:text-white">
+                      Pay
+                    </AlertDialogAction>
+                  </AlertDialogFooter>
                 </AlertDialogDescription>
               </AlertDialogHeader>
             </AlertDialogContent>

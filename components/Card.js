@@ -1,7 +1,13 @@
 import React from "react";
 import Image from "next/image";
 
-export default function Card({ image, title, shortDescription, price }) {
+export default function Card({
+  image,
+  title,
+  shortDescription,
+  price,
+  discount,
+}) {
   return (
     <div className=" md:max-w-xs p-1 mt-5 bg-white border border-white rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <a href="#">
@@ -21,9 +27,12 @@ export default function Card({ image, title, shortDescription, price }) {
           </h5>
         </a>
 
-        <p className="col-span-2 text-right text-primary dark:text-gray-400">
-          {price}
-        </p>
+        <div className="col-span-2 text-right text-primary dark:text-gray-400">
+          <p className="flex flex-col">
+            <p>{price}</p>
+            <p className="line-through decoration-red-600 text-red-600">{discount}</p>
+          </p>
+        </div>
       </div>
     </div>
   );

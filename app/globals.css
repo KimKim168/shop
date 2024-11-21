@@ -9,6 +9,18 @@ body {
 footer {
   background-color: #bcbcff ;
 }
+.baseColor{
+  background-color: #dcfce7 ;
+}
+.bg-payMent{
+
+  background-color: #4d489d;
+}
+.subBgpayMent{
+  background-color: rgba(77, 72, 157, 0.2);  /* #4d489d/20 */
+  
+}
+
 
 .custom-scrollbar::-webkit-scrollbar {
   height: 8px; /* Horizontal scrollbar height */
@@ -36,6 +48,16 @@ footer {
 .no-scrollbar {
   -ms-overflow-style: none; /* Hides scrollbar for Internet Explorer and Edge */
   scrollbar-width: none; /* Hides scrollbar for Firefox */
+}
+
+.no-spinner::-webkit-outer-spin-button,
+.no-spinner::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-spinner {
+  -moz-appearance: textfield; /* For Firefox */
 }
 
 @layer base {
