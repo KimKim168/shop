@@ -76,12 +76,15 @@ export default function Detail({ details }) {
             </div>
             <div className="flex justify-between text-sm">
               <p className="text-black">Discount sales</p>
-              <input
-                type="number"
-                id="received-dollar"
-                className="text-red-600 placeholder-red-600 w-20 text-end no-spinner"
-                placeholder="$0.00"
-              />
+              <div className="flex items-center border border-gray-300 rounded">
+                <span className="text-red-600 px-2">$</span>
+                <input
+                  type="number"
+                  id="received-dollar"
+                  className="text-red-600 outline-none w-20 text-end no-spinner "
+                  placeholder="0.00"
+                />
+              </div>
             </div>
             <div className="flex justify-between text-sm">
               <p className="text-black">Total sales tax</p>
