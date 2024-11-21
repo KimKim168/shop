@@ -128,10 +128,12 @@ export default function Detail({ details }) {
                     </div>
 
                     {/* Payment Method */}
-                    <div className="grid grid-cols-7 gap-6 justify-between items-center my-3">
-                      <div className="col-span-4">
-                        <p className="text-gray-700">Payment Method</p>
-                        <div className="flex space-x-2">
+                    <div className="grid grid-cols-7 space-x-2 gap-6 justify-between items-center my-3">
+                      <div className="col-span-4 sm:col-span-4">
+                        <p className="text-gray-700​ text-start">
+                          Payment Method
+                        </p>
+                        <div className="grid grid-cols-3 sm:flex space-x-2">
                           <ShadCNButton variant="base">
                             <Image
                               src="/images/dollar.png"
@@ -162,10 +164,10 @@ export default function Detail({ details }) {
                         </div>
                       </div>
 
-                      <div className="col-span-3">
+                      <div className="col-span-3 sm:col-span-3">
                         <label
                           htmlFor="customer"
-                          className="block text-gray-700 font-medium mb-1"
+                          className="block text-start text-gray-700 font-medium mb-1"
                         >
                           Customer:
                         </label>
@@ -182,13 +184,13 @@ export default function Detail({ details }) {
                     </div>
 
                     <hr className="my-4 border border-[#4d489d] max-w-72 mx-auto border-dashed " />
-                    <section className="grid grid-cols-7 gap-6">
-                      <div className="col-span-4">
+                    <section className="grid grid-cols-7 gap-2 sm:gap-6">
+                      <div className="col-span-7 sm:col-span-4 ">
                         {/* Received Amount */}
                         <div className="mb-4">
                           <label
                             htmlFor="received-dollar"
-                            className="block text-black text-[16px] font-medium mb-1"
+                            className="block text-black text-[16px] font-medium mb-1 text-start"
                           >
                             Received In Dollar
                           </label>
@@ -202,7 +204,7 @@ export default function Detail({ details }) {
                         <div className="mb-4">
                           <label
                             htmlFor="received-khmer"
-                            className="block text-black text-[16px] font-medium mb-1"
+                            className="block text-black text-[16px] font-medium mb-1 text-start"
                           >
                             Received In Khmer
                           </label>
@@ -215,7 +217,7 @@ export default function Detail({ details }) {
                         </div>
                       </div>
                       {/* Return Amount */}
-                      <div className="col-span-3">
+                      <div className="col-span-7 sm:col-span-3">
                         <p className="text-black text-[16px] mb-1">Return:</p>
                         <div className="subBgpayMent text-black p-4 rounded-lg ">
                           <div className="flex justify-between text-[16px] items-center py-4">
