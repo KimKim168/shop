@@ -429,7 +429,7 @@ export default function page() {
                     <XIcon style={{ width: 15, height: 15 }}></XIcon>
                   </AlertDialogCancel>
                 </div>
-                <AlertDialogDescription className="min-w-60 ">
+                <AlertDialogDescription className="min-w-64 ">
                   <div className="rounded-lg ">
                     <div className="flex items-center justify-center">
                       <Image
