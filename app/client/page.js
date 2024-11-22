@@ -482,7 +482,7 @@ export default function page() {
         </>
       </section>
      
-      <footer className="max-w-screen-xl col-span-12   w-full  z-70 fixed bottom-0">
+      <footer className="max-w-screen-2xl col-span-12   w-full  z-70 fixed bottom-0">
         <div className="text-center">
           <span className="text-sm text-black">
             © 2024 . All Rights Reserved.
