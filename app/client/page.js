@@ -447,26 +447,26 @@ export default function page() {
                           <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
                             Fellow Clara French Press
                           </h5>
-                          <p>
+                          <p className="mt-2">
                             ID: <span>10</span>
                           </p>
                         </a>
                         <div className="col-span-2 text-right text-primary">
                           <p className="flex flex-col">
                             <p>11.00$</p>
-                            <p className="line-through decoration-red-600 text-red-600">
+                            <p className="line-through mt-2 decoration-red-600 text-red-600">
                               12.50$
                             </p>
                           </p>
                         </div>
                       </div>
                     </div>
-                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
+                    <div className="mt-2 grid grid-cols-4  sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
                       <a href="https://facebook.com" aria-label="Facebook link">
                         <Image
                           src="/images/facebook.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Facebook"
                           className="rounded-full"
                         />
@@ -474,8 +474,8 @@ export default function page() {
                       <a href="https://telegram.org" aria-label="Telegram link">
                         <Image
                           src="/images/telegram.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Telegram"
                           className="rounded-full"
                         />
@@ -483,8 +483,8 @@ export default function page() {
                       <a href="https://tiktok.com" aria-label="TikTok link">
                         <Image
                           src="/images/tiktok.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="TikTok"
                           className="rounded-full"
                         />
@@ -496,20 +496,20 @@ export default function page() {
                       >
                         <Image
                           src="/images/map.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Map"
                           className="rounded-full bg-gray-300"
                         />
                       </a>
                       <a
                         href="tel:+012345987"
-                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
+                        className="flex justify-center mt-2 sm:mt-0 items-center col-span-4 sm:col-span-1 md:col-span-1"
                       >
                         <Image
                           src="/images/call.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Call"
                           className="rounded-full mr-3"
                         />
@@ -541,7 +541,7 @@ export default function page() {
                     <XIcon style={{ width: 15, height: 15 }}></XIcon>
                   </AlertDialogCancel>
                 </div>
-                <AlertDialogDescription className="min-w-52 ">
+                <AlertDialogDescription className="min-w-64 ">
                   <div className="rounded-lg ">
                     <div className="flex items-center justify-center">
                       <Image
@@ -559,26 +559,26 @@ export default function page() {
                           <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
                             Fellow Clara French Press
                           </h5>
-                          <p>
+                          <p className="mt-2">
                             ID: <span>10</span>
                           </p>
                         </a>
                         <div className="col-span-2 text-right text-primary">
                           <p className="flex flex-col">
                             <p>11.00$</p>
-                            <p className="line-through decoration-red-600 text-red-600">
+                            <p className="line-through mt-2 decoration-red-600 text-red-600">
                               12.50$
                             </p>
                           </p>
                         </div>
                       </div>
                     </div>
-                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
+                    <div className="mt-2 grid grid-cols-4  sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
                       <a href="https://facebook.com" aria-label="Facebook link">
                         <Image
                           src="/images/facebook.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Facebook"
                           className="rounded-full"
                         />
@@ -586,8 +586,8 @@ export default function page() {
                       <a href="https://telegram.org" aria-label="Telegram link">
                         <Image
                           src="/images/telegram.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Telegram"
                           className="rounded-full"
                         />
@@ -595,8 +595,8 @@ export default function page() {
                       <a href="https://tiktok.com" aria-label="TikTok link">
                         <Image
                           src="/images/tiktok.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="TikTok"
                           className="rounded-full"
                         />
@@ -608,20 +608,20 @@ export default function page() {
                       >
                         <Image
                           src="/images/map.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Map"
                           className="rounded-full bg-gray-300"
                         />
                       </a>
                       <a
                         href="tel:+012345987"
-                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
+                        className="flex justify-center mt-2 sm:mt-0 items-center col-span-4 sm:col-span-1 md:col-span-1"
                       >
                         <Image
                           src="/images/call.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Call"
                           className="rounded-full mr-3"
                         />
@@ -653,7 +653,7 @@ export default function page() {
                     <XIcon style={{ width: 15, height: 15 }}></XIcon>
                   </AlertDialogCancel>
                 </div>
-                <AlertDialogDescription className="min-w-52 ">
+                <AlertDialogDescription className="min-w-64 ">
                   <div className="rounded-lg ">
                     <div className="flex items-center justify-center">
                       <Image
@@ -671,26 +671,26 @@ export default function page() {
                           <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
                             Fellow Clara French Press
                           </h5>
-                          <p>
+                          <p className="mt-2">
                             ID: <span>10</span>
                           </p>
                         </a>
                         <div className="col-span-2 text-right text-primary">
                           <p className="flex flex-col">
                             <p>11.00$</p>
-                            <p className="line-through decoration-red-600 text-red-600">
+                            <p className="line-through mt-2 decoration-red-600 text-red-600">
                               12.50$
                             </p>
                           </p>
                         </div>
                       </div>
                     </div>
-                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
+                    <div className="mt-2 grid grid-cols-4  sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
                       <a href="https://facebook.com" aria-label="Facebook link">
                         <Image
                           src="/images/facebook.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Facebook"
                           className="rounded-full"
                         />
@@ -698,8 +698,8 @@ export default function page() {
                       <a href="https://telegram.org" aria-label="Telegram link">
                         <Image
                           src="/images/telegram.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Telegram"
                           className="rounded-full"
                         />
@@ -707,8 +707,8 @@ export default function page() {
                       <a href="https://tiktok.com" aria-label="TikTok link">
                         <Image
                           src="/images/tiktok.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="TikTok"
                           className="rounded-full"
                         />
@@ -720,20 +720,20 @@ export default function page() {
                       >
                         <Image
                           src="/images/map.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Map"
                           className="rounded-full bg-gray-300"
                         />
                       </a>
                       <a
                         href="tel:+012345987"
-                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
+                        className="flex justify-center mt-2 sm:mt-0 items-center col-span-4 sm:col-span-1 md:col-span-1"
                       >
                         <Image
                           src="/images/call.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Call"
                           className="rounded-full mr-3"
                         />
@@ -765,7 +765,7 @@ export default function page() {
                     <XIcon style={{ width: 15, height: 15 }}></XIcon>
                   </AlertDialogCancel>
                 </div>
-                <AlertDialogDescription className="min-w-52 ">
+                <AlertDialogDescription className="min-w-64 ">
                   <div className="rounded-lg ">
                     <div className="flex items-center justify-center">
                       <Image
@@ -783,26 +783,26 @@ export default function page() {
                           <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
                             Fellow Clara French Press
                           </h5>
-                          <p>
+                          <p className="mt-2">
                             ID: <span>10</span>
                           </p>
                         </a>
                         <div className="col-span-2 text-right text-primary">
                           <p className="flex flex-col">
                             <p>11.00$</p>
-                            <p className="line-through decoration-red-600 text-red-600">
+                            <p className="line-through mt-2 decoration-red-600 text-red-600">
                               12.50$
                             </p>
                           </p>
                         </div>
                       </div>
                     </div>
-                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
+                    <div className="mt-2 grid grid-cols-4  sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
                       <a href="https://facebook.com" aria-label="Facebook link">
                         <Image
                           src="/images/facebook.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Facebook"
                           className="rounded-full"
                         />
@@ -810,8 +810,8 @@ export default function page() {
                       <a href="https://telegram.org" aria-label="Telegram link">
                         <Image
                           src="/images/telegram.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Telegram"
                           className="rounded-full"
                         />
@@ -819,8 +819,8 @@ export default function page() {
                       <a href="https://tiktok.com" aria-label="TikTok link">
                         <Image
                           src="/images/tiktok.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="TikTok"
                           className="rounded-full"
                         />
@@ -832,20 +832,20 @@ export default function page() {
                       >
                         <Image
                           src="/images/map.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Map"
                           className="rounded-full bg-gray-300"
                         />
                       </a>
                       <a
                         href="tel:+012345987"
-                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
+                        className="flex justify-center mt-2 sm:mt-0 items-center col-span-4 sm:col-span-1 md:col-span-1"
                       >
                         <Image
                           src="/images/call.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Call"
                           className="rounded-full mr-3"
                         />
@@ -877,7 +877,7 @@ export default function page() {
                     <XIcon style={{ width: 15, height: 15 }}></XIcon>
                   </AlertDialogCancel>
                 </div>
-                <AlertDialogDescription className="min-w-52 ">
+                <AlertDialogDescription className="min-w-64 ">
                   <div className="rounded-lg ">
                     <div className="flex items-center justify-center">
                       <Image
@@ -895,26 +895,26 @@ export default function page() {
                           <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
                             Fellow Clara French Press
                           </h5>
-                          <p>
+                          <p className="mt-2">
                             ID: <span>10</span>
                           </p>
                         </a>
                         <div className="col-span-2 text-right text-primary">
                           <p className="flex flex-col">
                             <p>11.00$</p>
-                            <p className="line-through decoration-red-600 text-red-600">
+                            <p className="line-through mt-2 decoration-red-600 text-red-600">
                               12.50$
                             </p>
                           </p>
                         </div>
                       </div>
                     </div>
-                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
+                    <div className="mt-2 grid grid-cols-4  sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
                       <a href="https://facebook.com" aria-label="Facebook link">
                         <Image
                           src="/images/facebook.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Facebook"
                           className="rounded-full"
                         />
@@ -922,8 +922,8 @@ export default function page() {
                       <a href="https://telegram.org" aria-label="Telegram link">
                         <Image
                           src="/images/telegram.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Telegram"
                           className="rounded-full"
                         />
@@ -931,8 +931,8 @@ export default function page() {
                       <a href="https://tiktok.com" aria-label="TikTok link">
                         <Image
                           src="/images/tiktok.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="TikTok"
                           className="rounded-full"
                         />
@@ -944,20 +944,20 @@ export default function page() {
                       >
                         <Image
                           src="/images/map.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Map"
                           className="rounded-full bg-gray-300"
                         />
                       </a>
                       <a
                         href="tel:+012345987"
-                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
+                        className="flex justify-center mt-2 sm:mt-0 items-center col-span-4 sm:col-span-1 md:col-span-1"
                       >
                         <Image
                           src="/images/call.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Call"
                           className="rounded-full mr-3"
                         />
@@ -989,7 +989,7 @@ export default function page() {
                     <XIcon style={{ width: 15, height: 15 }}></XIcon>
                   </AlertDialogCancel>
                 </div>
-                <AlertDialogDescription className="min-w-52 ">
+                <AlertDialogDescription className="min-w-64 ">
                   <div className="rounded-lg ">
                     <div className="flex items-center justify-center">
                       <Image
@@ -1007,26 +1007,26 @@ export default function page() {
                           <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
                             Fellow Clara French Press
                           </h5>
-                          <p>
+                          <p className="mt-2">
                             ID: <span>10</span>
                           </p>
                         </a>
                         <div className="col-span-2 text-right text-primary">
                           <p className="flex flex-col">
                             <p>11.00$</p>
-                            <p className="line-through decoration-red-600 text-red-600">
+                            <p className="line-through mt-2 decoration-red-600 text-red-600">
                               12.50$
                             </p>
                           </p>
                         </div>
                       </div>
                     </div>
-                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
+                    <div className="mt-2 grid grid-cols-4  sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
                       <a href="https://facebook.com" aria-label="Facebook link">
                         <Image
                           src="/images/facebook.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Facebook"
                           className="rounded-full"
                         />
@@ -1034,8 +1034,8 @@ export default function page() {
                       <a href="https://telegram.org" aria-label="Telegram link">
                         <Image
                           src="/images/telegram.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Telegram"
                           className="rounded-full"
                         />
@@ -1043,8 +1043,8 @@ export default function page() {
                       <a href="https://tiktok.com" aria-label="TikTok link">
                         <Image
                           src="/images/tiktok.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="TikTok"
                           className="rounded-full"
                         />
@@ -1056,20 +1056,20 @@ export default function page() {
                       >
                         <Image
                           src="/images/map.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Map"
                           className="rounded-full bg-gray-300"
                         />
                       </a>
                       <a
                         href="tel:+012345987"
-                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
+                        className="flex justify-center mt-2 sm:mt-0 items-center col-span-4 sm:col-span-1 md:col-span-1"
                       >
                         <Image
                           src="/images/call.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Call"
                           className="rounded-full mr-3"
                         />
@@ -1101,7 +1101,7 @@ export default function page() {
                     <XIcon style={{ width: 15, height: 15 }}></XIcon>
                   </AlertDialogCancel>
                 </div>
-                <AlertDialogDescription className="min-w-52 ">
+                <AlertDialogDescription className="min-w-64 ">
                   <div className="rounded-lg ">
                     <div className="flex items-center justify-center">
                       <Image
@@ -1119,26 +1119,26 @@ export default function page() {
                           <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
                             Fellow Clara French Press
                           </h5>
-                          <p>
+                          <p className="mt-2">
                             ID: <span>10</span>
                           </p>
                         </a>
                         <div className="col-span-2 text-right text-primary">
                           <p className="flex flex-col">
                             <p>11.00$</p>
-                            <p className="line-through decoration-red-600 text-red-600">
+                            <p className="line-through mt-2 decoration-red-600 text-red-600">
                               12.50$
                             </p>
                           </p>
                         </div>
                       </div>
                     </div>
-                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
+                    <div className="mt-2 grid grid-cols-4  sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
                       <a href="https://facebook.com" aria-label="Facebook link">
                         <Image
                           src="/images/facebook.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Facebook"
                           className="rounded-full"
                         />
@@ -1146,8 +1146,8 @@ export default function page() {
                       <a href="https://telegram.org" aria-label="Telegram link">
                         <Image
                           src="/images/telegram.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Telegram"
                           className="rounded-full"
                         />
@@ -1155,8 +1155,8 @@ export default function page() {
                       <a href="https://tiktok.com" aria-label="TikTok link">
                         <Image
                           src="/images/tiktok.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="TikTok"
                           className="rounded-full"
                         />
@@ -1168,20 +1168,20 @@ export default function page() {
                       >
                         <Image
                           src="/images/map.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Map"
                           className="rounded-full bg-gray-300"
                         />
                       </a>
                       <a
                         href="tel:+012345987"
-                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
+                        className="flex justify-center mt-2 sm:mt-0 items-center col-span-4 sm:col-span-1 md:col-span-1"
                       >
                         <Image
                           src="/images/call.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Call"
                           className="rounded-full mr-3"
                         />
@@ -1213,7 +1213,7 @@ export default function page() {
                     <XIcon style={{ width: 15, height: 15 }}></XIcon>
                   </AlertDialogCancel>
                 </div>
-                <AlertDialogDescription className="min-w-52 ">
+                <AlertDialogDescription className="min-w-64 ">
                   <div className="rounded-lg ">
                     <div className="flex items-center justify-center">
                       <Image
@@ -1231,26 +1231,26 @@ export default function page() {
                           <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
                             Fellow Clara French Press
                           </h5>
-                          <p>
+                          <p className="mt-2">
                             ID: <span>10</span>
                           </p>
                         </a>
                         <div className="col-span-2 text-right text-primary">
                           <p className="flex flex-col">
                             <p>11.00$</p>
-                            <p className="line-through decoration-red-600 text-red-600">
+                            <p className="line-through mt-2 decoration-red-600 text-red-600">
                               12.50$
                             </p>
                           </p>
                         </div>
                       </div>
                     </div>
-                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
+                    <div className="mt-2 grid grid-cols-4  sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
                       <a href="https://facebook.com" aria-label="Facebook link">
                         <Image
                           src="/images/facebook.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Facebook"
                           className="rounded-full"
                         />
@@ -1258,8 +1258,8 @@ export default function page() {
                       <a href="https://telegram.org" aria-label="Telegram link">
                         <Image
                           src="/images/telegram.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Telegram"
                           className="rounded-full"
                         />
@@ -1267,8 +1267,8 @@ export default function page() {
                       <a href="https://tiktok.com" aria-label="TikTok link">
                         <Image
                           src="/images/tiktok.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="TikTok"
                           className="rounded-full"
                         />
@@ -1280,20 +1280,20 @@ export default function page() {
                       >
                         <Image
                           src="/images/map.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Map"
                           className="rounded-full bg-gray-300"
                         />
                       </a>
                       <a
                         href="tel:+012345987"
-                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
+                        className="flex justify-center mt-2 sm:mt-0 items-center col-span-4 sm:col-span-1 md:col-span-1"
                       >
                         <Image
                           src="/images/call.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Call"
                           className="rounded-full mr-3"
                         />
@@ -1325,7 +1325,7 @@ export default function page() {
                     <XIcon style={{ width: 15, height: 15 }}></XIcon>
                   </AlertDialogCancel>
                 </div>
-                <AlertDialogDescription className="min-w-52 ">
+                <AlertDialogDescription className="min-w-64 ">
                   <div className="rounded-lg ">
                     <div className="flex items-center justify-center">
                       <Image
@@ -1343,26 +1343,26 @@ export default function page() {
                           <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
                             Fellow Clara French Press
                           </h5>
-                          <p>
+                          <p className="mt-2">
                             ID: <span>10</span>
                           </p>
                         </a>
                         <div className="col-span-2 text-right text-primary">
                           <p className="flex flex-col">
                             <p>11.00$</p>
-                            <p className="line-through decoration-red-600 text-red-600">
+                            <p className="line-through mt-2 decoration-red-600 text-red-600">
                               12.50$
                             </p>
                           </p>
                         </div>
                       </div>
                     </div>
-                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
+                    <div className="mt-2 grid grid-cols-4  sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
                       <a href="https://facebook.com" aria-label="Facebook link">
                         <Image
                           src="/images/facebook.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Facebook"
                           className="rounded-full"
                         />
@@ -1370,8 +1370,8 @@ export default function page() {
                       <a href="https://telegram.org" aria-label="Telegram link">
                         <Image
                           src="/images/telegram.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Telegram"
                           className="rounded-full"
                         />
@@ -1379,8 +1379,8 @@ export default function page() {
                       <a href="https://tiktok.com" aria-label="TikTok link">
                         <Image
                           src="/images/tiktok.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="TikTok"
                           className="rounded-full"
                         />
@@ -1392,1028 +1392,20 @@ export default function page() {
                       >
                         <Image
                           src="/images/map.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Map"
                           className="rounded-full bg-gray-300"
                         />
                       </a>
                       <a
                         href="tel:+012345987"
-                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
+                        className="flex justify-center mt-2 sm:mt-0 items-center col-span-4 sm:col-span-1 md:col-span-1"
                       >
                         <Image
                           src="/images/call.png"
-                          width={25}
-                          height={25}
-                          alt="Call"
-                          className="rounded-full mr-3"
-                        />
-                        <p className="text-green-800 text-md">012345987</p>
-                      </a>
-                    </div>
-                  </div>
-                  <AlertDialogFooter className="mt-10"></AlertDialogFooter>
-                </AlertDialogDescription>
-              </AlertDialogContent>
-            </AlertDialog>
-            {/* Ent */}
-            {/* Start */}
-            <AlertDialog>
-              <AlertDialogTrigger className="w-full text-start">
-                <Card
-                  image="/images/product3.webp"
-                  title="Fellow Clara French Press"
-                  id="10"
-                  price="11.00$"
-                  discount="0.50$"
-                />
-              </AlertDialogTrigger>
-
-              {/* Payment Arlert */}
-              <AlertDialogContent className="w-auto p-4 gap-0">
-                <div>
-                  <AlertDialogCancel className=" mt-0 p-3 h-3 text-black hover:text-white w-1 border ">
-                    <XIcon style={{ width: 15, height: 15 }}></XIcon>
-                  </AlertDialogCancel>
-                </div>
-                <AlertDialogDescription className="min-w-52 ">
-                  <div className="rounded-lg ">
-                    <div className="flex items-center justify-center">
-                      <Image
-                        className="rounded-lg aspect-[1/1] object-cover"
-                        src="/images/product3.webp"
-                        alt="Noteworthy technology acquisitions 2021"
-                        width={300} // Static width for large screens
-                        height={300} // Static height for large screens
-                        style={{ objectFit: "cover" }} // Ensures the image fills its container while keeping its aspect
-                      />
-                    </div>
-                    <div>
-                      <div className="px-1 py-3  text-sm grid grid-cols-5 ">
-                        <a href="#" className="col-span-3">
-                          <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
-                            Fellow Clara French Press
-                          </h5>
-                          <p>
-                            ID: <span>10</span>
-                          </p>
-                        </a>
-                        <div className="col-span-2 text-right text-primary">
-                          <p className="flex flex-col">
-                            <p>11.00$</p>
-                            <p className="line-through decoration-red-600 text-red-600">
-                              12.50$
-                            </p>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
-                      <a href="https://facebook.com" aria-label="Facebook link">
-                        <Image
-                          src="/images/facebook.png"
-                          width={25}
-                          height={25}
-                          alt="Facebook"
-                          className="rounded-full"
-                        />
-                      </a>
-                      <a href="https://telegram.org" aria-label="Telegram link">
-                        <Image
-                          src="/images/telegram.png"
-                          width={25}
-                          height={25}
-                          alt="Telegram"
-                          className="rounded-full"
-                        />
-                      </a>
-                      <a href="https://tiktok.com" aria-label="TikTok link">
-                        <Image
-                          src="/images/tiktok.png"
-                          width={25}
-                          height={25}
-                          alt="TikTok"
-                          className="rounded-full"
-                        />
-                      </a>
-                      <a
-                        href="https://google.com/maps"
-                        className="flex justify-center items-center"
-                        aria-label="Map link"
-                      >
-                        <Image
-                          src="/images/map.png"
-                          width={25}
-                          height={25}
-                          alt="Map"
-                          className="rounded-full bg-gray-300"
-                        />
-                      </a>
-                      <a
-                        href="tel:+012345987"
-                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
-                      >
-                        <Image
-                          src="/images/call.png"
-                          width={25}
-                          height={25}
-                          alt="Call"
-                          className="rounded-full mr-3"
-                        />
-                        <p className="text-green-800 text-md">012345987</p>
-                      </a>
-                    </div>
-                  </div>
-                  <AlertDialogFooter className="mt-10"></AlertDialogFooter>
-                </AlertDialogDescription>
-              </AlertDialogContent>
-            </AlertDialog>
-            {/* Ent */}
-            {/* Start */}
-            <AlertDialog>
-              <AlertDialogTrigger className="w-full text-start">
-                <Card
-                  image="/images/product3.webp"
-                  title="Fellow Clara French Press"
-                  id="10"
-                  price="11.00$"
-                  discount="0.50$"
-                />
-              </AlertDialogTrigger>
-
-              {/* Payment Arlert */}
-              <AlertDialogContent className="w-auto p-4 gap-0">
-                <div>
-                  <AlertDialogCancel className=" mt-0 p-3 h-3 text-black hover:text-white w-1 border ">
-                    <XIcon style={{ width: 15, height: 15 }}></XIcon>
-                  </AlertDialogCancel>
-                </div>
-                <AlertDialogDescription className="min-w-52 ">
-                  <div className="rounded-lg ">
-                    <div className="flex items-center justify-center">
-                      <Image
-                        className="rounded-lg aspect-[1/1] object-cover"
-                        src="/images/product3.webp"
-                        alt="Noteworthy technology acquisitions 2021"
-                        width={300} // Static width for large screens
-                        height={300} // Static height for large screens
-                        style={{ objectFit: "cover" }} // Ensures the image fills its container while keeping its aspect
-                      />
-                    </div>
-                    <div>
-                      <div className="px-1 py-3  text-sm grid grid-cols-5 ">
-                        <a href="#" className="col-span-3">
-                          <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
-                            Fellow Clara French Press
-                          </h5>
-                          <p>
-                            ID: <span>10</span>
-                          </p>
-                        </a>
-                        <div className="col-span-2 text-right text-primary">
-                          <p className="flex flex-col">
-                            <p>11.00$</p>
-                            <p className="line-through decoration-red-600 text-red-600">
-                              12.50$
-                            </p>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
-                      <a href="https://facebook.com" aria-label="Facebook link">
-                        <Image
-                          src="/images/facebook.png"
-                          width={25}
-                          height={25}
-                          alt="Facebook"
-                          className="rounded-full"
-                        />
-                      </a>
-                      <a href="https://telegram.org" aria-label="Telegram link">
-                        <Image
-                          src="/images/telegram.png"
-                          width={25}
-                          height={25}
-                          alt="Telegram"
-                          className="rounded-full"
-                        />
-                      </a>
-                      <a href="https://tiktok.com" aria-label="TikTok link">
-                        <Image
-                          src="/images/tiktok.png"
-                          width={25}
-                          height={25}
-                          alt="TikTok"
-                          className="rounded-full"
-                        />
-                      </a>
-                      <a
-                        href="https://google.com/maps"
-                        className="flex justify-center items-center"
-                        aria-label="Map link"
-                      >
-                        <Image
-                          src="/images/map.png"
-                          width={25}
-                          height={25}
-                          alt="Map"
-                          className="rounded-full bg-gray-300"
-                        />
-                      </a>
-                      <a
-                        href="tel:+012345987"
-                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
-                      >
-                        <Image
-                          src="/images/call.png"
-                          width={25}
-                          height={25}
-                          alt="Call"
-                          className="rounded-full mr-3"
-                        />
-                        <p className="text-green-800 text-md">012345987</p>
-                      </a>
-                    </div>
-                  </div>
-                  <AlertDialogFooter className="mt-10"></AlertDialogFooter>
-                </AlertDialogDescription>
-              </AlertDialogContent>
-            </AlertDialog>
-            {/* Ent */}
-            {/* Start */}
-            <AlertDialog>
-              <AlertDialogTrigger className="w-full text-start">
-                <Card
-                  image="/images/product3.webp"
-                  title="Fellow Clara French Press"
-                  id="10"
-                  price="11.00$"
-                  discount="0.50$"
-                />
-              </AlertDialogTrigger>
-
-              {/* Payment Arlert */}
-              <AlertDialogContent className="w-auto p-4 gap-0">
-                <div>
-                  <AlertDialogCancel className=" mt-0 p-3 h-3 text-black hover:text-white w-1 border ">
-                    <XIcon style={{ width: 15, height: 15 }}></XIcon>
-                  </AlertDialogCancel>
-                </div>
-                <AlertDialogDescription className="min-w-52 ">
-                  <div className="rounded-lg ">
-                    <div className="flex items-center justify-center">
-                      <Image
-                        className="rounded-lg aspect-[1/1] object-cover"
-                        src="/images/product3.webp"
-                        alt="Noteworthy technology acquisitions 2021"
-                        width={300} // Static width for large screens
-                        height={300} // Static height for large screens
-                        style={{ objectFit: "cover" }} // Ensures the image fills its container while keeping its aspect
-                      />
-                    </div>
-                    <div>
-                      <div className="px-1 py-3  text-sm grid grid-cols-5 ">
-                        <a href="#" className="col-span-3">
-                          <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
-                            Fellow Clara French Press
-                          </h5>
-                          <p>
-                            ID: <span>10</span>
-                          </p>
-                        </a>
-                        <div className="col-span-2 text-right text-primary">
-                          <p className="flex flex-col">
-                            <p>11.00$</p>
-                            <p className="line-through decoration-red-600 text-red-600">
-                              12.50$
-                            </p>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
-                      <a href="https://facebook.com" aria-label="Facebook link">
-                        <Image
-                          src="/images/facebook.png"
-                          width={25}
-                          height={25}
-                          alt="Facebook"
-                          className="rounded-full"
-                        />
-                      </a>
-                      <a href="https://telegram.org" aria-label="Telegram link">
-                        <Image
-                          src="/images/telegram.png"
-                          width={25}
-                          height={25}
-                          alt="Telegram"
-                          className="rounded-full"
-                        />
-                      </a>
-                      <a href="https://tiktok.com" aria-label="TikTok link">
-                        <Image
-                          src="/images/tiktok.png"
-                          width={25}
-                          height={25}
-                          alt="TikTok"
-                          className="rounded-full"
-                        />
-                      </a>
-                      <a
-                        href="https://google.com/maps"
-                        className="flex justify-center items-center"
-                        aria-label="Map link"
-                      >
-                        <Image
-                          src="/images/map.png"
-                          width={25}
-                          height={25}
-                          alt="Map"
-                          className="rounded-full bg-gray-300"
-                        />
-                      </a>
-                      <a
-                        href="tel:+012345987"
-                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
-                      >
-                        <Image
-                          src="/images/call.png"
-                          width={25}
-                          height={25}
-                          alt="Call"
-                          className="rounded-full mr-3"
-                        />
-                        <p className="text-green-800 text-md">012345987</p>
-                      </a>
-                    </div>
-                  </div>
-                  <AlertDialogFooter className="mt-10"></AlertDialogFooter>
-                </AlertDialogDescription>
-              </AlertDialogContent>
-            </AlertDialog>
-            {/* Ent */}
-            {/* Start */}
-            <AlertDialog>
-              <AlertDialogTrigger className="w-full text-start">
-                <Card
-                  image="/images/product3.webp"
-                  title="Fellow Clara French Press"
-                  id="10"
-                  price="11.00$"
-                  discount="0.50$"
-                />
-              </AlertDialogTrigger>
-
-              {/* Payment Arlert */}
-              <AlertDialogContent className="w-auto p-4 gap-0">
-                <div>
-                  <AlertDialogCancel className=" mt-0 p-3 h-3 text-black hover:text-white w-1 border ">
-                    <XIcon style={{ width: 15, height: 15 }}></XIcon>
-                  </AlertDialogCancel>
-                </div>
-                <AlertDialogDescription className="min-w-52 ">
-                  <div className="rounded-lg ">
-                    <div className="flex items-center justify-center">
-                      <Image
-                        className="rounded-lg aspect-[1/1] object-cover"
-                        src="/images/product3.webp"
-                        alt="Noteworthy technology acquisitions 2021"
-                        width={300} // Static width for large screens
-                        height={300} // Static height for large screens
-                        style={{ objectFit: "cover" }} // Ensures the image fills its container while keeping its aspect
-                      />
-                    </div>
-                    <div>
-                      <div className="px-1 py-3  text-sm grid grid-cols-5 ">
-                        <a href="#" className="col-span-3">
-                          <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
-                            Fellow Clara French Press
-                          </h5>
-                          <p>
-                            ID: <span>10</span>
-                          </p>
-                        </a>
-                        <div className="col-span-2 text-right text-primary">
-                          <p className="flex flex-col">
-                            <p>11.00$</p>
-                            <p className="line-through decoration-red-600 text-red-600">
-                              12.50$
-                            </p>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
-                      <a href="https://facebook.com" aria-label="Facebook link">
-                        <Image
-                          src="/images/facebook.png"
-                          width={25}
-                          height={25}
-                          alt="Facebook"
-                          className="rounded-full"
-                        />
-                      </a>
-                      <a href="https://telegram.org" aria-label="Telegram link">
-                        <Image
-                          src="/images/telegram.png"
-                          width={25}
-                          height={25}
-                          alt="Telegram"
-                          className="rounded-full"
-                        />
-                      </a>
-                      <a href="https://tiktok.com" aria-label="TikTok link">
-                        <Image
-                          src="/images/tiktok.png"
-                          width={25}
-                          height={25}
-                          alt="TikTok"
-                          className="rounded-full"
-                        />
-                      </a>
-                      <a
-                        href="https://google.com/maps"
-                        className="flex justify-center items-center"
-                        aria-label="Map link"
-                      >
-                        <Image
-                          src="/images/map.png"
-                          width={25}
-                          height={25}
-                          alt="Map"
-                          className="rounded-full bg-gray-300"
-                        />
-                      </a>
-                      <a
-                        href="tel:+012345987"
-                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
-                      >
-                        <Image
-                          src="/images/call.png"
-                          width={25}
-                          height={25}
-                          alt="Call"
-                          className="rounded-full mr-3"
-                        />
-                        <p className="text-green-800 text-md">012345987</p>
-                      </a>
-                    </div>
-                  </div>
-                  <AlertDialogFooter className="mt-10"></AlertDialogFooter>
-                </AlertDialogDescription>
-              </AlertDialogContent>
-            </AlertDialog>
-            {/* Ent */}
-            {/* Start */}
-            <AlertDialog>
-              <AlertDialogTrigger className="w-full text-start">
-                <Card
-                  image="/images/product3.webp"
-                  title="Fellow Clara French Press"
-                  id="10"
-                  price="11.00$"
-                  discount="0.50$"
-                />
-              </AlertDialogTrigger>
-
-              {/* Payment Arlert */}
-              <AlertDialogContent className="w-auto p-4 gap-0">
-                <div>
-                  <AlertDialogCancel className=" mt-0 p-3 h-3 text-black hover:text-white w-1 border ">
-                    <XIcon style={{ width: 15, height: 15 }}></XIcon>
-                  </AlertDialogCancel>
-                </div>
-                <AlertDialogDescription className="min-w-52 ">
-                  <div className="rounded-lg ">
-                    <div className="flex items-center justify-center">
-                      <Image
-                        className="rounded-lg aspect-[1/1] object-cover"
-                        src="/images/product3.webp"
-                        alt="Noteworthy technology acquisitions 2021"
-                        width={300} // Static width for large screens
-                        height={300} // Static height for large screens
-                        style={{ objectFit: "cover" }} // Ensures the image fills its container while keeping its aspect
-                      />
-                    </div>
-                    <div>
-                      <div className="px-1 py-3  text-sm grid grid-cols-5 ">
-                        <a href="#" className="col-span-3">
-                          <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
-                            Fellow Clara French Press
-                          </h5>
-                          <p>
-                            ID: <span>10</span>
-                          </p>
-                        </a>
-                        <div className="col-span-2 text-right text-primary">
-                          <p className="flex flex-col">
-                            <p>11.00$</p>
-                            <p className="line-through decoration-red-600 text-red-600">
-                              12.50$
-                            </p>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
-                      <a href="https://facebook.com" aria-label="Facebook link">
-                        <Image
-                          src="/images/facebook.png"
-                          width={25}
-                          height={25}
-                          alt="Facebook"
-                          className="rounded-full"
-                        />
-                      </a>
-                      <a href="https://telegram.org" aria-label="Telegram link">
-                        <Image
-                          src="/images/telegram.png"
-                          width={25}
-                          height={25}
-                          alt="Telegram"
-                          className="rounded-full"
-                        />
-                      </a>
-                      <a href="https://tiktok.com" aria-label="TikTok link">
-                        <Image
-                          src="/images/tiktok.png"
-                          width={25}
-                          height={25}
-                          alt="TikTok"
-                          className="rounded-full"
-                        />
-                      </a>
-                      <a
-                        href="https://google.com/maps"
-                        className="flex justify-center items-center"
-                        aria-label="Map link"
-                      >
-                        <Image
-                          src="/images/map.png"
-                          width={25}
-                          height={25}
-                          alt="Map"
-                          className="rounded-full bg-gray-300"
-                        />
-                      </a>
-                      <a
-                        href="tel:+012345987"
-                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
-                      >
-                        <Image
-                          src="/images/call.png"
-                          width={25}
-                          height={25}
-                          alt="Call"
-                          className="rounded-full mr-3"
-                        />
-                        <p className="text-green-800 text-md">012345987</p>
-                      </a>
-                    </div>
-                  </div>
-                  <AlertDialogFooter className="mt-10"></AlertDialogFooter>
-                </AlertDialogDescription>
-              </AlertDialogContent>
-            </AlertDialog>
-            {/* Ent */}
-            {/* Start */}
-            <AlertDialog>
-              <AlertDialogTrigger className="w-full text-start">
-                <Card
-                  image="/images/product3.webp"
-                  title="Fellow Clara French Press"
-                  id="10"
-                  price="11.00$"
-                  discount="0.50$"
-                />
-              </AlertDialogTrigger>
-
-              {/* Payment Arlert */}
-              <AlertDialogContent className="w-auto p-4 gap-0">
-                <div>
-                  <AlertDialogCancel className=" mt-0 p-3 h-3 text-black hover:text-white w-1 border ">
-                    <XIcon style={{ width: 15, height: 15 }}></XIcon>
-                  </AlertDialogCancel>
-                </div>
-                <AlertDialogDescription className="min-w-52 ">
-                  <div className="rounded-lg ">
-                    <div className="flex items-center justify-center">
-                      <Image
-                        className="rounded-lg aspect-[1/1] object-cover"
-                        src="/images/product3.webp"
-                        alt="Noteworthy technology acquisitions 2021"
-                        width={300} // Static width for large screens
-                        height={300} // Static height for large screens
-                        style={{ objectFit: "cover" }} // Ensures the image fills its container while keeping its aspect
-                      />
-                    </div>
-                    <div>
-                      <div className="px-1 py-3  text-sm grid grid-cols-5 ">
-                        <a href="#" className="col-span-3">
-                          <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
-                            Fellow Clara French Press
-                          </h5>
-                          <p>
-                            ID: <span>10</span>
-                          </p>
-                        </a>
-                        <div className="col-span-2 text-right text-primary">
-                          <p className="flex flex-col">
-                            <p>11.00$</p>
-                            <p className="line-through decoration-red-600 text-red-600">
-                              12.50$
-                            </p>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
-                      <a href="https://facebook.com" aria-label="Facebook link">
-                        <Image
-                          src="/images/facebook.png"
-                          width={25}
-                          height={25}
-                          alt="Facebook"
-                          className="rounded-full"
-                        />
-                      </a>
-                      <a href="https://telegram.org" aria-label="Telegram link">
-                        <Image
-                          src="/images/telegram.png"
-                          width={25}
-                          height={25}
-                          alt="Telegram"
-                          className="rounded-full"
-                        />
-                      </a>
-                      <a href="https://tiktok.com" aria-label="TikTok link">
-                        <Image
-                          src="/images/tiktok.png"
-                          width={25}
-                          height={25}
-                          alt="TikTok"
-                          className="rounded-full"
-                        />
-                      </a>
-                      <a
-                        href="https://google.com/maps"
-                        className="flex justify-center items-center"
-                        aria-label="Map link"
-                      >
-                        <Image
-                          src="/images/map.png"
-                          width={25}
-                          height={25}
-                          alt="Map"
-                          className="rounded-full bg-gray-300"
-                        />
-                      </a>
-                      <a
-                        href="tel:+012345987"
-                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
-                      >
-                        <Image
-                          src="/images/call.png"
-                          width={25}
-                          height={25}
-                          alt="Call"
-                          className="rounded-full mr-3"
-                        />
-                        <p className="text-green-800 text-md">012345987</p>
-                      </a>
-                    </div>
-                  </div>
-                  <AlertDialogFooter className="mt-10"></AlertDialogFooter>
-                </AlertDialogDescription>
-              </AlertDialogContent>
-            </AlertDialog>
-            {/* Ent */}
-            {/* Start */}
-            <AlertDialog>
-              <AlertDialogTrigger className="w-full text-start">
-                <Card
-                  image="/images/product3.webp"
-                  title="Fellow Clara French Press"
-                  id="10"
-                  price="11.00$"
-                  discount="0.50$"
-                />
-              </AlertDialogTrigger>
-
-              {/* Payment Arlert */}
-              <AlertDialogContent className="w-auto p-4 gap-0">
-                <div>
-                  <AlertDialogCancel className=" mt-0 p-3 h-3 text-black hover:text-white w-1 border ">
-                    <XIcon style={{ width: 15, height: 15 }}></XIcon>
-                  </AlertDialogCancel>
-                </div>
-                <AlertDialogDescription className="min-w-52 ">
-                  <div className="rounded-lg ">
-                    <div className="flex items-center justify-center">
-                      <Image
-                        className="rounded-lg aspect-[1/1] object-cover"
-                        src="/images/product3.webp"
-                        alt="Noteworthy technology acquisitions 2021"
-                        width={300} // Static width for large screens
-                        height={300} // Static height for large screens
-                        style={{ objectFit: "cover" }} // Ensures the image fills its container while keeping its aspect
-                      />
-                    </div>
-                    <div>
-                      <div className="px-1 py-3  text-sm grid grid-cols-5 ">
-                        <a href="#" className="col-span-3">
-                          <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
-                            Fellow Clara French Press
-                          </h5>
-                          <p>
-                            ID: <span>10</span>
-                          </p>
-                        </a>
-                        <div className="col-span-2 text-right text-primary">
-                          <p className="flex flex-col">
-                            <p>11.00$</p>
-                            <p className="line-through decoration-red-600 text-red-600">
-                              12.50$
-                            </p>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
-                      <a href="https://facebook.com" aria-label="Facebook link">
-                        <Image
-                          src="/images/facebook.png"
-                          width={25}
-                          height={25}
-                          alt="Facebook"
-                          className="rounded-full"
-                        />
-                      </a>
-                      <a href="https://telegram.org" aria-label="Telegram link">
-                        <Image
-                          src="/images/telegram.png"
-                          width={25}
-                          height={25}
-                          alt="Telegram"
-                          className="rounded-full"
-                        />
-                      </a>
-                      <a href="https://tiktok.com" aria-label="TikTok link">
-                        <Image
-                          src="/images/tiktok.png"
-                          width={25}
-                          height={25}
-                          alt="TikTok"
-                          className="rounded-full"
-                        />
-                      </a>
-                      <a
-                        href="https://google.com/maps"
-                        className="flex justify-center items-center"
-                        aria-label="Map link"
-                      >
-                        <Image
-                          src="/images/map.png"
-                          width={25}
-                          height={25}
-                          alt="Map"
-                          className="rounded-full bg-gray-300"
-                        />
-                      </a>
-                      <a
-                        href="tel:+012345987"
-                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
-                      >
-                        <Image
-                          src="/images/call.png"
-                          width={25}
-                          height={25}
-                          alt="Call"
-                          className="rounded-full mr-3"
-                        />
-                        <p className="text-green-800 text-md">012345987</p>
-                      </a>
-                    </div>
-                  </div>
-                  <AlertDialogFooter className="mt-10"></AlertDialogFooter>
-                </AlertDialogDescription>
-              </AlertDialogContent>
-            </AlertDialog>
-            {/* Ent */}
-            {/* Start */}
-            <AlertDialog>
-              <AlertDialogTrigger className="w-full text-start">
-                <Card
-                  image="/images/product3.webp"
-                  title="Fellow Clara French Press"
-                  id="10"
-                  price="11.00$"
-                  discount="0.50$"
-                />
-              </AlertDialogTrigger>
-
-              {/* Payment Arlert */}
-              <AlertDialogContent className="w-auto p-4 gap-0">
-                <div>
-                  <AlertDialogCancel className=" mt-0 p-3 h-3 text-black hover:text-white w-1 border ">
-                    <XIcon style={{ width: 15, height: 15 }}></XIcon>
-                  </AlertDialogCancel>
-                </div>
-                <AlertDialogDescription className="min-w-52 ">
-                  <div className="rounded-lg ">
-                    <div className="flex items-center justify-center">
-                      <Image
-                        className="rounded-lg aspect-[1/1] object-cover"
-                        src="/images/product3.webp"
-                        alt="Noteworthy technology acquisitions 2021"
-                        width={300} // Static width for large screens
-                        height={300} // Static height for large screens
-                        style={{ objectFit: "cover" }} // Ensures the image fills its container while keeping its aspect
-                      />
-                    </div>
-                    <div>
-                      <div className="px-1 py-3  text-sm grid grid-cols-5 ">
-                        <a href="#" className="col-span-3">
-                          <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
-                            Fellow Clara French Press
-                          </h5>
-                          <p>
-                            ID: <span>10</span>
-                          </p>
-                        </a>
-                        <div className="col-span-2 text-right text-primary">
-                          <p className="flex flex-col">
-                            <p>11.00$</p>
-                            <p className="line-through decoration-red-600 text-red-600">
-                              12.50$
-                            </p>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
-                      <a href="https://facebook.com" aria-label="Facebook link">
-                        <Image
-                          src="/images/facebook.png"
-                          width={25}
-                          height={25}
-                          alt="Facebook"
-                          className="rounded-full"
-                        />
-                      </a>
-                      <a href="https://telegram.org" aria-label="Telegram link">
-                        <Image
-                          src="/images/telegram.png"
-                          width={25}
-                          height={25}
-                          alt="Telegram"
-                          className="rounded-full"
-                        />
-                      </a>
-                      <a href="https://tiktok.com" aria-label="TikTok link">
-                        <Image
-                          src="/images/tiktok.png"
-                          width={25}
-                          height={25}
-                          alt="TikTok"
-                          className="rounded-full"
-                        />
-                      </a>
-                      <a
-                        href="https://google.com/maps"
-                        className="flex justify-center items-center"
-                        aria-label="Map link"
-                      >
-                        <Image
-                          src="/images/map.png"
-                          width={25}
-                          height={25}
-                          alt="Map"
-                          className="rounded-full bg-gray-300"
-                        />
-                      </a>
-                      <a
-                        href="tel:+012345987"
-                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
-                      >
-                        <Image
-                          src="/images/call.png"
-                          width={25}
-                          height={25}
-                          alt="Call"
-                          className="rounded-full mr-3"
-                        />
-                        <p className="text-green-800 text-md">012345987</p>
-                      </a>
-                    </div>
-                  </div>
-                  <AlertDialogFooter className="mt-10"></AlertDialogFooter>
-                </AlertDialogDescription>
-              </AlertDialogContent>
-            </AlertDialog>
-            {/* Ent */}
-            {/* Start */}
-            <AlertDialog>
-              <AlertDialogTrigger className="w-full text-start">
-                <Card
-                  image="/images/product3.webp"
-                  title="Fellow Clara French Press"
-                  id="10"
-                  price="11.00$"
-                  discount="0.50$"
-                />
-              </AlertDialogTrigger>
-
-              {/* Payment Arlert */}
-              <AlertDialogContent className="w-auto p-4 gap-0">
-                <div>
-                  <AlertDialogCancel className=" mt-0 p-3 h-3 text-black hover:text-white w-1 border ">
-                    <XIcon style={{ width: 15, height: 15 }}></XIcon>
-                  </AlertDialogCancel>
-                </div>
-                <AlertDialogDescription className="min-w-52 ">
-                  <div className="rounded-lg ">
-                    <div className="flex items-center justify-center">
-                      <Image
-                        className="rounded-lg aspect-[1/1] object-cover"
-                        src="/images/product3.webp"
-                        alt="Noteworthy technology acquisitions 2021"
-                        width={300} // Static width for large screens
-                        height={300} // Static height for large screens
-                        style={{ objectFit: "cover" }} // Ensures the image fills its container while keeping its aspect
-                      />
-                    </div>
-                    <div>
-                      <div className="px-1 py-3  text-sm grid grid-cols-5 ">
-                        <a href="#" className="col-span-3">
-                          <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
-                            Fellow Clara French Press
-                          </h5>
-                          <p>
-                            ID: <span>10</span>
-                          </p>
-                        </a>
-                        <div className="col-span-2 text-right text-primary">
-                          <p className="flex flex-col">
-                            <p>11.00$</p>
-                            <p className="line-through decoration-red-600 text-red-600">
-                              12.50$
-                            </p>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
-                      <a href="https://facebook.com" aria-label="Facebook link">
-                        <Image
-                          src="/images/facebook.png"
-                          width={25}
-                          height={25}
-                          alt="Facebook"
-                          className="rounded-full"
-                        />
-                      </a>
-                      <a href="https://telegram.org" aria-label="Telegram link">
-                        <Image
-                          src="/images/telegram.png"
-                          width={25}
-                          height={25}
-                          alt="Telegram"
-                          className="rounded-full"
-                        />
-                      </a>
-                      <a href="https://tiktok.com" aria-label="TikTok link">
-                        <Image
-                          src="/images/tiktok.png"
-                          width={25}
-                          height={25}
-                          alt="TikTok"
-                          className="rounded-full"
-                        />
-                      </a>
-                      <a
-                        href="https://google.com/maps"
-                        className="flex justify-center items-center"
-                        aria-label="Map link"
-                      >
-                        <Image
-                          src="/images/map.png"
-                          width={25}
-                          height={25}
-                          alt="Map"
-                          className="rounded-full bg-gray-300"
-                        />
-                      </a>
-                      <a
-                        href="tel:+012345987"
-                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
-                      >
-                        <Image
-                          src="/images/call.png"
-                          width={25}
-                          height={25}
+                          width={30}
+                          height={30}
                           alt="Call"
                           className="rounded-full mr-3"
                         />
