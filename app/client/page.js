@@ -15,6 +15,17 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
 
 import { Fugaz_One } from "next/font/google";
 import {
@@ -24,6 +35,7 @@ import {
   MenuIcon,
   ShoppingCart,
   SlidersHorizontal,
+  XIcon,
 } from "lucide-react";
 
 const fugaz = Fugaz_One({ subsets: ["latin"], weight: ["400"] });
@@ -138,25 +150,114 @@ export default function page() {
 
   const headers = (
     <header>
-      {/* Logo */}
-      <div className="flex  mt-5 items-center">
-        <div className="space-x-3 px-2">
-          <ShadCNButton className="py-[54px] rounded-none px-2">
-            <Image
-              src="/images/logo.webp"
-              width={90}
-              height={90}
-              alt="image"
-              className="rounded-md"
-            ></Image>
-          </ShadCNButton>
-        </div>
-        <div className="space-y-2 ml-2">
-          <p className="font-bold text-xl">Scholar Library</p>
-          <hr className="border-[#4d489d]" />
-          <p className="text-md">Tell: 012345987 | Telegram: 0982828</p>
-        </div>
-      </div>
+      <AlertDialog>
+        <AlertDialogTrigger>
+          {/* Logo */}
+          <div className="flex text-start  mt-5 items-center">
+            <div className="space-x-3 px-2">
+              <ShadCNButton className="py-[54px] rounded-none px-2">
+                <Image
+                  src="/images/logo.webp"
+                  width={90}
+                  height={90}
+                  alt="image"
+                  className="rounded-md"
+                ></Image>
+              </ShadCNButton>
+            </div>
+            <div className="space-y-2 ml-2">
+              <p className="font-bold text-xl">Scholar Library</p>
+              <hr className="border-[#4d489d]" />
+              <p className="text-md">Tell: 012345987 | Telegram: 0982828</p>
+            </div>
+          </div>
+        </AlertDialogTrigger>
+
+        {/* Payment Arlert */}
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogCancel className="text-white flex bg-payMent  w-2  border ">
+              <XIcon></XIcon>
+            </AlertDialogCancel>
+            <AlertDialogDescription>
+              <div>
+                <div className="my-5 flex justify-center items-center">
+                  <Image
+                    src="/images/logo.webp"
+                    width={100}
+                    height={100}
+                    alt="image"
+                    className="rounded-full"
+                  ></Image>
+                </div>
+                <div className=" flex flex-col text-center justify-center items-center">
+                  <h1 className="font-bold text-black text-2xl">
+                    Scholar Library
+                  </h1>
+                  <p className="text-black text-xl">
+                    RedBox restaurant is a comfortable, brasserie-style
+                    restaurant offering everything you love about asia cuisine
+                    without the attitude. Our restaurant features classic dishes
+                    such as Grilled Giant Squid and Crispy Duck Tongue Garlic,
+                    as well as fresh salads and juicy hamburgers made with
+                    fresh-ground beef.
+                  </p>
+                  <div className="mt-10 flex justify-between space-x-5">
+                    <a>
+                      <Image
+                        src="/images/facebook.png"
+                        width={50}
+                        height={50}
+                        alt="image"
+                        className="rounded-full"
+                      ></Image>
+                    </a>
+                    <a>
+                      <Image
+                        src="/images/telegram.png"
+                        width={50}
+                        height={50}
+                        alt="image"
+                        className="rounded-full"
+                      ></Image>
+                    </a>
+                    <a>
+                      <Image
+                        src="/images/tiktok.png"
+                        width={50}
+                        height={50}
+                        alt="image"
+                        className="rounded-full"
+                      ></Image>
+                    </a>
+                    <a>
+                      <Image
+                        src="/images/map.png"
+                        width={50}
+                        height={50}
+                        alt="image"
+                        className="rounded-full bg-gray-100"
+                      ></Image>
+                    </a>
+                    <a className="text-green-800 text-xl flex justify-center items-center">
+                      <Image
+                        src="/images/call.png"
+                        width={50}
+                        height={50}
+                        alt="image"
+                        className="rounded-full mr-3"
+                      ></Image>
+                      012345987
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <AlertDialogFooter className="mt-10"></AlertDialogFooter>
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+        </AlertDialogContent>
+      </AlertDialog>
+
       <div className="mt-3 px-2  flex items-center justify-between gap-4  ">
         <div className="gap-4 flex w-full justify-center items-center">
           {/* Mobile Menu Toggle */}
@@ -481,7 +582,7 @@ export default function page() {
           </div>
         </>
       </section>
-     
+
       <footer className="max-w-screen-2xl col-span-12   w-full  z-70 fixed bottom-0">
         <div className="text-center">
           <span className="text-sm text-black">
