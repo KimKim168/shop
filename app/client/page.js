@@ -155,20 +155,22 @@ export default function page() {
           {/* Logo */}
           <div className="flex text-start  mt-5 items-center">
             <div className="space-x-3 px-2">
-              <ShadCNButton className="py-[54px] rounded-none px-2">
+              <ShadCNButton className="py-[28px] px-1 sm:py-[50px] rounded-none sm:px-2">
                 <Image
                   src="/images/logo.webp"
-                  width={90}
-                  height={90}
+                  width={80}
+                  height={80}
                   alt="image"
-                  className="rounded-md"
+                  className="rounded-md w-12 sm:w-20 "
                 ></Image>
               </ShadCNButton>
             </div>
-            <div className="space-y-2 ml-2">
-              <p className="font-bold text-xl">Scholar Library</p>
+            <div className="space-y-1 sm:space-y-2 ml-2">
+              <p className="font-bold text-md sm:text-xl">Scholar Library</p>
               <hr className="border-[#4d489d]" />
-              <p className="text-md">Tell: 012345987 | Telegram: 0982828</p>
+              <p className="text-sm sm:text-md">
+                Tell: 012345987 | Telegram: 0982828
+              </p>
             </div>
           </div>
         </AlertDialogTrigger>
