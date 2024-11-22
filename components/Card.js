@@ -7,6 +7,7 @@ export default function Card({
   shortDescription,
   price,
   discount,
+  id,
 }) {
   return (
     <div className=" md:max-w-xs p-1 mt-5 bg-white border border-white rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -25,12 +26,16 @@ export default function Card({
           <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
             {title}
           </h5>
+          <p>ID: {id}</p>
         </a>
 
         <div className="col-span-2 text-right text-primary dark:text-gray-400">
           <p className="flex flex-col">
             <p>{price}</p>
-            <p className="line-through decoration-red-600 text-red-600">{discount}</p>
+
+            <p className="line-through decoration-red-600 text-red-600">
+              {discount}
+            </p>
           </p>
         </div>
       </div>

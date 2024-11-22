@@ -410,226 +410,2022 @@ export default function page() {
         </>
         <>
           <div className="px-2 grid grid-cols-1 mb-10 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 items-center justify-center w-full lg:grid-cols-4 gap-3">
+            {/* Start */}
             <AlertDialog>
               <AlertDialogTrigger className="w-full text-start">
                 <Card
                   image="/images/product3.webp"
                   title="Fellow Clara French Press"
+                  id="10"
                   price="11.00$"
                   discount="0.50$"
                 />
               </AlertDialogTrigger>
 
               {/* Payment Arlert */}
-              <AlertDialogContent className="w-auto left-[50%] top-[50%] z-50 grid max-w-2xl  translate-x-[-50%] translate-y-[-50%]">
+              <AlertDialogContent className="w-auto p-4 gap-0">
                 <div>
-                  <AlertDialogCancel className="  text-black hover:text-white  w-2  border ">
-                    <XIcon style={{ width: 20, height: 20 }}></XIcon>
+                  <AlertDialogCancel className=" mt-0 p-3 h-3 text-black hover:text-white w-1 border ">
+                    <XIcon style={{ width: 15, height: 15 }}></XIcon>
                   </AlertDialogCancel>
                 </div>
-                <AlertDialogDescription>
-                  <div className=" p-1 mt-5 rounded-lg ">
-                    <Image
-                      className="rounded-lg bg-gray-200 aspect-[1/1] object-cover p-0.5"
-                      src="/images/product3.webp"
-                      alt="Noteworthy technology acquisitions 2021"
-                      width={300} // Adjust width according to your needs
-                      height={300}
-                      objectFit="center" // Adjust height according to your needs
-                    />
-                    <div className="px-1 py-3  text-sm grid grid-cols-5 ">
-                      <a href="#" className="col-span-3">
-                        <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
-                          Fellow Clara French Press
-                        </h5>
-                      </a>
-
-                      <div className="col-span-2 text-right text-primary">
-                        <p className="flex flex-col">
-                          <p>11.00$</p>
-                          <p className="line-through decoration-red-600 text-red-600">
-                            0.50$
+                <AlertDialogDescription className="min-w-52 ">
+                  <div className="rounded-lg ">
+                    <div className="flex items-center justify-center">
+                      <Image
+                        className="rounded-lg aspect-[1/1] object-cover"
+                        src="/images/product3.webp"
+                        alt="Noteworthy technology acquisitions 2021"
+                        width={300} // Static width for large screens
+                        height={300} // Static height for large screens
+                        style={{ objectFit: "cover" }} // Ensures the image fills its container while keeping its aspect
+                      />
+                    </div>
+                    <div>
+                      <div className="px-1 py-3  text-sm grid grid-cols-5 ">
+                        <a href="#" className="col-span-3">
+                          <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
+                            Fellow Clara French Press
+                          </h5>
+                          <p>
+                            ID: <span>10</span>
                           </p>
-                        </p>
+                        </a>
+                        <div className="col-span-2 text-right text-primary">
+                          <p className="flex flex-col">
+                            <p>11.00$</p>
+                            <p className="line-through decoration-red-600 text-red-600">
+                              12.50$
+                            </p>
+                          </p>
+                        </div>
                       </div>
+                    </div>
+                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
+                      <a href="https://facebook.com" aria-label="Facebook link">
+                        <Image
+                          src="/images/facebook.png"
+                          width={25}
+                          height={25}
+                          alt="Facebook"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://telegram.org" aria-label="Telegram link">
+                        <Image
+                          src="/images/telegram.png"
+                          width={25}
+                          height={25}
+                          alt="Telegram"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://tiktok.com" aria-label="TikTok link">
+                        <Image
+                          src="/images/tiktok.png"
+                          width={25}
+                          height={25}
+                          alt="TikTok"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a
+                        href="https://google.com/maps"
+                        className="flex justify-center items-center"
+                        aria-label="Map link"
+                      >
+                        <Image
+                          src="/images/map.png"
+                          width={25}
+                          height={25}
+                          alt="Map"
+                          className="rounded-full bg-gray-300"
+                        />
+                      </a>
+                      <a
+                        href="tel:+012345987"
+                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
+                      >
+                        <Image
+                          src="/images/call.png"
+                          width={25}
+                          height={25}
+                          alt="Call"
+                          className="rounded-full mr-3"
+                        />
+                        <p className="text-green-800 text-md">012345987</p>
+                      </a>
                     </div>
                   </div>
                   <AlertDialogFooter className="mt-10"></AlertDialogFooter>
                 </AlertDialogDescription>
               </AlertDialogContent>
             </AlertDialog>
-            <Card
-              image="/images/product5.png"
-              title="Fellow Clara French Press"
-              price="12.00$"
-              discount="0.50$"
-            />
-            <Card
-              image="/images/product4.png"
-              title="Fellow Clara French Press"
-              price="13.00$"
-              discount="0.50$"
-            />
-            <Card
-              image="/images/product2.jpg"
-              title="Fellow Clara French Press"
-              price="14.00$"
-              discount="0.50$"
-            />
-            <Card
-              image="/images/book1.jpg"
-              title="Fellow Clara French Press"
-              price="11.00$"
-              discount="0.50$"
-            />
-            <Card
-              image="/images/book3.jpg"
-              title="Fellow Clara French Press"
-              price="12.00$"
-              discount="0.50$"
-            />
-            <Card
-              image="/images/book4.jpg"
-              title="Fellow Clara French Press"
-              price="13.00$"
-              discount="0.50$"
-            />
-            <Card
-              image="/images/book5.jpg"
-              title="Fellow Clara French Press"
-              price="14.00$"
-              discount="0.50$"
-            />
-            <Card
-              image="/images/book6.jpg"
-              title="Fellow Clara French Press"
-              price="11.00$"
-              discount="0.50$"
-            />
-            <Card
-              image="/images/book3.jpg"
-              title="Fellow Clara French Press"
-              price="12.00$"
-              discount="0.50$"
-            />
-            <Card
-              image="/images/book1.jpg"
-              title="Fellow Clara French Press"
-              price="13.00$"
-              discount="0.50$"
-            />
-            <Card
-              image="/images/book6.jpg"
-              title="Fellow Clara French Press"
-              price="14.00$"
-              discount="0.50$"
-            />
-            <Card
-              image="/images/book4.jpg"
-              title="Fellow Clara French Press"
-              price="11.00$"
-              discount="0.50$"
-            />
-            <Card
-              image="/images/book5.jpg"
-              title="Fellow Clara French Press"
-              price="12.00$"
-              discount="0.50$"
-            />
-            <Card
-              image="/images/book1.jpg"
-              title="Fellow Clara French Press"
-              price="13.00$"
-              discount="0.50$"
-            />
-            <Card
-              image="/images/book6.jpg"
-              title="Fellow Clara French Press"
-              price="14.00$"
-              discount="0.50$"
-            />
-            <Card
-              image="/images/product3.webp"
-              title="Fellow Clara French Press"
-              price="11.00$"
-              discount="0.50$"
-            />
-            <Card
-              image="/images/product5.png"
-              title="Fellow Clara French Press"
-              price="12.00$"
-              discount="0.50$"
-            />
-            <Card
-              image="/images/product4.png"
-              title="Fellow Clara French Press"
-              price="13.00$"
-              discount="0.50$"
-            />
-            <Card
-              image="/images/product2.jpg"
-              title="Fellow Clara French Press"
-              price="14.00$"
-              discount="0.50$"
-            />
-            <Card
-              image="/images/book6.jpg"
-              title="Fellow Clara French Press"
-              price="11.00$"
-              discount="0.50$"
-            />
-            <Card
-              image="/images/book3.jpg"
-              title="Fellow Clara French Press"
-              price="12.00$"
-              discount="0.50$"
-            />
-            <Card
-              image="/images/book1.jpg"
-              title="Fellow Clara French Press"
-              price="13.00$"
-              discount="0.50$"
-            />
-            <Card
-              image="/images/book6.jpg"
-              title="Fellow Clara French Press"
-              price="14.00$"
-              discount="0.50$"
-            />
-            <Card
-              image="/images/book4.jpg"
-              title="Fellow Clara French Press"
-              price="11.00$"
-              discount="0.50$"
-            />
-            <Card
-              image="/images/book5.jpg"
-              title="Fellow Clara French Press"
-              price="12.00$"
-              discount="0.50$"
-            />
-            <Card
-              image="/images/product3.webp"
-              title="Fellow Clara French Press"
-              price="11.00$"
-            />
-            <Card
-              image="/images/product5.png"
-              title="Fellow Clara French Press"
-              price="12.00$"
-              discount="0.50$"
-            />
-            <Card
-              image="/images/product4.png"
-              title="Fellow Clara French Press"
-              price="13.00$"
-            />
-            <Card
-              image="/images/book5.jpg"
-              title="Fellow Clara French Press"
-              price="12.00$"
-              discount="0.50$"
-            />
+            {/* Ent */}
+            {/* Start */}
+            <AlertDialog>
+              <AlertDialogTrigger className="w-full text-start">
+                <Card
+                  image="/images/product3.webp"
+                  title="Fellow Clara French Press"
+                  id="10"
+                  price="11.00$"
+                  discount="0.50$"
+                />
+              </AlertDialogTrigger>
+
+              {/* Payment Arlert */}
+              <AlertDialogContent className="w-auto p-4 gap-0">
+                <div>
+                  <AlertDialogCancel className=" mt-0 p-3 h-3 text-black hover:text-white w-1 border ">
+                    <XIcon style={{ width: 15, height: 15 }}></XIcon>
+                  </AlertDialogCancel>
+                </div>
+                <AlertDialogDescription className="min-w-52 ">
+                  <div className="rounded-lg ">
+                    <div className="flex items-center justify-center">
+                      <Image
+                        className="rounded-lg aspect-[1/1] object-cover"
+                        src="/images/product3.webp"
+                        alt="Noteworthy technology acquisitions 2021"
+                        width={300} // Static width for large screens
+                        height={300} // Static height for large screens
+                        style={{ objectFit: "cover" }} // Ensures the image fills its container while keeping its aspect
+                      />
+                    </div>
+                    <div>
+                      <div className="px-1 py-3  text-sm grid grid-cols-5 ">
+                        <a href="#" className="col-span-3">
+                          <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
+                            Fellow Clara French Press
+                          </h5>
+                          <p>
+                            ID: <span>10</span>
+                          </p>
+                        </a>
+                        <div className="col-span-2 text-right text-primary">
+                          <p className="flex flex-col">
+                            <p>11.00$</p>
+                            <p className="line-through decoration-red-600 text-red-600">
+                              12.50$
+                            </p>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
+                      <a href="https://facebook.com" aria-label="Facebook link">
+                        <Image
+                          src="/images/facebook.png"
+                          width={25}
+                          height={25}
+                          alt="Facebook"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://telegram.org" aria-label="Telegram link">
+                        <Image
+                          src="/images/telegram.png"
+                          width={25}
+                          height={25}
+                          alt="Telegram"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://tiktok.com" aria-label="TikTok link">
+                        <Image
+                          src="/images/tiktok.png"
+                          width={25}
+                          height={25}
+                          alt="TikTok"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a
+                        href="https://google.com/maps"
+                        className="flex justify-center items-center"
+                        aria-label="Map link"
+                      >
+                        <Image
+                          src="/images/map.png"
+                          width={25}
+                          height={25}
+                          alt="Map"
+                          className="rounded-full bg-gray-300"
+                        />
+                      </a>
+                      <a
+                        href="tel:+012345987"
+                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
+                      >
+                        <Image
+                          src="/images/call.png"
+                          width={25}
+                          height={25}
+                          alt="Call"
+                          className="rounded-full mr-3"
+                        />
+                        <p className="text-green-800 text-md">012345987</p>
+                      </a>
+                    </div>
+                  </div>
+                  <AlertDialogFooter className="mt-10"></AlertDialogFooter>
+                </AlertDialogDescription>
+              </AlertDialogContent>
+            </AlertDialog>
+            {/* Ent */}
+            {/* Start */}
+            <AlertDialog>
+              <AlertDialogTrigger className="w-full text-start">
+                <Card
+                  image="/images/product3.webp"
+                  title="Fellow Clara French Press"
+                  id="10"
+                  price="11.00$"
+                  discount="0.50$"
+                />
+              </AlertDialogTrigger>
+
+              {/* Payment Arlert */}
+              <AlertDialogContent className="w-auto p-4 gap-0">
+                <div>
+                  <AlertDialogCancel className=" mt-0 p-3 h-3 text-black hover:text-white w-1 border ">
+                    <XIcon style={{ width: 15, height: 15 }}></XIcon>
+                  </AlertDialogCancel>
+                </div>
+                <AlertDialogDescription className="min-w-52 ">
+                  <div className="rounded-lg ">
+                    <div className="flex items-center justify-center">
+                      <Image
+                        className="rounded-lg aspect-[1/1] object-cover"
+                        src="/images/product3.webp"
+                        alt="Noteworthy technology acquisitions 2021"
+                        width={300} // Static width for large screens
+                        height={300} // Static height for large screens
+                        style={{ objectFit: "cover" }} // Ensures the image fills its container while keeping its aspect
+                      />
+                    </div>
+                    <div>
+                      <div className="px-1 py-3  text-sm grid grid-cols-5 ">
+                        <a href="#" className="col-span-3">
+                          <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
+                            Fellow Clara French Press
+                          </h5>
+                          <p>
+                            ID: <span>10</span>
+                          </p>
+                        </a>
+                        <div className="col-span-2 text-right text-primary">
+                          <p className="flex flex-col">
+                            <p>11.00$</p>
+                            <p className="line-through decoration-red-600 text-red-600">
+                              12.50$
+                            </p>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
+                      <a href="https://facebook.com" aria-label="Facebook link">
+                        <Image
+                          src="/images/facebook.png"
+                          width={25}
+                          height={25}
+                          alt="Facebook"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://telegram.org" aria-label="Telegram link">
+                        <Image
+                          src="/images/telegram.png"
+                          width={25}
+                          height={25}
+                          alt="Telegram"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://tiktok.com" aria-label="TikTok link">
+                        <Image
+                          src="/images/tiktok.png"
+                          width={25}
+                          height={25}
+                          alt="TikTok"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a
+                        href="https://google.com/maps"
+                        className="flex justify-center items-center"
+                        aria-label="Map link"
+                      >
+                        <Image
+                          src="/images/map.png"
+                          width={25}
+                          height={25}
+                          alt="Map"
+                          className="rounded-full bg-gray-300"
+                        />
+                      </a>
+                      <a
+                        href="tel:+012345987"
+                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
+                      >
+                        <Image
+                          src="/images/call.png"
+                          width={25}
+                          height={25}
+                          alt="Call"
+                          className="rounded-full mr-3"
+                        />
+                        <p className="text-green-800 text-md">012345987</p>
+                      </a>
+                    </div>
+                  </div>
+                  <AlertDialogFooter className="mt-10"></AlertDialogFooter>
+                </AlertDialogDescription>
+              </AlertDialogContent>
+            </AlertDialog>
+            {/* Ent */}
+            {/* Start */}
+            <AlertDialog>
+              <AlertDialogTrigger className="w-full text-start">
+                <Card
+                  image="/images/product3.webp"
+                  title="Fellow Clara French Press"
+                  id="10"
+                  price="11.00$"
+                  discount="0.50$"
+                />
+              </AlertDialogTrigger>
+
+              {/* Payment Arlert */}
+              <AlertDialogContent className="w-auto p-4 gap-0">
+                <div>
+                  <AlertDialogCancel className=" mt-0 p-3 h-3 text-black hover:text-white w-1 border ">
+                    <XIcon style={{ width: 15, height: 15 }}></XIcon>
+                  </AlertDialogCancel>
+                </div>
+                <AlertDialogDescription className="min-w-52 ">
+                  <div className="rounded-lg ">
+                    <div className="flex items-center justify-center">
+                      <Image
+                        className="rounded-lg aspect-[1/1] object-cover"
+                        src="/images/product3.webp"
+                        alt="Noteworthy technology acquisitions 2021"
+                        width={300} // Static width for large screens
+                        height={300} // Static height for large screens
+                        style={{ objectFit: "cover" }} // Ensures the image fills its container while keeping its aspect
+                      />
+                    </div>
+                    <div>
+                      <div className="px-1 py-3  text-sm grid grid-cols-5 ">
+                        <a href="#" className="col-span-3">
+                          <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
+                            Fellow Clara French Press
+                          </h5>
+                          <p>
+                            ID: <span>10</span>
+                          </p>
+                        </a>
+                        <div className="col-span-2 text-right text-primary">
+                          <p className="flex flex-col">
+                            <p>11.00$</p>
+                            <p className="line-through decoration-red-600 text-red-600">
+                              12.50$
+                            </p>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
+                      <a href="https://facebook.com" aria-label="Facebook link">
+                        <Image
+                          src="/images/facebook.png"
+                          width={25}
+                          height={25}
+                          alt="Facebook"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://telegram.org" aria-label="Telegram link">
+                        <Image
+                          src="/images/telegram.png"
+                          width={25}
+                          height={25}
+                          alt="Telegram"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://tiktok.com" aria-label="TikTok link">
+                        <Image
+                          src="/images/tiktok.png"
+                          width={25}
+                          height={25}
+                          alt="TikTok"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a
+                        href="https://google.com/maps"
+                        className="flex justify-center items-center"
+                        aria-label="Map link"
+                      >
+                        <Image
+                          src="/images/map.png"
+                          width={25}
+                          height={25}
+                          alt="Map"
+                          className="rounded-full bg-gray-300"
+                        />
+                      </a>
+                      <a
+                        href="tel:+012345987"
+                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
+                      >
+                        <Image
+                          src="/images/call.png"
+                          width={25}
+                          height={25}
+                          alt="Call"
+                          className="rounded-full mr-3"
+                        />
+                        <p className="text-green-800 text-md">012345987</p>
+                      </a>
+                    </div>
+                  </div>
+                  <AlertDialogFooter className="mt-10"></AlertDialogFooter>
+                </AlertDialogDescription>
+              </AlertDialogContent>
+            </AlertDialog>
+            {/* Ent */}
+            {/* Start */}
+            <AlertDialog>
+              <AlertDialogTrigger className="w-full text-start">
+                <Card
+                  image="/images/product3.webp"
+                  title="Fellow Clara French Press"
+                  id="10"
+                  price="11.00$"
+                  discount="0.50$"
+                />
+              </AlertDialogTrigger>
+
+              {/* Payment Arlert */}
+              <AlertDialogContent className="w-auto p-4 gap-0">
+                <div>
+                  <AlertDialogCancel className=" mt-0 p-3 h-3 text-black hover:text-white w-1 border ">
+                    <XIcon style={{ width: 15, height: 15 }}></XIcon>
+                  </AlertDialogCancel>
+                </div>
+                <AlertDialogDescription className="min-w-52 ">
+                  <div className="rounded-lg ">
+                    <div className="flex items-center justify-center">
+                      <Image
+                        className="rounded-lg aspect-[1/1] object-cover"
+                        src="/images/product3.webp"
+                        alt="Noteworthy technology acquisitions 2021"
+                        width={300} // Static width for large screens
+                        height={300} // Static height for large screens
+                        style={{ objectFit: "cover" }} // Ensures the image fills its container while keeping its aspect
+                      />
+                    </div>
+                    <div>
+                      <div className="px-1 py-3  text-sm grid grid-cols-5 ">
+                        <a href="#" className="col-span-3">
+                          <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
+                            Fellow Clara French Press
+                          </h5>
+                          <p>
+                            ID: <span>10</span>
+                          </p>
+                        </a>
+                        <div className="col-span-2 text-right text-primary">
+                          <p className="flex flex-col">
+                            <p>11.00$</p>
+                            <p className="line-through decoration-red-600 text-red-600">
+                              12.50$
+                            </p>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
+                      <a href="https://facebook.com" aria-label="Facebook link">
+                        <Image
+                          src="/images/facebook.png"
+                          width={25}
+                          height={25}
+                          alt="Facebook"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://telegram.org" aria-label="Telegram link">
+                        <Image
+                          src="/images/telegram.png"
+                          width={25}
+                          height={25}
+                          alt="Telegram"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://tiktok.com" aria-label="TikTok link">
+                        <Image
+                          src="/images/tiktok.png"
+                          width={25}
+                          height={25}
+                          alt="TikTok"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a
+                        href="https://google.com/maps"
+                        className="flex justify-center items-center"
+                        aria-label="Map link"
+                      >
+                        <Image
+                          src="/images/map.png"
+                          width={25}
+                          height={25}
+                          alt="Map"
+                          className="rounded-full bg-gray-300"
+                        />
+                      </a>
+                      <a
+                        href="tel:+012345987"
+                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
+                      >
+                        <Image
+                          src="/images/call.png"
+                          width={25}
+                          height={25}
+                          alt="Call"
+                          className="rounded-full mr-3"
+                        />
+                        <p className="text-green-800 text-md">012345987</p>
+                      </a>
+                    </div>
+                  </div>
+                  <AlertDialogFooter className="mt-10"></AlertDialogFooter>
+                </AlertDialogDescription>
+              </AlertDialogContent>
+            </AlertDialog>
+            {/* Ent */}
+            {/* Start */}
+            <AlertDialog>
+              <AlertDialogTrigger className="w-full text-start">
+                <Card
+                  image="/images/product3.webp"
+                  title="Fellow Clara French Press"
+                  id="10"
+                  price="11.00$"
+                  discount="0.50$"
+                />
+              </AlertDialogTrigger>
+
+              {/* Payment Arlert */}
+              <AlertDialogContent className="w-auto p-4 gap-0">
+                <div>
+                  <AlertDialogCancel className=" mt-0 p-3 h-3 text-black hover:text-white w-1 border ">
+                    <XIcon style={{ width: 15, height: 15 }}></XIcon>
+                  </AlertDialogCancel>
+                </div>
+                <AlertDialogDescription className="min-w-52 ">
+                  <div className="rounded-lg ">
+                    <div className="flex items-center justify-center">
+                      <Image
+                        className="rounded-lg aspect-[1/1] object-cover"
+                        src="/images/product3.webp"
+                        alt="Noteworthy technology acquisitions 2021"
+                        width={300} // Static width for large screens
+                        height={300} // Static height for large screens
+                        style={{ objectFit: "cover" }} // Ensures the image fills its container while keeping its aspect
+                      />
+                    </div>
+                    <div>
+                      <div className="px-1 py-3  text-sm grid grid-cols-5 ">
+                        <a href="#" className="col-span-3">
+                          <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
+                            Fellow Clara French Press
+                          </h5>
+                          <p>
+                            ID: <span>10</span>
+                          </p>
+                        </a>
+                        <div className="col-span-2 text-right text-primary">
+                          <p className="flex flex-col">
+                            <p>11.00$</p>
+                            <p className="line-through decoration-red-600 text-red-600">
+                              12.50$
+                            </p>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
+                      <a href="https://facebook.com" aria-label="Facebook link">
+                        <Image
+                          src="/images/facebook.png"
+                          width={25}
+                          height={25}
+                          alt="Facebook"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://telegram.org" aria-label="Telegram link">
+                        <Image
+                          src="/images/telegram.png"
+                          width={25}
+                          height={25}
+                          alt="Telegram"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://tiktok.com" aria-label="TikTok link">
+                        <Image
+                          src="/images/tiktok.png"
+                          width={25}
+                          height={25}
+                          alt="TikTok"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a
+                        href="https://google.com/maps"
+                        className="flex justify-center items-center"
+                        aria-label="Map link"
+                      >
+                        <Image
+                          src="/images/map.png"
+                          width={25}
+                          height={25}
+                          alt="Map"
+                          className="rounded-full bg-gray-300"
+                        />
+                      </a>
+                      <a
+                        href="tel:+012345987"
+                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
+                      >
+                        <Image
+                          src="/images/call.png"
+                          width={25}
+                          height={25}
+                          alt="Call"
+                          className="rounded-full mr-3"
+                        />
+                        <p className="text-green-800 text-md">012345987</p>
+                      </a>
+                    </div>
+                  </div>
+                  <AlertDialogFooter className="mt-10"></AlertDialogFooter>
+                </AlertDialogDescription>
+              </AlertDialogContent>
+            </AlertDialog>
+            {/* Ent */}
+            {/* Start */}
+            <AlertDialog>
+              <AlertDialogTrigger className="w-full text-start">
+                <Card
+                  image="/images/product3.webp"
+                  title="Fellow Clara French Press"
+                  id="10"
+                  price="11.00$"
+                  discount="0.50$"
+                />
+              </AlertDialogTrigger>
+
+              {/* Payment Arlert */}
+              <AlertDialogContent className="w-auto p-4 gap-0">
+                <div>
+                  <AlertDialogCancel className=" mt-0 p-3 h-3 text-black hover:text-white w-1 border ">
+                    <XIcon style={{ width: 15, height: 15 }}></XIcon>
+                  </AlertDialogCancel>
+                </div>
+                <AlertDialogDescription className="min-w-52 ">
+                  <div className="rounded-lg ">
+                    <div className="flex items-center justify-center">
+                      <Image
+                        className="rounded-lg aspect-[1/1] object-cover"
+                        src="/images/product3.webp"
+                        alt="Noteworthy technology acquisitions 2021"
+                        width={300} // Static width for large screens
+                        height={300} // Static height for large screens
+                        style={{ objectFit: "cover" }} // Ensures the image fills its container while keeping its aspect
+                      />
+                    </div>
+                    <div>
+                      <div className="px-1 py-3  text-sm grid grid-cols-5 ">
+                        <a href="#" className="col-span-3">
+                          <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
+                            Fellow Clara French Press
+                          </h5>
+                          <p>
+                            ID: <span>10</span>
+                          </p>
+                        </a>
+                        <div className="col-span-2 text-right text-primary">
+                          <p className="flex flex-col">
+                            <p>11.00$</p>
+                            <p className="line-through decoration-red-600 text-red-600">
+                              12.50$
+                            </p>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
+                      <a href="https://facebook.com" aria-label="Facebook link">
+                        <Image
+                          src="/images/facebook.png"
+                          width={25}
+                          height={25}
+                          alt="Facebook"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://telegram.org" aria-label="Telegram link">
+                        <Image
+                          src="/images/telegram.png"
+                          width={25}
+                          height={25}
+                          alt="Telegram"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://tiktok.com" aria-label="TikTok link">
+                        <Image
+                          src="/images/tiktok.png"
+                          width={25}
+                          height={25}
+                          alt="TikTok"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a
+                        href="https://google.com/maps"
+                        className="flex justify-center items-center"
+                        aria-label="Map link"
+                      >
+                        <Image
+                          src="/images/map.png"
+                          width={25}
+                          height={25}
+                          alt="Map"
+                          className="rounded-full bg-gray-300"
+                        />
+                      </a>
+                      <a
+                        href="tel:+012345987"
+                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
+                      >
+                        <Image
+                          src="/images/call.png"
+                          width={25}
+                          height={25}
+                          alt="Call"
+                          className="rounded-full mr-3"
+                        />
+                        <p className="text-green-800 text-md">012345987</p>
+                      </a>
+                    </div>
+                  </div>
+                  <AlertDialogFooter className="mt-10"></AlertDialogFooter>
+                </AlertDialogDescription>
+              </AlertDialogContent>
+            </AlertDialog>
+            {/* Ent */}
+            {/* Start */}
+            <AlertDialog>
+              <AlertDialogTrigger className="w-full text-start">
+                <Card
+                  image="/images/product3.webp"
+                  title="Fellow Clara French Press"
+                  id="10"
+                  price="11.00$"
+                  discount="0.50$"
+                />
+              </AlertDialogTrigger>
+
+              {/* Payment Arlert */}
+              <AlertDialogContent className="w-auto p-4 gap-0">
+                <div>
+                  <AlertDialogCancel className=" mt-0 p-3 h-3 text-black hover:text-white w-1 border ">
+                    <XIcon style={{ width: 15, height: 15 }}></XIcon>
+                  </AlertDialogCancel>
+                </div>
+                <AlertDialogDescription className="min-w-52 ">
+                  <div className="rounded-lg ">
+                    <div className="flex items-center justify-center">
+                      <Image
+                        className="rounded-lg aspect-[1/1] object-cover"
+                        src="/images/product3.webp"
+                        alt="Noteworthy technology acquisitions 2021"
+                        width={300} // Static width for large screens
+                        height={300} // Static height for large screens
+                        style={{ objectFit: "cover" }} // Ensures the image fills its container while keeping its aspect
+                      />
+                    </div>
+                    <div>
+                      <div className="px-1 py-3  text-sm grid grid-cols-5 ">
+                        <a href="#" className="col-span-3">
+                          <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
+                            Fellow Clara French Press
+                          </h5>
+                          <p>
+                            ID: <span>10</span>
+                          </p>
+                        </a>
+                        <div className="col-span-2 text-right text-primary">
+                          <p className="flex flex-col">
+                            <p>11.00$</p>
+                            <p className="line-through decoration-red-600 text-red-600">
+                              12.50$
+                            </p>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
+                      <a href="https://facebook.com" aria-label="Facebook link">
+                        <Image
+                          src="/images/facebook.png"
+                          width={25}
+                          height={25}
+                          alt="Facebook"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://telegram.org" aria-label="Telegram link">
+                        <Image
+                          src="/images/telegram.png"
+                          width={25}
+                          height={25}
+                          alt="Telegram"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://tiktok.com" aria-label="TikTok link">
+                        <Image
+                          src="/images/tiktok.png"
+                          width={25}
+                          height={25}
+                          alt="TikTok"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a
+                        href="https://google.com/maps"
+                        className="flex justify-center items-center"
+                        aria-label="Map link"
+                      >
+                        <Image
+                          src="/images/map.png"
+                          width={25}
+                          height={25}
+                          alt="Map"
+                          className="rounded-full bg-gray-300"
+                        />
+                      </a>
+                      <a
+                        href="tel:+012345987"
+                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
+                      >
+                        <Image
+                          src="/images/call.png"
+                          width={25}
+                          height={25}
+                          alt="Call"
+                          className="rounded-full mr-3"
+                        />
+                        <p className="text-green-800 text-md">012345987</p>
+                      </a>
+                    </div>
+                  </div>
+                  <AlertDialogFooter className="mt-10"></AlertDialogFooter>
+                </AlertDialogDescription>
+              </AlertDialogContent>
+            </AlertDialog>
+            {/* Ent */}
+            {/* Start */}
+            <AlertDialog>
+              <AlertDialogTrigger className="w-full text-start">
+                <Card
+                  image="/images/product3.webp"
+                  title="Fellow Clara French Press"
+                  id="10"
+                  price="11.00$"
+                  discount="0.50$"
+                />
+              </AlertDialogTrigger>
+
+              {/* Payment Arlert */}
+              <AlertDialogContent className="w-auto p-4 gap-0">
+                <div>
+                  <AlertDialogCancel className=" mt-0 p-3 h-3 text-black hover:text-white w-1 border ">
+                    <XIcon style={{ width: 15, height: 15 }}></XIcon>
+                  </AlertDialogCancel>
+                </div>
+                <AlertDialogDescription className="min-w-52 ">
+                  <div className="rounded-lg ">
+                    <div className="flex items-center justify-center">
+                      <Image
+                        className="rounded-lg aspect-[1/1] object-cover"
+                        src="/images/product3.webp"
+                        alt="Noteworthy technology acquisitions 2021"
+                        width={300} // Static width for large screens
+                        height={300} // Static height for large screens
+                        style={{ objectFit: "cover" }} // Ensures the image fills its container while keeping its aspect
+                      />
+                    </div>
+                    <div>
+                      <div className="px-1 py-3  text-sm grid grid-cols-5 ">
+                        <a href="#" className="col-span-3">
+                          <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
+                            Fellow Clara French Press
+                          </h5>
+                          <p>
+                            ID: <span>10</span>
+                          </p>
+                        </a>
+                        <div className="col-span-2 text-right text-primary">
+                          <p className="flex flex-col">
+                            <p>11.00$</p>
+                            <p className="line-through decoration-red-600 text-red-600">
+                              12.50$
+                            </p>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
+                      <a href="https://facebook.com" aria-label="Facebook link">
+                        <Image
+                          src="/images/facebook.png"
+                          width={25}
+                          height={25}
+                          alt="Facebook"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://telegram.org" aria-label="Telegram link">
+                        <Image
+                          src="/images/telegram.png"
+                          width={25}
+                          height={25}
+                          alt="Telegram"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://tiktok.com" aria-label="TikTok link">
+                        <Image
+                          src="/images/tiktok.png"
+                          width={25}
+                          height={25}
+                          alt="TikTok"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a
+                        href="https://google.com/maps"
+                        className="flex justify-center items-center"
+                        aria-label="Map link"
+                      >
+                        <Image
+                          src="/images/map.png"
+                          width={25}
+                          height={25}
+                          alt="Map"
+                          className="rounded-full bg-gray-300"
+                        />
+                      </a>
+                      <a
+                        href="tel:+012345987"
+                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
+                      >
+                        <Image
+                          src="/images/call.png"
+                          width={25}
+                          height={25}
+                          alt="Call"
+                          className="rounded-full mr-3"
+                        />
+                        <p className="text-green-800 text-md">012345987</p>
+                      </a>
+                    </div>
+                  </div>
+                  <AlertDialogFooter className="mt-10"></AlertDialogFooter>
+                </AlertDialogDescription>
+              </AlertDialogContent>
+            </AlertDialog>
+            {/* Ent */}
+            {/* Start */}
+            <AlertDialog>
+              <AlertDialogTrigger className="w-full text-start">
+                <Card
+                  image="/images/product3.webp"
+                  title="Fellow Clara French Press"
+                  id="10"
+                  price="11.00$"
+                  discount="0.50$"
+                />
+              </AlertDialogTrigger>
+
+              {/* Payment Arlert */}
+              <AlertDialogContent className="w-auto p-4 gap-0">
+                <div>
+                  <AlertDialogCancel className=" mt-0 p-3 h-3 text-black hover:text-white w-1 border ">
+                    <XIcon style={{ width: 15, height: 15 }}></XIcon>
+                  </AlertDialogCancel>
+                </div>
+                <AlertDialogDescription className="min-w-52 ">
+                  <div className="rounded-lg ">
+                    <div className="flex items-center justify-center">
+                      <Image
+                        className="rounded-lg aspect-[1/1] object-cover"
+                        src="/images/product3.webp"
+                        alt="Noteworthy technology acquisitions 2021"
+                        width={300} // Static width for large screens
+                        height={300} // Static height for large screens
+                        style={{ objectFit: "cover" }} // Ensures the image fills its container while keeping its aspect
+                      />
+                    </div>
+                    <div>
+                      <div className="px-1 py-3  text-sm grid grid-cols-5 ">
+                        <a href="#" className="col-span-3">
+                          <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
+                            Fellow Clara French Press
+                          </h5>
+                          <p>
+                            ID: <span>10</span>
+                          </p>
+                        </a>
+                        <div className="col-span-2 text-right text-primary">
+                          <p className="flex flex-col">
+                            <p>11.00$</p>
+                            <p className="line-through decoration-red-600 text-red-600">
+                              12.50$
+                            </p>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
+                      <a href="https://facebook.com" aria-label="Facebook link">
+                        <Image
+                          src="/images/facebook.png"
+                          width={25}
+                          height={25}
+                          alt="Facebook"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://telegram.org" aria-label="Telegram link">
+                        <Image
+                          src="/images/telegram.png"
+                          width={25}
+                          height={25}
+                          alt="Telegram"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://tiktok.com" aria-label="TikTok link">
+                        <Image
+                          src="/images/tiktok.png"
+                          width={25}
+                          height={25}
+                          alt="TikTok"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a
+                        href="https://google.com/maps"
+                        className="flex justify-center items-center"
+                        aria-label="Map link"
+                      >
+                        <Image
+                          src="/images/map.png"
+                          width={25}
+                          height={25}
+                          alt="Map"
+                          className="rounded-full bg-gray-300"
+                        />
+                      </a>
+                      <a
+                        href="tel:+012345987"
+                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
+                      >
+                        <Image
+                          src="/images/call.png"
+                          width={25}
+                          height={25}
+                          alt="Call"
+                          className="rounded-full mr-3"
+                        />
+                        <p className="text-green-800 text-md">012345987</p>
+                      </a>
+                    </div>
+                  </div>
+                  <AlertDialogFooter className="mt-10"></AlertDialogFooter>
+                </AlertDialogDescription>
+              </AlertDialogContent>
+            </AlertDialog>
+            {/* Ent */}
+            {/* Start */}
+            <AlertDialog>
+              <AlertDialogTrigger className="w-full text-start">
+                <Card
+                  image="/images/product3.webp"
+                  title="Fellow Clara French Press"
+                  id="10"
+                  price="11.00$"
+                  discount="0.50$"
+                />
+              </AlertDialogTrigger>
+
+              {/* Payment Arlert */}
+              <AlertDialogContent className="w-auto p-4 gap-0">
+                <div>
+                  <AlertDialogCancel className=" mt-0 p-3 h-3 text-black hover:text-white w-1 border ">
+                    <XIcon style={{ width: 15, height: 15 }}></XIcon>
+                  </AlertDialogCancel>
+                </div>
+                <AlertDialogDescription className="min-w-52 ">
+                  <div className="rounded-lg ">
+                    <div className="flex items-center justify-center">
+                      <Image
+                        className="rounded-lg aspect-[1/1] object-cover"
+                        src="/images/product3.webp"
+                        alt="Noteworthy technology acquisitions 2021"
+                        width={300} // Static width for large screens
+                        height={300} // Static height for large screens
+                        style={{ objectFit: "cover" }} // Ensures the image fills its container while keeping its aspect
+                      />
+                    </div>
+                    <div>
+                      <div className="px-1 py-3  text-sm grid grid-cols-5 ">
+                        <a href="#" className="col-span-3">
+                          <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
+                            Fellow Clara French Press
+                          </h5>
+                          <p>
+                            ID: <span>10</span>
+                          </p>
+                        </a>
+                        <div className="col-span-2 text-right text-primary">
+                          <p className="flex flex-col">
+                            <p>11.00$</p>
+                            <p className="line-through decoration-red-600 text-red-600">
+                              12.50$
+                            </p>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
+                      <a href="https://facebook.com" aria-label="Facebook link">
+                        <Image
+                          src="/images/facebook.png"
+                          width={25}
+                          height={25}
+                          alt="Facebook"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://telegram.org" aria-label="Telegram link">
+                        <Image
+                          src="/images/telegram.png"
+                          width={25}
+                          height={25}
+                          alt="Telegram"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://tiktok.com" aria-label="TikTok link">
+                        <Image
+                          src="/images/tiktok.png"
+                          width={25}
+                          height={25}
+                          alt="TikTok"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a
+                        href="https://google.com/maps"
+                        className="flex justify-center items-center"
+                        aria-label="Map link"
+                      >
+                        <Image
+                          src="/images/map.png"
+                          width={25}
+                          height={25}
+                          alt="Map"
+                          className="rounded-full bg-gray-300"
+                        />
+                      </a>
+                      <a
+                        href="tel:+012345987"
+                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
+                      >
+                        <Image
+                          src="/images/call.png"
+                          width={25}
+                          height={25}
+                          alt="Call"
+                          className="rounded-full mr-3"
+                        />
+                        <p className="text-green-800 text-md">012345987</p>
+                      </a>
+                    </div>
+                  </div>
+                  <AlertDialogFooter className="mt-10"></AlertDialogFooter>
+                </AlertDialogDescription>
+              </AlertDialogContent>
+            </AlertDialog>
+            {/* Ent */}
+            {/* Start */}
+            <AlertDialog>
+              <AlertDialogTrigger className="w-full text-start">
+                <Card
+                  image="/images/product3.webp"
+                  title="Fellow Clara French Press"
+                  id="10"
+                  price="11.00$"
+                  discount="0.50$"
+                />
+              </AlertDialogTrigger>
+
+              {/* Payment Arlert */}
+              <AlertDialogContent className="w-auto p-4 gap-0">
+                <div>
+                  <AlertDialogCancel className=" mt-0 p-3 h-3 text-black hover:text-white w-1 border ">
+                    <XIcon style={{ width: 15, height: 15 }}></XIcon>
+                  </AlertDialogCancel>
+                </div>
+                <AlertDialogDescription className="min-w-52 ">
+                  <div className="rounded-lg ">
+                    <div className="flex items-center justify-center">
+                      <Image
+                        className="rounded-lg aspect-[1/1] object-cover"
+                        src="/images/product3.webp"
+                        alt="Noteworthy technology acquisitions 2021"
+                        width={300} // Static width for large screens
+                        height={300} // Static height for large screens
+                        style={{ objectFit: "cover" }} // Ensures the image fills its container while keeping its aspect
+                      />
+                    </div>
+                    <div>
+                      <div className="px-1 py-3  text-sm grid grid-cols-5 ">
+                        <a href="#" className="col-span-3">
+                          <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
+                            Fellow Clara French Press
+                          </h5>
+                          <p>
+                            ID: <span>10</span>
+                          </p>
+                        </a>
+                        <div className="col-span-2 text-right text-primary">
+                          <p className="flex flex-col">
+                            <p>11.00$</p>
+                            <p className="line-through decoration-red-600 text-red-600">
+                              12.50$
+                            </p>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
+                      <a href="https://facebook.com" aria-label="Facebook link">
+                        <Image
+                          src="/images/facebook.png"
+                          width={25}
+                          height={25}
+                          alt="Facebook"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://telegram.org" aria-label="Telegram link">
+                        <Image
+                          src="/images/telegram.png"
+                          width={25}
+                          height={25}
+                          alt="Telegram"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://tiktok.com" aria-label="TikTok link">
+                        <Image
+                          src="/images/tiktok.png"
+                          width={25}
+                          height={25}
+                          alt="TikTok"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a
+                        href="https://google.com/maps"
+                        className="flex justify-center items-center"
+                        aria-label="Map link"
+                      >
+                        <Image
+                          src="/images/map.png"
+                          width={25}
+                          height={25}
+                          alt="Map"
+                          className="rounded-full bg-gray-300"
+                        />
+                      </a>
+                      <a
+                        href="tel:+012345987"
+                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
+                      >
+                        <Image
+                          src="/images/call.png"
+                          width={25}
+                          height={25}
+                          alt="Call"
+                          className="rounded-full mr-3"
+                        />
+                        <p className="text-green-800 text-md">012345987</p>
+                      </a>
+                    </div>
+                  </div>
+                  <AlertDialogFooter className="mt-10"></AlertDialogFooter>
+                </AlertDialogDescription>
+              </AlertDialogContent>
+            </AlertDialog>
+            {/* Ent */}
+            {/* Start */}
+            <AlertDialog>
+              <AlertDialogTrigger className="w-full text-start">
+                <Card
+                  image="/images/product3.webp"
+                  title="Fellow Clara French Press"
+                  id="10"
+                  price="11.00$"
+                  discount="0.50$"
+                />
+              </AlertDialogTrigger>
+
+              {/* Payment Arlert */}
+              <AlertDialogContent className="w-auto p-4 gap-0">
+                <div>
+                  <AlertDialogCancel className=" mt-0 p-3 h-3 text-black hover:text-white w-1 border ">
+                    <XIcon style={{ width: 15, height: 15 }}></XIcon>
+                  </AlertDialogCancel>
+                </div>
+                <AlertDialogDescription className="min-w-52 ">
+                  <div className="rounded-lg ">
+                    <div className="flex items-center justify-center">
+                      <Image
+                        className="rounded-lg aspect-[1/1] object-cover"
+                        src="/images/product3.webp"
+                        alt="Noteworthy technology acquisitions 2021"
+                        width={300} // Static width for large screens
+                        height={300} // Static height for large screens
+                        style={{ objectFit: "cover" }} // Ensures the image fills its container while keeping its aspect
+                      />
+                    </div>
+                    <div>
+                      <div className="px-1 py-3  text-sm grid grid-cols-5 ">
+                        <a href="#" className="col-span-3">
+                          <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
+                            Fellow Clara French Press
+                          </h5>
+                          <p>
+                            ID: <span>10</span>
+                          </p>
+                        </a>
+                        <div className="col-span-2 text-right text-primary">
+                          <p className="flex flex-col">
+                            <p>11.00$</p>
+                            <p className="line-through decoration-red-600 text-red-600">
+                              12.50$
+                            </p>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
+                      <a href="https://facebook.com" aria-label="Facebook link">
+                        <Image
+                          src="/images/facebook.png"
+                          width={25}
+                          height={25}
+                          alt="Facebook"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://telegram.org" aria-label="Telegram link">
+                        <Image
+                          src="/images/telegram.png"
+                          width={25}
+                          height={25}
+                          alt="Telegram"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://tiktok.com" aria-label="TikTok link">
+                        <Image
+                          src="/images/tiktok.png"
+                          width={25}
+                          height={25}
+                          alt="TikTok"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a
+                        href="https://google.com/maps"
+                        className="flex justify-center items-center"
+                        aria-label="Map link"
+                      >
+                        <Image
+                          src="/images/map.png"
+                          width={25}
+                          height={25}
+                          alt="Map"
+                          className="rounded-full bg-gray-300"
+                        />
+                      </a>
+                      <a
+                        href="tel:+012345987"
+                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
+                      >
+                        <Image
+                          src="/images/call.png"
+                          width={25}
+                          height={25}
+                          alt="Call"
+                          className="rounded-full mr-3"
+                        />
+                        <p className="text-green-800 text-md">012345987</p>
+                      </a>
+                    </div>
+                  </div>
+                  <AlertDialogFooter className="mt-10"></AlertDialogFooter>
+                </AlertDialogDescription>
+              </AlertDialogContent>
+            </AlertDialog>
+            {/* Ent */}
+            {/* Start */}
+            <AlertDialog>
+              <AlertDialogTrigger className="w-full text-start">
+                <Card
+                  image="/images/product3.webp"
+                  title="Fellow Clara French Press"
+                  id="10"
+                  price="11.00$"
+                  discount="0.50$"
+                />
+              </AlertDialogTrigger>
+
+              {/* Payment Arlert */}
+              <AlertDialogContent className="w-auto p-4 gap-0">
+                <div>
+                  <AlertDialogCancel className=" mt-0 p-3 h-3 text-black hover:text-white w-1 border ">
+                    <XIcon style={{ width: 15, height: 15 }}></XIcon>
+                  </AlertDialogCancel>
+                </div>
+                <AlertDialogDescription className="min-w-52 ">
+                  <div className="rounded-lg ">
+                    <div className="flex items-center justify-center">
+                      <Image
+                        className="rounded-lg aspect-[1/1] object-cover"
+                        src="/images/product3.webp"
+                        alt="Noteworthy technology acquisitions 2021"
+                        width={300} // Static width for large screens
+                        height={300} // Static height for large screens
+                        style={{ objectFit: "cover" }} // Ensures the image fills its container while keeping its aspect
+                      />
+                    </div>
+                    <div>
+                      <div className="px-1 py-3  text-sm grid grid-cols-5 ">
+                        <a href="#" className="col-span-3">
+                          <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
+                            Fellow Clara French Press
+                          </h5>
+                          <p>
+                            ID: <span>10</span>
+                          </p>
+                        </a>
+                        <div className="col-span-2 text-right text-primary">
+                          <p className="flex flex-col">
+                            <p>11.00$</p>
+                            <p className="line-through decoration-red-600 text-red-600">
+                              12.50$
+                            </p>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
+                      <a href="https://facebook.com" aria-label="Facebook link">
+                        <Image
+                          src="/images/facebook.png"
+                          width={25}
+                          height={25}
+                          alt="Facebook"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://telegram.org" aria-label="Telegram link">
+                        <Image
+                          src="/images/telegram.png"
+                          width={25}
+                          height={25}
+                          alt="Telegram"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://tiktok.com" aria-label="TikTok link">
+                        <Image
+                          src="/images/tiktok.png"
+                          width={25}
+                          height={25}
+                          alt="TikTok"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a
+                        href="https://google.com/maps"
+                        className="flex justify-center items-center"
+                        aria-label="Map link"
+                      >
+                        <Image
+                          src="/images/map.png"
+                          width={25}
+                          height={25}
+                          alt="Map"
+                          className="rounded-full bg-gray-300"
+                        />
+                      </a>
+                      <a
+                        href="tel:+012345987"
+                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
+                      >
+                        <Image
+                          src="/images/call.png"
+                          width={25}
+                          height={25}
+                          alt="Call"
+                          className="rounded-full mr-3"
+                        />
+                        <p className="text-green-800 text-md">012345987</p>
+                      </a>
+                    </div>
+                  </div>
+                  <AlertDialogFooter className="mt-10"></AlertDialogFooter>
+                </AlertDialogDescription>
+              </AlertDialogContent>
+            </AlertDialog>
+            {/* Ent */}
+            {/* Start */}
+            <AlertDialog>
+              <AlertDialogTrigger className="w-full text-start">
+                <Card
+                  image="/images/product3.webp"
+                  title="Fellow Clara French Press"
+                  id="10"
+                  price="11.00$"
+                  discount="0.50$"
+                />
+              </AlertDialogTrigger>
+
+              {/* Payment Arlert */}
+              <AlertDialogContent className="w-auto p-4 gap-0">
+                <div>
+                  <AlertDialogCancel className=" mt-0 p-3 h-3 text-black hover:text-white w-1 border ">
+                    <XIcon style={{ width: 15, height: 15 }}></XIcon>
+                  </AlertDialogCancel>
+                </div>
+                <AlertDialogDescription className="min-w-52 ">
+                  <div className="rounded-lg ">
+                    <div className="flex items-center justify-center">
+                      <Image
+                        className="rounded-lg aspect-[1/1] object-cover"
+                        src="/images/product3.webp"
+                        alt="Noteworthy technology acquisitions 2021"
+                        width={300} // Static width for large screens
+                        height={300} // Static height for large screens
+                        style={{ objectFit: "cover" }} // Ensures the image fills its container while keeping its aspect
+                      />
+                    </div>
+                    <div>
+                      <div className="px-1 py-3  text-sm grid grid-cols-5 ">
+                        <a href="#" className="col-span-3">
+                          <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
+                            Fellow Clara French Press
+                          </h5>
+                          <p>
+                            ID: <span>10</span>
+                          </p>
+                        </a>
+                        <div className="col-span-2 text-right text-primary">
+                          <p className="flex flex-col">
+                            <p>11.00$</p>
+                            <p className="line-through decoration-red-600 text-red-600">
+                              12.50$
+                            </p>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
+                      <a href="https://facebook.com" aria-label="Facebook link">
+                        <Image
+                          src="/images/facebook.png"
+                          width={25}
+                          height={25}
+                          alt="Facebook"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://telegram.org" aria-label="Telegram link">
+                        <Image
+                          src="/images/telegram.png"
+                          width={25}
+                          height={25}
+                          alt="Telegram"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://tiktok.com" aria-label="TikTok link">
+                        <Image
+                          src="/images/tiktok.png"
+                          width={25}
+                          height={25}
+                          alt="TikTok"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a
+                        href="https://google.com/maps"
+                        className="flex justify-center items-center"
+                        aria-label="Map link"
+                      >
+                        <Image
+                          src="/images/map.png"
+                          width={25}
+                          height={25}
+                          alt="Map"
+                          className="rounded-full bg-gray-300"
+                        />
+                      </a>
+                      <a
+                        href="tel:+012345987"
+                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
+                      >
+                        <Image
+                          src="/images/call.png"
+                          width={25}
+                          height={25}
+                          alt="Call"
+                          className="rounded-full mr-3"
+                        />
+                        <p className="text-green-800 text-md">012345987</p>
+                      </a>
+                    </div>
+                  </div>
+                  <AlertDialogFooter className="mt-10"></AlertDialogFooter>
+                </AlertDialogDescription>
+              </AlertDialogContent>
+            </AlertDialog>
+            {/* Ent */}
+            {/* Start */}
+            <AlertDialog>
+              <AlertDialogTrigger className="w-full text-start">
+                <Card
+                  image="/images/product3.webp"
+                  title="Fellow Clara French Press"
+                  id="10"
+                  price="11.00$"
+                  discount="0.50$"
+                />
+              </AlertDialogTrigger>
+
+              {/* Payment Arlert */}
+              <AlertDialogContent className="w-auto p-4 gap-0">
+                <div>
+                  <AlertDialogCancel className=" mt-0 p-3 h-3 text-black hover:text-white w-1 border ">
+                    <XIcon style={{ width: 15, height: 15 }}></XIcon>
+                  </AlertDialogCancel>
+                </div>
+                <AlertDialogDescription className="min-w-52 ">
+                  <div className="rounded-lg ">
+                    <div className="flex items-center justify-center">
+                      <Image
+                        className="rounded-lg aspect-[1/1] object-cover"
+                        src="/images/product3.webp"
+                        alt="Noteworthy technology acquisitions 2021"
+                        width={300} // Static width for large screens
+                        height={300} // Static height for large screens
+                        style={{ objectFit: "cover" }} // Ensures the image fills its container while keeping its aspect
+                      />
+                    </div>
+                    <div>
+                      <div className="px-1 py-3  text-sm grid grid-cols-5 ">
+                        <a href="#" className="col-span-3">
+                          <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
+                            Fellow Clara French Press
+                          </h5>
+                          <p>
+                            ID: <span>10</span>
+                          </p>
+                        </a>
+                        <div className="col-span-2 text-right text-primary">
+                          <p className="flex flex-col">
+                            <p>11.00$</p>
+                            <p className="line-through decoration-red-600 text-red-600">
+                              12.50$
+                            </p>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
+                      <a href="https://facebook.com" aria-label="Facebook link">
+                        <Image
+                          src="/images/facebook.png"
+                          width={25}
+                          height={25}
+                          alt="Facebook"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://telegram.org" aria-label="Telegram link">
+                        <Image
+                          src="/images/telegram.png"
+                          width={25}
+                          height={25}
+                          alt="Telegram"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://tiktok.com" aria-label="TikTok link">
+                        <Image
+                          src="/images/tiktok.png"
+                          width={25}
+                          height={25}
+                          alt="TikTok"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a
+                        href="https://google.com/maps"
+                        className="flex justify-center items-center"
+                        aria-label="Map link"
+                      >
+                        <Image
+                          src="/images/map.png"
+                          width={25}
+                          height={25}
+                          alt="Map"
+                          className="rounded-full bg-gray-300"
+                        />
+                      </a>
+                      <a
+                        href="tel:+012345987"
+                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
+                      >
+                        <Image
+                          src="/images/call.png"
+                          width={25}
+                          height={25}
+                          alt="Call"
+                          className="rounded-full mr-3"
+                        />
+                        <p className="text-green-800 text-md">012345987</p>
+                      </a>
+                    </div>
+                  </div>
+                  <AlertDialogFooter className="mt-10"></AlertDialogFooter>
+                </AlertDialogDescription>
+              </AlertDialogContent>
+            </AlertDialog>
+            {/* Ent */}
+            {/* Start */}
+            <AlertDialog>
+              <AlertDialogTrigger className="w-full text-start">
+                <Card
+                  image="/images/product3.webp"
+                  title="Fellow Clara French Press"
+                  id="10"
+                  price="11.00$"
+                  discount="0.50$"
+                />
+              </AlertDialogTrigger>
+
+              {/* Payment Arlert */}
+              <AlertDialogContent className="w-auto p-4 gap-0">
+                <div>
+                  <AlertDialogCancel className=" mt-0 p-3 h-3 text-black hover:text-white w-1 border ">
+                    <XIcon style={{ width: 15, height: 15 }}></XIcon>
+                  </AlertDialogCancel>
+                </div>
+                <AlertDialogDescription className="min-w-52 ">
+                  <div className="rounded-lg ">
+                    <div className="flex items-center justify-center">
+                      <Image
+                        className="rounded-lg aspect-[1/1] object-cover"
+                        src="/images/product3.webp"
+                        alt="Noteworthy technology acquisitions 2021"
+                        width={300} // Static width for large screens
+                        height={300} // Static height for large screens
+                        style={{ objectFit: "cover" }} // Ensures the image fills its container while keeping its aspect
+                      />
+                    </div>
+                    <div>
+                      <div className="px-1 py-3  text-sm grid grid-cols-5 ">
+                        <a href="#" className="col-span-3">
+                          <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
+                            Fellow Clara French Press
+                          </h5>
+                          <p>
+                            ID: <span>10</span>
+                          </p>
+                        </a>
+                        <div className="col-span-2 text-right text-primary">
+                          <p className="flex flex-col">
+                            <p>11.00$</p>
+                            <p className="line-through decoration-red-600 text-red-600">
+                              12.50$
+                            </p>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
+                      <a href="https://facebook.com" aria-label="Facebook link">
+                        <Image
+                          src="/images/facebook.png"
+                          width={25}
+                          height={25}
+                          alt="Facebook"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://telegram.org" aria-label="Telegram link">
+                        <Image
+                          src="/images/telegram.png"
+                          width={25}
+                          height={25}
+                          alt="Telegram"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://tiktok.com" aria-label="TikTok link">
+                        <Image
+                          src="/images/tiktok.png"
+                          width={25}
+                          height={25}
+                          alt="TikTok"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a
+                        href="https://google.com/maps"
+                        className="flex justify-center items-center"
+                        aria-label="Map link"
+                      >
+                        <Image
+                          src="/images/map.png"
+                          width={25}
+                          height={25}
+                          alt="Map"
+                          className="rounded-full bg-gray-300"
+                        />
+                      </a>
+                      <a
+                        href="tel:+012345987"
+                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
+                      >
+                        <Image
+                          src="/images/call.png"
+                          width={25}
+                          height={25}
+                          alt="Call"
+                          className="rounded-full mr-3"
+                        />
+                        <p className="text-green-800 text-md">012345987</p>
+                      </a>
+                    </div>
+                  </div>
+                  <AlertDialogFooter className="mt-10"></AlertDialogFooter>
+                </AlertDialogDescription>
+              </AlertDialogContent>
+            </AlertDialog>
+            {/* Ent */}
+            {/* Start */}
+            <AlertDialog>
+              <AlertDialogTrigger className="w-full text-start">
+                <Card
+                  image="/images/product3.webp"
+                  title="Fellow Clara French Press"
+                  id="10"
+                  price="11.00$"
+                  discount="0.50$"
+                />
+              </AlertDialogTrigger>
+
+              {/* Payment Arlert */}
+              <AlertDialogContent className="w-auto p-4 gap-0">
+                <div>
+                  <AlertDialogCancel className=" mt-0 p-3 h-3 text-black hover:text-white w-1 border ">
+                    <XIcon style={{ width: 15, height: 15 }}></XIcon>
+                  </AlertDialogCancel>
+                </div>
+                <AlertDialogDescription className="min-w-52 ">
+                  <div className="rounded-lg ">
+                    <div className="flex items-center justify-center">
+                      <Image
+                        className="rounded-lg aspect-[1/1] object-cover"
+                        src="/images/product3.webp"
+                        alt="Noteworthy technology acquisitions 2021"
+                        width={300} // Static width for large screens
+                        height={300} // Static height for large screens
+                        style={{ objectFit: "cover" }} // Ensures the image fills its container while keeping its aspect
+                      />
+                    </div>
+                    <div>
+                      <div className="px-1 py-3  text-sm grid grid-cols-5 ">
+                        <a href="#" className="col-span-3">
+                          <h5 className=" line-clamp-2  text-gray-900 dark:text-white">
+                            Fellow Clara French Press
+                          </h5>
+                          <p>
+                            ID: <span>10</span>
+                          </p>
+                        </a>
+                        <div className="col-span-2 text-right text-primary">
+                          <p className="flex flex-col">
+                            <p>11.00$</p>
+                            <p className="line-through decoration-red-600 text-red-600">
+                              12.50$
+                            </p>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt-2 grid grid-cols-4 gap-3 sm:flex sm:space-x-3 md:mx-10 justify-items-center items-center">
+                      <a href="https://facebook.com" aria-label="Facebook link">
+                        <Image
+                          src="/images/facebook.png"
+                          width={25}
+                          height={25}
+                          alt="Facebook"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://telegram.org" aria-label="Telegram link">
+                        <Image
+                          src="/images/telegram.png"
+                          width={25}
+                          height={25}
+                          alt="Telegram"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a href="https://tiktok.com" aria-label="TikTok link">
+                        <Image
+                          src="/images/tiktok.png"
+                          width={25}
+                          height={25}
+                          alt="TikTok"
+                          className="rounded-full"
+                        />
+                      </a>
+                      <a
+                        href="https://google.com/maps"
+                        className="flex justify-center items-center"
+                        aria-label="Map link"
+                      >
+                        <Image
+                          src="/images/map.png"
+                          width={25}
+                          height={25}
+                          alt="Map"
+                          className="rounded-full bg-gray-300"
+                        />
+                      </a>
+                      <a
+                        href="tel:+012345987"
+                        className="flex justify-center items-center col-span-4 sm:col-span-1 md:col-span-1"
+                      >
+                        <Image
+                          src="/images/call.png"
+                          width={25}
+                          height={25}
+                          alt="Call"
+                          className="rounded-full mr-3"
+                        />
+                        <p className="text-green-800 text-md">012345987</p>
+                      </a>
+                    </div>
+                  </div>
+                  <AlertDialogFooter className="mt-10"></AlertDialogFooter>
+                </AlertDialogDescription>
+              </AlertDialogContent>
+            </AlertDialog>
+            {/* Ent */}
           </div>
         </>
       </section>
