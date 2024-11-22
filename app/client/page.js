@@ -429,7 +429,7 @@ export default function page() {
                     <XIcon style={{ width: 15, height: 15 }}></XIcon>
                   </AlertDialogCancel>
                 </div>
-                <AlertDialogDescription className="min-w-64 ">
+                <AlertDialogDescription className="min-w-80 ">
                   <div className="rounded-lg ">
                     <div className="flex items-center justify-center">
                       <Image
@@ -465,8 +465,8 @@ export default function page() {
                       <a href="https://facebook.com" aria-label="Facebook link">
                         <Image
                           src="/images/facebook.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Facebook"
                           className="rounded-full"
                         />
@@ -474,8 +474,8 @@ export default function page() {
                       <a href="https://telegram.org" aria-label="Telegram link">
                         <Image
                           src="/images/telegram.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Telegram"
                           className="rounded-full"
                         />
@@ -483,8 +483,8 @@ export default function page() {
                       <a href="https://tiktok.com" aria-label="TikTok link">
                         <Image
                           src="/images/tiktok.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="TikTok"
                           className="rounded-full"
                         />
@@ -496,10 +496,10 @@ export default function page() {
                       >
                         <Image
                           src="/images/map.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Map"
-                          className="rounded-full bg-gray-300"
+                          className="rounded-full bg-gray-400"
                         />
                       </a>
                       <a
@@ -508,8 +508,8 @@ export default function page() {
                       >
                         <Image
                           src="/images/call.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Call"
                           className="rounded-full mr-3"
                         />
@@ -541,7 +541,7 @@ export default function page() {
                     <XIcon style={{ width: 15, height: 15 }}></XIcon>
                   </AlertDialogCancel>
                 </div>
-                <AlertDialogDescription className="min-w-64 ">
+                <AlertDialogDescription className="min-w-80 ">
                   <div className="rounded-lg ">
                     <div className="flex items-center justify-center">
                       <Image
@@ -577,8 +577,8 @@ export default function page() {
                       <a href="https://facebook.com" aria-label="Facebook link">
                         <Image
                           src="/images/facebook.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Facebook"
                           className="rounded-full"
                         />
@@ -586,8 +586,8 @@ export default function page() {
                       <a href="https://telegram.org" aria-label="Telegram link">
                         <Image
                           src="/images/telegram.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Telegram"
                           className="rounded-full"
                         />
@@ -595,8 +595,8 @@ export default function page() {
                       <a href="https://tiktok.com" aria-label="TikTok link">
                         <Image
                           src="/images/tiktok.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="TikTok"
                           className="rounded-full"
                         />
@@ -608,10 +608,10 @@ export default function page() {
                       >
                         <Image
                           src="/images/map.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Map"
-                          className="rounded-full bg-gray-300"
+                          className="rounded-full bg-gray-400"
                         />
                       </a>
                       <a
@@ -620,8 +620,8 @@ export default function page() {
                       >
                         <Image
                           src="/images/call.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Call"
                           className="rounded-full mr-3"
                         />
@@ -653,7 +653,7 @@ export default function page() {
                     <XIcon style={{ width: 15, height: 15 }}></XIcon>
                   </AlertDialogCancel>
                 </div>
-                <AlertDialogDescription className="min-w-64 ">
+                <AlertDialogDescription className="min-w-80 ">
                   <div className="rounded-lg ">
                     <div className="flex items-center justify-center">
                       <Image
@@ -689,8 +689,8 @@ export default function page() {
                       <a href="https://facebook.com" aria-label="Facebook link">
                         <Image
                           src="/images/facebook.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Facebook"
                           className="rounded-full"
                         />
@@ -698,8 +698,8 @@ export default function page() {
                       <a href="https://telegram.org" aria-label="Telegram link">
                         <Image
                           src="/images/telegram.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Telegram"
                           className="rounded-full"
                         />
@@ -707,8 +707,8 @@ export default function page() {
                       <a href="https://tiktok.com" aria-label="TikTok link">
                         <Image
                           src="/images/tiktok.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="TikTok"
                           className="rounded-full"
                         />
@@ -720,10 +720,10 @@ export default function page() {
                       >
                         <Image
                           src="/images/map.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Map"
-                          className="rounded-full bg-gray-300"
+                          className="rounded-full bg-gray-400"
                         />
                       </a>
                       <a
@@ -732,8 +732,8 @@ export default function page() {
                       >
                         <Image
                           src="/images/call.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Call"
                           className="rounded-full mr-3"
                         />
@@ -765,7 +765,7 @@ export default function page() {
                     <XIcon style={{ width: 15, height: 15 }}></XIcon>
                   </AlertDialogCancel>
                 </div>
-                <AlertDialogDescription className="min-w-64 ">
+                <AlertDialogDescription className="min-w-80 ">
                   <div className="rounded-lg ">
                     <div className="flex items-center justify-center">
                       <Image
@@ -801,8 +801,8 @@ export default function page() {
                       <a href="https://facebook.com" aria-label="Facebook link">
                         <Image
                           src="/images/facebook.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Facebook"
                           className="rounded-full"
                         />
@@ -810,8 +810,8 @@ export default function page() {
                       <a href="https://telegram.org" aria-label="Telegram link">
                         <Image
                           src="/images/telegram.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Telegram"
                           className="rounded-full"
                         />
@@ -819,8 +819,8 @@ export default function page() {
                       <a href="https://tiktok.com" aria-label="TikTok link">
                         <Image
                           src="/images/tiktok.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="TikTok"
                           className="rounded-full"
                         />
@@ -832,10 +832,10 @@ export default function page() {
                       >
                         <Image
                           src="/images/map.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Map"
-                          className="rounded-full bg-gray-300"
+                          className="rounded-full bg-gray-400"
                         />
                       </a>
                       <a
@@ -844,8 +844,8 @@ export default function page() {
                       >
                         <Image
                           src="/images/call.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Call"
                           className="rounded-full mr-3"
                         />
@@ -877,7 +877,7 @@ export default function page() {
                     <XIcon style={{ width: 15, height: 15 }}></XIcon>
                   </AlertDialogCancel>
                 </div>
-                <AlertDialogDescription className="min-w-64 ">
+                <AlertDialogDescription className="min-w-80 ">
                   <div className="rounded-lg ">
                     <div className="flex items-center justify-center">
                       <Image
@@ -913,8 +913,8 @@ export default function page() {
                       <a href="https://facebook.com" aria-label="Facebook link">
                         <Image
                           src="/images/facebook.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Facebook"
                           className="rounded-full"
                         />
@@ -922,8 +922,8 @@ export default function page() {
                       <a href="https://telegram.org" aria-label="Telegram link">
                         <Image
                           src="/images/telegram.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Telegram"
                           className="rounded-full"
                         />
@@ -931,8 +931,8 @@ export default function page() {
                       <a href="https://tiktok.com" aria-label="TikTok link">
                         <Image
                           src="/images/tiktok.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="TikTok"
                           className="rounded-full"
                         />
@@ -944,10 +944,10 @@ export default function page() {
                       >
                         <Image
                           src="/images/map.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Map"
-                          className="rounded-full bg-gray-300"
+                          className="rounded-full bg-gray-400"
                         />
                       </a>
                       <a
@@ -956,8 +956,8 @@ export default function page() {
                       >
                         <Image
                           src="/images/call.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Call"
                           className="rounded-full mr-3"
                         />
@@ -989,7 +989,7 @@ export default function page() {
                     <XIcon style={{ width: 15, height: 15 }}></XIcon>
                   </AlertDialogCancel>
                 </div>
-                <AlertDialogDescription className="min-w-64 ">
+                <AlertDialogDescription className="min-w-80 ">
                   <div className="rounded-lg ">
                     <div className="flex items-center justify-center">
                       <Image
@@ -1025,8 +1025,8 @@ export default function page() {
                       <a href="https://facebook.com" aria-label="Facebook link">
                         <Image
                           src="/images/facebook.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Facebook"
                           className="rounded-full"
                         />
@@ -1034,8 +1034,8 @@ export default function page() {
                       <a href="https://telegram.org" aria-label="Telegram link">
                         <Image
                           src="/images/telegram.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Telegram"
                           className="rounded-full"
                         />
@@ -1043,8 +1043,8 @@ export default function page() {
                       <a href="https://tiktok.com" aria-label="TikTok link">
                         <Image
                           src="/images/tiktok.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="TikTok"
                           className="rounded-full"
                         />
@@ -1056,10 +1056,10 @@ export default function page() {
                       >
                         <Image
                           src="/images/map.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Map"
-                          className="rounded-full bg-gray-300"
+                          className="rounded-full bg-gray-400"
                         />
                       </a>
                       <a
@@ -1068,8 +1068,8 @@ export default function page() {
                       >
                         <Image
                           src="/images/call.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Call"
                           className="rounded-full mr-3"
                         />
@@ -1101,7 +1101,7 @@ export default function page() {
                     <XIcon style={{ width: 15, height: 15 }}></XIcon>
                   </AlertDialogCancel>
                 </div>
-                <AlertDialogDescription className="min-w-64 ">
+                <AlertDialogDescription className="min-w-80 ">
                   <div className="rounded-lg ">
                     <div className="flex items-center justify-center">
                       <Image
@@ -1137,8 +1137,8 @@ export default function page() {
                       <a href="https://facebook.com" aria-label="Facebook link">
                         <Image
                           src="/images/facebook.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Facebook"
                           className="rounded-full"
                         />
@@ -1146,8 +1146,8 @@ export default function page() {
                       <a href="https://telegram.org" aria-label="Telegram link">
                         <Image
                           src="/images/telegram.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Telegram"
                           className="rounded-full"
                         />
@@ -1155,8 +1155,8 @@ export default function page() {
                       <a href="https://tiktok.com" aria-label="TikTok link">
                         <Image
                           src="/images/tiktok.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="TikTok"
                           className="rounded-full"
                         />
@@ -1168,10 +1168,10 @@ export default function page() {
                       >
                         <Image
                           src="/images/map.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Map"
-                          className="rounded-full bg-gray-300"
+                          className="rounded-full bg-gray-400"
                         />
                       </a>
                       <a
@@ -1180,8 +1180,8 @@ export default function page() {
                       >
                         <Image
                           src="/images/call.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Call"
                           className="rounded-full mr-3"
                         />
@@ -1213,7 +1213,7 @@ export default function page() {
                     <XIcon style={{ width: 15, height: 15 }}></XIcon>
                   </AlertDialogCancel>
                 </div>
-                <AlertDialogDescription className="min-w-64 ">
+                <AlertDialogDescription className="min-w-80 ">
                   <div className="rounded-lg ">
                     <div className="flex items-center justify-center">
                       <Image
@@ -1249,8 +1249,8 @@ export default function page() {
                       <a href="https://facebook.com" aria-label="Facebook link">
                         <Image
                           src="/images/facebook.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Facebook"
                           className="rounded-full"
                         />
@@ -1258,8 +1258,8 @@ export default function page() {
                       <a href="https://telegram.org" aria-label="Telegram link">
                         <Image
                           src="/images/telegram.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Telegram"
                           className="rounded-full"
                         />
@@ -1267,8 +1267,8 @@ export default function page() {
                       <a href="https://tiktok.com" aria-label="TikTok link">
                         <Image
                           src="/images/tiktok.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="TikTok"
                           className="rounded-full"
                         />
@@ -1280,10 +1280,10 @@ export default function page() {
                       >
                         <Image
                           src="/images/map.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Map"
-                          className="rounded-full bg-gray-300"
+                          className="rounded-full bg-gray-400"
                         />
                       </a>
                       <a
@@ -1292,8 +1292,8 @@ export default function page() {
                       >
                         <Image
                           src="/images/call.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Call"
                           className="rounded-full mr-3"
                         />
@@ -1325,7 +1325,7 @@ export default function page() {
                     <XIcon style={{ width: 15, height: 15 }}></XIcon>
                   </AlertDialogCancel>
                 </div>
-                <AlertDialogDescription className="min-w-64 ">
+                <AlertDialogDescription className="min-w-80 ">
                   <div className="rounded-lg ">
                     <div className="flex items-center justify-center">
                       <Image
@@ -1361,8 +1361,8 @@ export default function page() {
                       <a href="https://facebook.com" aria-label="Facebook link">
                         <Image
                           src="/images/facebook.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Facebook"
                           className="rounded-full"
                         />
@@ -1370,8 +1370,8 @@ export default function page() {
                       <a href="https://telegram.org" aria-label="Telegram link">
                         <Image
                           src="/images/telegram.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Telegram"
                           className="rounded-full"
                         />
@@ -1379,8 +1379,8 @@ export default function page() {
                       <a href="https://tiktok.com" aria-label="TikTok link">
                         <Image
                           src="/images/tiktok.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="TikTok"
                           className="rounded-full"
                         />
@@ -1392,10 +1392,10 @@ export default function page() {
                       >
                         <Image
                           src="/images/map.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Map"
-                          className="rounded-full bg-gray-300"
+                          className="rounded-full bg-gray-400"
                         />
                       </a>
                       <a
@@ -1404,8 +1404,8 @@ export default function page() {
                       >
                         <Image
                           src="/images/call.png"
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt="Call"
                           className="rounded-full mr-3"
                         />
