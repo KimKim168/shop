@@ -175,86 +175,93 @@ export default function page() {
 
         {/* Payment Arlert */}
         <AlertDialogContent>
-          <AlertDialogHeader>
-            <AlertDialogCancel className="text-white flex bg-payMent  w-2  border ">
-              <XIcon></XIcon>
+          <div>
+            <div className="absolute top-0 left-0 rounded-t-md bg-slate-300 w-full h-44">
+              {/* <Image
+              src="/images/logo.webp"
+              width={150}
+              height={150}
+              alt="image"
+            ></Image> */}
+            </div>
+            <AlertDialogCancel className="relative  text-black hover:text-white  w-2  border ">
+              <XIcon style={{ width: 20, height: 20 }}></XIcon>
             </AlertDialogCancel>
-            <AlertDialogDescription>
-              <div>
-                <div className="my-5 flex justify-center items-center">
-                  <Image
-                    src="/images/logo.webp"
-                    width={100}
-                    height={100}
-                    alt="image"
-                    className="rounded-full"
-                  ></Image>
-                </div>
-                <div className=" flex flex-col text-center justify-center items-center">
-                  <h1 className="font-bold text-black text-2xl">
-                    Scholar Library
-                  </h1>
-                  <p className="text-black text-xl">
-                    RedBox restaurant is a comfortable, brasserie-style
-                    restaurant offering everything you love about asia cuisine
-                    without the attitude. Our restaurant features classic dishes
-                    such as Grilled Giant Squid and Crispy Duck Tongue Garlic,
-                    as well as fresh salads and juicy hamburgers made with
-                    fresh-ground beef.
-                  </p>
-                  <div className="mt-10 flex justify-between space-x-5">
-                    <a>
-                      <Image
-                        src="/images/facebook.png"
-                        width={50}
-                        height={50}
-                        alt="image"
-                        className="rounded-full"
-                      ></Image>
-                    </a>
-                    <a>
-                      <Image
-                        src="/images/telegram.png"
-                        width={50}
-                        height={50}
-                        alt="image"
-                        className="rounded-full"
-                      ></Image>
-                    </a>
-                    <a>
-                      <Image
-                        src="/images/tiktok.png"
-                        width={50}
-                        height={50}
-                        alt="image"
-                        className="rounded-full"
-                      ></Image>
-                    </a>
-                    <a>
-                      <Image
-                        src="/images/map.png"
-                        width={50}
-                        height={50}
-                        alt="image"
-                        className="rounded-full bg-gray-100"
-                      ></Image>
-                    </a>
-                    <a className="text-green-800 text-xl flex justify-center items-center">
-                      <Image
-                        src="/images/call.png"
-                        width={50}
-                        height={50}
-                        alt="image"
-                        className="rounded-full mr-3"
-                      ></Image>
-                      012345987
-                    </a>
-                  </div>
+          </div>
+          <AlertDialogDescription>
+            <div>
+              <div className="my-5 flex justify-center items-center">
+                <Image
+                  src="/images/logo.webp"
+                  width={150}
+                  height={150}
+                  alt="image"
+                  className="rounded-full z-20"
+                ></Image>
+              </div>
+              <div className=" flex flex-col text-center justify-center items-center">
+                <h1 className="font-bold text-black text-xl sm:text-2xl">
+                  Scholar Library
+                </h1>
+                <p className="text-black sm:text-xl">
+                  RedBox restaurant is a comfortable, brasserie-style restaurant
+                  offering everything you love about asia cuisine without the
+                  attitude. Our restaurant features classic dishes such as
+                  Grilled Giant Squid and Crispy Duck Tongue Garlic, as well as
+                  fresh salads and juicy hamburgers made with fresh-ground beef.
+                </p>
+                <div className="mt-10 grid grid-cols-4 sm:flex  gap-5 justify-items-center items-center">
+                  <a>
+                    <Image
+                      src="/images/facebook.png"
+                      width={40}
+                      height={40}
+                      alt="image"
+                      className="rounded-full"
+                    />
+                  </a>
+                  <a>
+                    <Image
+                      src="/images/telegram.png"
+                      width={40}
+                      height={40}
+                      alt="image"
+                      className="rounded-full"
+                    />
+                  </a>
+                  <a>
+                    <Image
+                      src="/images/tiktok.png"
+                      width={40}
+                      height={40}
+                      alt="image"
+                      className="rounded-full"
+                    />
+                  </a>
+                  <a className="flex justify-center items-center">
+                    <Image
+                      src="/images/map.png"
+                      width={40}
+                      height={40}
+                      alt="image"
+                      className="rounded-full bg-gray-100"
+                    />
+                  </a>
+                  <a className="flex justify-center items-center col-span-5 sm:col-span-1 md:col-span-1">
+                    <Image
+                      src="/images/call.png"
+                      width={40}
+                      height={40}
+                      alt="image"
+                      className="rounded-full mr-3"
+                    />
+                    <p className="text-green-800 text-xl">012345987</p>
+                  </a>
                 </div>
               </div>
-              <AlertDialogFooter className="mt-10"></AlertDialogFooter>
-            </AlertDialogDescription>
-          </AlertDialogHeader>
+            </div>
+            <AlertDialogFooter className="mt-10"></AlertDialogFooter>
+          </AlertDialogDescription>
         </AlertDialogContent>
       </AlertDialog>
 
