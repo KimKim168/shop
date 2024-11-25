@@ -1,20 +1,23 @@
 import { Link } from "lucide-react";
 import React from "react";
+import { Button as ShadCNButton } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function page() {
   return (
     <>
       <section className="w-full mt-5 mb-7">
-        <div className="text-center">
+        <div className="text-center flex flex-col justify-center items-center">
           <h1 className="text-sm sm:text-xl md:text-2xl">
             Thnal Classification
           </h1>
+          <Image src="/images/direction.png" width={30} height={30}></Image>
           <h1 className="text-sm sm:text-xl md:text-2xl">
             DDC | LC (AL Power)
           </h1>
         </div>
         {/* Search */}
-        <div className="mt-10 max-w-screen-2xl mx-auto px-4">
+        {/* <div className="mt-10 max-w-screen-2xl mx-auto">
           <form>
             <label
               htmlFor="default-search"
@@ -58,11 +61,11 @@ export default function page() {
               </button>
             </div>
           </form>
-        </div>
+        </div> */}
         {/* End Search */}
 
         {/* Start */}
-        <div className="grid  grid-cols-12 max-w-screen-2xl gap-4 mx-auto px-4 mt-6">
+        <div className="grid  grid-cols-12 max-w-screen-2xl gap-4 mx-auto  mt-6">
           <div className="col-span-12 sm:col-span-8 border borderColor  rounded-lg bg-white p-6 shadow-md w-full">
             <h1 className="text-[16px] sm:text-xl md:text-xl font-normal text-black mb-2">
               Standard Number Khmer Book
@@ -90,7 +93,7 @@ export default function page() {
         </div>
         {/* End */}
         {/* Start */}
-        <div className="max-w-screen-2xl mx-auto px-4 mt-6 text-[16px] sm:text-[18px] md:text-[18px] space-y-3">
+        <div className="max-w-screen-2xl mx-auto  mt-6 text-[16px] sm:text-[18px] md:text-[18px] space-y-3">
           <h1 className="font-bold text-[16px] sm:text-xl md:text-2xl">
             Summary:
           </h1>
@@ -117,7 +120,7 @@ export default function page() {
         {/* End */}
 
         {/* Start */}
-        <div class="bg-gray-100 mx-4 mt-10">
+        <div class="bg-gray-100  mt-10">
           <p className="text-[16px] sm:text-[18px] md:text-[18px]">
             Search Result
           </p>
