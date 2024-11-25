@@ -21,6 +21,10 @@ footer {
   
 }
 
+.borderColor{
+  border-color: #4d489d;
+}
+
 
 .custom-scrollbar::-webkit-scrollbar {
   height: 8px; /* Horizontal scrollbar height */
