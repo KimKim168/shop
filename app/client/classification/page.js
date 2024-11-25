@@ -6,12 +6,12 @@ import Image from "next/image";
 export default function page() {
   return (
     <>
-      <section className="w-full mt-5 mb-7">
+      <section className="w-full mt-5 mb-7 px-10">
         <div className="text-center flex flex-col justify-center items-center">
           <h1 className="text-sm sm:text-xl md:text-2xl">
             Thnal Classification
           </h1>
-          <Image src="/images/direction.png" width={30} height={30}></Image>
+          {/* <Image src="/images/direction.png" width={30} height={30}></Image> */}
           <h1 className="text-sm sm:text-xl md:text-2xl">
             DDC | LC (AL Power)
           </h1>
@@ -20,7 +20,7 @@ export default function page() {
         <hr className="border-[#4d489d] my-7"></hr>
 
         {/* Start */}
-        <div className="grid  grid-cols-12 max-w-screen-2xl gap-4 mx-auto  mt-5">
+        <div className="grid  grid-cols-12 max-w-screen-2xl  gap-4 mx-auto  mt-5">
           <div className="col-span-12 sm:col-span-8 border borderColor  rounded-lg bg-white p-6  w-full">
             <h1 className="text-[16px] sm:text-xl md:text-xl font-normal text-black mb-2">
               Standard Number Khmer Book
