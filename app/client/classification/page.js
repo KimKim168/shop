@@ -64,10 +64,10 @@ export default function page() {
         {/* Start */}
         <div className="grid  grid-cols-12 max-w-screen-2xl gap-4 mx-auto px-4 mt-6">
           <div className="col-span-8 border borderColor  rounded-lg bg-white p-6 shadow-md w-full">
-            <h1 className="text-[16px] sm:text-xl md:text-xl font-normal text-gray-700 mb-2">
+            <h1 className="text-[16px] sm:text-xl md:text-xl font-normal text-black mb-2">
               Standard Number Khmer Book
             </h1>
-            <p className="text-sm text-gray-600 mb-4">
+            <p className="text-sm text-black mb-4">
               Enter an ISBN, ISSN or TSIN (Thnal Standard Identification Number)
             </p>
             <input
