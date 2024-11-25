@@ -17,7 +17,7 @@ export default function page() {
           </h1>
         </div>
 
-        <hr className="border-black my-7"></hr>
+        <hr className="border-[#4d489d] my-7"></hr>
 
         {/* Start */}
         <div className="grid  grid-cols-12 max-w-screen-2xl gap-4 mx-auto  mt-5">
