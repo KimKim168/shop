@@ -63,7 +63,7 @@ export default function page() {
 
         {/* Start */}
         <div className="grid  grid-cols-12 max-w-screen-2xl gap-4 mx-auto px-4 mt-6">
-          <div className="col-span-8 border borderColor  rounded-lg bg-white p-6 shadow-md w-full">
+          <div className="col-span-12 sm:col-span-8 border borderColor  rounded-lg bg-white p-6 shadow-md w-full">
             <h1 className="text-[16px] sm:text-xl md:text-xl font-normal text-black mb-2">
               Standard Number Khmer Book
             </h1>
@@ -76,7 +76,7 @@ export default function page() {
               className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-0.5 focus:ring-black focus:border-black"
             />
           </div>
-          <div className="col-span-4 bg-payMent rounded-lg text-white text-center pt-6">
+          <div className="col-span-12 sm:col-span-4 bg-payMent rounded-lg text-white text-center p-6">
             <h1 className="text-sm sm:text-xl md:text-xl">
               Access Classification
             </h1>
@@ -145,9 +145,7 @@ export default function page() {
                     John Doe
                   </td>
                   <td class="px-4 py-2 border border-black text-black">30</td>
-                  <td class="px-4 py-2 border border-black text-black">
-                    Book
-                  </td>
+                  <td class="px-4 py-2 border border-black text-black">Book</td>
                   <td class="px-4 py-2 border border-black text-black">
                     https://www.thnal.com/business
                   </td>
@@ -157,9 +155,7 @@ export default function page() {
                     John Doe
                   </td>
                   <td class="px-4 py-2 border border-black text-black">30</td>
-                  <td class="px-4 py-2 border border-black text-black">
-                    Book
-                  </td>
+                  <td class="px-4 py-2 border border-black text-black">Book</td>
                   <td class="px-4 py-2 border border-black text-black">
                     https://www.thnal.com/business
                   </td>
@@ -169,9 +165,7 @@ export default function page() {
                     John Doe
                   </td>
                   <td class="px-4 py-2 border border-black text-black">30</td>
-                  <td class="px-4 py-2 border border-black text-black">
-                    Book
-                  </td>
+                  <td class="px-4 py-2 border border-black text-black">Book</td>
                   <td class="px-4 py-2 border border-black text-black">
                     https://www.thnal.com/business
                   </td>
@@ -181,9 +175,7 @@ export default function page() {
                     John Doe
                   </td>
                   <td class="px-4 py-2 border border-black text-black">30</td>
-                  <td class="px-4 py-2 border border-black text-black">
-                    Book
-                  </td>
+                  <td class="px-4 py-2 border border-black text-black">Book</td>
                   <td class="px-4 py-2 border border-black text-black">
                     https://www.thnal.com/business
                   </td>
